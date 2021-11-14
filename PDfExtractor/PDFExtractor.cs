@@ -31,7 +31,7 @@ namespace PDfExtractor
             {
                 try
                 {
-                    bob.Append(PdfTextExtractor.GetTextFromPage(reader, i));
+                    bob.Append(PdfTextExtractor.GetTextFromPage(reader, i, new GlyphTextRenderListener(new LocationTextExtractionStrategy())));
                 }
                 catch (Exception)
                 {

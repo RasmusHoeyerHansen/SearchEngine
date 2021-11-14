@@ -38,6 +38,7 @@ namespace ExtractorTests
 
         
         [Test]
+        
         public void Extract_Returns_StringContainer_With_String_From_PDF_With_Tables_IsNotEmpty()
         {
             IExtractor pdfExtractor = new PdfExtractor();
@@ -68,8 +69,9 @@ namespace ExtractorTests
         private string LoadTestPDF()
         {
             StringBuilder bob = new StringBuilder();
-            using (PdfReader reader = new PdfReader(@"C:\Users\rasmus\Desktop\New folder\SearchEngine\ExtractorTests\PDFs\Rasmus Høyer Hansen, grades - Aalborg University.pdf"))
+            using (PdfReader reader = new PdfReader(Environment.CurrentDirectory + @"\PDFs\Rasmus Høyer Hansen, grades - Aalborg University.pdf"))
             {
+                
                 for (int i = 1; i <= reader.NumberOfPages; i++)
                 {
                     try
