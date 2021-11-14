@@ -67,11 +67,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rasmus\\Desktop\\New folder\\SearchEngine\\PDfExtractor\\PDfExtractor.csproj",
+      "projectUniqueName": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\PDfExtractor\\PDfExtractor.csproj",
       "projectName": "PDfExtractor",
-      "projectPath": "C:\\Users\\rasmus\\Desktop\\New folder\\SearchEngine\\PDfExtractor\\PDfExtractor.csproj",
+      "projectPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\PDfExtractor\\PDfExtractor.csproj",
       "packagesPath": "C:\\Users\\rasmus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rasmus\\Desktop\\New folder\\SearchEngine\\PDfExtractor\\obj\\",
+      "outputPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\PDfExtractor\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rasmus\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -5027,11 +5027,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rasmus\\Desktop\\New folder\\SearchEngine\\ExtractorTests\\ExtractorTests.csproj",
+      "projectUniqueName": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\ExtractorTests\\ExtractorTests.csproj",
       "projectName": "ExtractorTests",
-      "projectPath": "C:\\Users\\rasmus\\Desktop\\New folder\\SearchEngine\\ExtractorTests\\ExtractorTests.csproj",
+      "projectPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\ExtractorTests\\ExtractorTests.csproj",
       "packagesPath": "C:\\Users\\rasmus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rasmus\\Desktop\\New folder\\SearchEngine\\ExtractorTests\\obj\\",
+      "outputPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\ExtractorTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rasmus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5048,8 +5048,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\rasmus\\Desktop\\New folder\\SearchEngine\\PDfExtractor\\PDfExtractor.csproj": {
-              "projectPath": "C:\\Users\\rasmus\\Desktop\\New folder\\SearchEngine\\PDfExtractor\\PDfExtractor.csproj"
+            "C:\\Users\\rasmus\\Desktop\\SearchEngine\\PDfExtractor\\PDfExtractor.csproj": {
+              "projectPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\PDfExtractor\\PDfExtractor.csproj"
             }
           }
         }

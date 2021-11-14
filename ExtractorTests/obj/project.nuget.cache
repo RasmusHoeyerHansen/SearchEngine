@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VuXVu/9F7JtDHndFLB/zWeQvnpDUUfv9GexpCJrTVeRMIoF3AIKsa3c5AZO4UVbx4QraR+gzukhrVfWDItulJw==",
+  "dgSpecHash": "kTD5ZKPvxrEG6Gpii4gfO9pp7Bqq8p09W7Jog63NUGf1c9aGSxvFtGGMklLtLHu7gaO8otyDOSxDlLiTgfzjRQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rasmus\\Desktop\\New folder\\SearchEngine\\ExtractorTests\\ExtractorTests.csproj",
+  "projectFilePath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\ExtractorTests\\ExtractorTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rasmus\\.nuget\\packages\\bouncycastle\\1.8.6.1\\bouncycastle.1.8.6.1.nupkg.sha512",
     "C:\\Users\\rasmus\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
