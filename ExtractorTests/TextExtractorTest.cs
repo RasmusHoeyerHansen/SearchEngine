@@ -53,7 +53,7 @@ namespace ExtractorTests
 
         private PdfDocument CreateTestPDF(string text)
         {
-            string path = @"C:\Users\rasmus\Desktop\New folder\SearchEngine\ExtractorTests\PDFs\file.txt";
+            string path = @"./test.txt";
             PdfDocument pdfDocument = new PdfDocument(path);
             PdfWriter.GetInstance(pdfDocument,
                 new FileStream(path, FileMode.Create));
@@ -68,7 +68,7 @@ namespace ExtractorTests
         private string ReadPdf()
         {
             StringBuilder bob = new StringBuilder();
-            using (PdfReader reader = new PdfReader(Environment.CurrentDirectory + @"\PDFs\Rasmus Høyer Hansen, grades - Aalborg University.pdf"))
+            using (PdfReader reader = new PdfReader(@"C:\Users\rasmus\Desktop\SearchEngine\ExtractorTests\PDFs\Rasmus Høyer Hansen, grades - Aalborg University.pdf"))
             {
                 
                 for (int i = 1; i <= reader.NumberOfPages; i++)
