@@ -38,11 +38,10 @@ namespace ExtractorTests
 
         
         [Test]
-        
         public void Extract_Returns_StringContainer_With_String_From_PDF_With_Tables_IsNotEmpty()
         {
             IExtractor pdfExtractor = new PdfExtractor();
-            PdfDocument input =  CreateTestPDF(LoadTestPDF());
+            PdfDocument input =  CreateTestPDF(ReadPdf());
             PdfExtractResult q = null; 
             
             Assert.DoesNotThrow(()=> q = pdfExtractor.ParsePdf(input));
@@ -66,7 +65,7 @@ namespace ExtractorTests
             return pdfDocument;
         }
         
-        private string LoadTestPDF()
+        private string ReadPdf()
         {
             StringBuilder bob = new StringBuilder();
             using (PdfReader reader = new PdfReader(Environment.CurrentDirectory + @"\PDFs\Rasmus Høyer Hansen, grades - Aalborg University.pdf"))
