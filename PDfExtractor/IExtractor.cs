@@ -1,11 +1,9 @@
 ﻿
-
-using iTextSharp.text;
-
-namespace PDfExtractor
+namespace PdfExtractor
 {
     public interface IExtractor
     {
-        public PdfExtractResult ParsePdf(PdfDocument document);
+        public PdfArticle ParsePdf(PdfDocument document);
+        
     }
 }

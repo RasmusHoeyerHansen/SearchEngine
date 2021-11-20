@@ -26,3 +26,32 @@ C:\Users\rasmus\Desktop\New folder\SearchEngine\SearchEngine\obj\Debug\net5.0\Se
 C:\Users\rasmus\Desktop\New folder\SearchEngine\SearchEngine\obj\Debug\net5.0\ref\SearchEngineAPI.dll
 C:\Users\rasmus\Desktop\New folder\SearchEngine\SearchEngine\obj\Debug\net5.0\SearchEngineAPI.pdb
 C:\Users\rasmus\Desktop\New folder\SearchEngine\SearchEngine\obj\Debug\net5.0\SearchEngineAPI.genruntimeconfig.cache
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\bin\Debug\net5.0\appsettings.json
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\bin\Debug\net5.0\SearchEngineAPI.StaticWebAssets.xml
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\bin\Debug\net5.0\SearchEngineAPI.exe
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\bin\Debug\net5.0\SearchEngineAPI.deps.json
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\bin\Debug\net5.0\SearchEngineAPI.runtimeconfig.json
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\bin\Debug\net5.0\SearchEngineAPI.runtimeconfig.dev.json
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\bin\Debug\net5.0\SearchEngineAPI.dll
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\bin\Debug\net5.0\ref\SearchEngineAPI.dll
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\bin\Debug\net5.0\SearchEngineAPI.pdb
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\obj\Debug\net5.0\SearchEngineAPI.csproj.AssemblyReference.cache
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\obj\Debug\net5.0\SearchEngineAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\obj\Debug\net5.0\SearchEngineAPI.AssemblyInfoInputs.cache
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\obj\Debug\net5.0\SearchEngineAPI.AssemblyInfo.cs
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\obj\Debug\net5.0\SearchEngineAPI.csproj.CoreCompileInputs.cache
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\obj\Debug\net5.0\SearchEngineAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\obj\Debug\net5.0\SearchEngineAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\obj\Debug\net5.0\scopedcss\bundle\SearchEngineAPI.styles.css
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\obj\Debug\net5.0\staticwebassets\SearchEngineAPI.StaticWebAssets.Manifest.cache
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\obj\Debug\net5.0\SearchEngineAPI.RazorTargetAssemblyInfo.cache
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\obj\Debug\net5.0\SearchEngineAPI.csproj.CopyComplete
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\obj\Debug\net5.0\SearchEngineAPI.dll
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\obj\Debug\net5.0\ref\SearchEngineAPI.dll
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\obj\Debug\net5.0\SearchEngineAPI.pdb
+C:\Users\rasmus\Desktop\SearchEngine\SearchEngine\obj\Debug\net5.0\SearchEngineAPI.genruntimeconfig.cache

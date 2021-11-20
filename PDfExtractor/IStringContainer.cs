@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace PDfExtractor
+namespace PdfExtractor
 {
     public interface IStringContainer
     {

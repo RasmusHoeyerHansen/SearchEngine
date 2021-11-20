@@ -1,6 +1,6 @@
 ﻿using iTextSharp.text;
 
-namespace PDfExtractor
+namespace PdfExtractor
 {
     public class PdfDocument : Document
     {
@@ -9,8 +9,5 @@ namespace PDfExtractor
         {
             Path = path;
         }
-
-        
-        
     }
 }

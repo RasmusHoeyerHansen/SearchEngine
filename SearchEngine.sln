@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchEngineAPI", "SearchEn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDfExtractor", "PDfExtractor\PDfExtractor.csproj", "{E5E11B5D-D5E3-4953-9112-FB53D1B3D3B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractorTests", "ExtractorTests\ExtractorTests.csproj", "{8EC595F8-7471-48DA-BF7D-41D7D9A0430F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extractor.UnitTest", "Extractor.UnitTest\Extractor.UnitTest.csproj", "{8EC595F8-7471-48DA-BF7D-41D7D9A0430F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

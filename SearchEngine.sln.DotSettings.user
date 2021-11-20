@@ -11,7 +11,5 @@
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f1786359_002Da274_002D4064_002Dbb76_002D1abaca0eb114/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TextExtractorTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::8EC595F8-7471-48DA-BF7D-41D7D9A0430F::net5.0::ExtractorTests.TextExtractorTest&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

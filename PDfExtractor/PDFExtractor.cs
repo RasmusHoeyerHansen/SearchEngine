@@ -1,45 +1,24 @@
-﻿
-
-
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using iTextSharp.text;
 using iTextSharp.text.pdf;
-using iTextSharp.text.pdf.parser;
 
-
-namespace PDfExtractor
+namespace PdfExtractor
 {
     public class PdfExtractor : IExtractor
     {
-        public PdfExtractResult ParsePdf(PdfDocument document)
+        public PdfArticle ParsePdf(PdfDocument document)
         {
             string result;
-            using (PdfReader reader = new PdfReader(document.Path))
-            {
-                ExtractPages(reader, out result);
-            }
-            
-            return new PdfExtractResult(result.Split(" "));
+            IPdfExtractionStrategy strategy = new DocumentExtractionStrategy(document, document.Path);
+            return new PdfArticle(strategy.ExtractText().Split(" "));
         }
 
-        private void ExtractPages(PdfReader reader, out string content)
+        public PdfArticle ParsePdf(byte[] documentBytes)
         {
-            StringBuilder bob = new StringBuilder();
-            for (int i = 1; i <= reader.NumberOfPages; i++)
-            {
-                try
-                {
-                    bob.Append(PdfTextExtractor.GetTextFromPage(reader, i, new GlyphTextRenderListener(new LocationTextExtractionStrategy())));
-                }
-                catch (Exception)
-                {
-                    // ignored
-                }
-            }
-
-            content = bob.ToString();
+            
         }
+        
+
     }
 }

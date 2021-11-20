@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rasmus\\Desktop\\New folder\\SearchEngine\\SearchEngine\\SearchEngineAPI.csproj": {}
+    "C:\\Users\\rasmus\\Desktop\\SearchEngine\\SearchEngine\\SearchEngineAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rasmus\\Desktop\\New folder\\SearchEngine\\SearchEngine\\SearchEngineAPI.csproj": {
+    "C:\\Users\\rasmus\\Desktop\\SearchEngine\\SearchEngine\\SearchEngineAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rasmus\\Desktop\\New folder\\SearchEngine\\SearchEngine\\SearchEngineAPI.csproj",
+        "projectUniqueName": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\SearchEngine\\SearchEngineAPI.csproj",
         "projectName": "SearchEngineAPI",
-        "projectPath": "C:\\Users\\rasmus\\Desktop\\New folder\\SearchEngine\\SearchEngine\\SearchEngineAPI.csproj",
+        "projectPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\SearchEngine\\SearchEngineAPI.csproj",
         "packagesPath": "C:\\Users\\rasmus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rasmus\\Desktop\\New folder\\SearchEngine\\SearchEngine\\obj\\",
+        "outputPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\SearchEngine\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rasmus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,6 +55,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.12, 5.0.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -63,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

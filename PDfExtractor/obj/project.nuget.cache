@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vvuO5Pna0fuvvmPlKm1OXsIz00FcHjEZHyysI+IR/2BYJz6/6N29Z6pbqVhiYSUZjNOiObCd5b7+IG2yysOfqw==",
+  "dgSpecHash": "EyqB6UxyYnYV640GtVXwVeCzcwKZlqTRC1A1Nm5rpsKUx+VbS3Vb37+GswAZFpDvndZFb9SZ3wJQJCqxm7S7vQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\PDfExtractor\\PDfExtractor.csproj",
   "expectedPackageFiles": [
@@ -12,20 +12,20 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'BouncyCastle 1.8.6.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'BouncyCastle 1.8.6.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
       "libraryId": "BouncyCastle",
       "targetGraphs": [
-        "net5.0"
+        "net6.0"
       ]
     },
     {
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'iTextSharp 5.5.13.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'iTextSharp 5.5.13.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
       "libraryId": "iTextSharp",
       "targetGraphs": [
-        "net5.0"
+        "net6.0"
       ]
     }
   ]
