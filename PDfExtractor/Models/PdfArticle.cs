@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using PdfExtractor;
 
-namespace PdfExtractor
+namespace PDfExtractor.Models
 {
-    public class PdfArticle : IStringContainer
+    public class PdfArticle : IStringContainer, IExtractResult
     {
         public PdfArticle(IEnumerable<string> parsedStrings)
         {

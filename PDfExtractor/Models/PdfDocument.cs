@@ -1,6 +1,6 @@
 ﻿using iTextSharp.text;
 
-namespace PdfExtractor
+namespace PDfExtractor.Models
 {
     public class PdfDocument : Document
     {

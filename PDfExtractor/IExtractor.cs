@@ -1,9 +1,10 @@
 ﻿
+using PDfExtractor.Models;
+
 namespace PdfExtractor
 {
-    public interface IExtractor
+    public interface IExtractor<in TIn, out TOut> where TOut : IExtractResult
     {
-        public PdfArticle ParsePdf(PdfDocument document);
-        
+        public TOut Parse(TIn document);
     }
 }
