@@ -18,7 +18,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\PDfExtractor\PDfExtractor.csproj" />
+      <ProjectReference Include="..\Domain\Domain.csproj" />
+      <ProjectReference Include="..\Preprocessing\Preprocessing.csproj" />
     </ItemGroup>
 
 </Project>

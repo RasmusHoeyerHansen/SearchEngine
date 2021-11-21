@@ -198,9 +198,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\SearchEngine\\SearchEngineAPI.csproj",
-      "projectName": "SearchEngineAPI",
-      "projectPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\SearchEngine\\SearchEngineAPI.csproj",
+      "projectUniqueName": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\SearchEngine\\Presentation.csproj",
+      "projectName": "Presentation",
+      "projectPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\SearchEngine\\Presentation.csproj",
       "packagesPath": "C:\\Users\\rasmus\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\SearchEngine\\obj\\",
       "projectStyle": "PackageReference",
