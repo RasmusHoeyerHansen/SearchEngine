@@ -1,10 +1,8 @@
-﻿using System;
-
-namespace KnowledgeExtraction.Preprocessing.Strategies
+﻿namespace KnowledgeExtraction.Preprocessing.Strategies.Abstractions
 {
-    public interface IExtractionStrategy<T>
+    public interface IExtractionStrategy<TIn, TOut>
     {
-        public T ExecuteExtraction();
+        public TOut? ExecuteExtraction(TIn data);
     }
 
 }

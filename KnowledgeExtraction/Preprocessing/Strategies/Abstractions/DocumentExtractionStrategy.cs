@@ -1,31 +1,17 @@
-﻿
-
-using System.Text;
+﻿using System.Text;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
 
-namespace KnowledgeExtraction.Preprocessing.Strategies
+namespace KnowledgeExtraction.Preprocessing.Strategies.Abstractions
 {
-    public abstract class DocumentExtractionStrategy<TResult> : ExtractionStrategy<Document, TResult>
+    public abstract class DocumentExtractionStrategy<TResult> : IExtractionStrategy<Document, TResult>
     {
         protected readonly string Path;
-        public string DocumentTitle { get; private set; }
-
-        public DocumentExtractionStrategy(Document document, string path, string documentTitle) : base(document)
-        {
-            this.Path = path;
-            DocumentTitle = documentTitle;
-        }
-        
-        public DocumentExtractionStrategy(Document document, string path) : base(document)
-        {
-            this.Path = path;
-            DocumentTitle = "";
-        }
+        public string DocumentTitle { get; protected set; }
         
 
-        protected override string ReadText()
+        protected string ReadText()
         {
             StringBuilder bob = new StringBuilder();
             using (PdfReader reader = new PdfReader(Path))
@@ -35,8 +21,12 @@ namespace KnowledgeExtraction.Preprocessing.Strategies
                     bob.Append(PdfTextExtractor.GetTextFromPage(reader, i,
                         new GlyphTextRenderListener(new LocationTextExtractionStrategy())));
                 }
+
+                DocumentTitle=reader.Info["Title"];
             }
             return bob.ToString();
         }
+
+        public abstract TResult? ExecuteExtraction(Document data);
     }
 }

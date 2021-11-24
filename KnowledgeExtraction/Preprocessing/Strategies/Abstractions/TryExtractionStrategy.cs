@@ -1,21 +1,17 @@
 ﻿using System;
 
-namespace KnowledgeExtraction.Preprocessing.Strategies
+namespace KnowledgeExtraction.Preprocessing.Strategies.Abstractions
 {
     public abstract class  TryExtractionStrategy<T, TOut> 
-        : ExtractionStrategy<T, TOut>
+        : Preprocessing.ITryExtractionStrategy<T, TOut>
     {
+        public abstract TOut? ExecuteExtraction(T data);
 
-        protected TryExtractionStrategy(T data) : base(data)
+        public bool TryExtract(T input, TOut? result)
         {
-           
-        }
-        public virtual bool TryExtract(out TOut? result)
-        {
-
             try
             {
-                result = ExecuteExtraction();
+                result = ExecuteExtraction(input);
                 return true;
             }
             catch

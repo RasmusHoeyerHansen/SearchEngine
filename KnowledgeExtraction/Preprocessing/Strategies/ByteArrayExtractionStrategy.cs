@@ -1,27 +1,17 @@
 ﻿using System;
 using Domain_models.Models;
 using KnowledgeExtraction.Preprocessing.Models;
+using KnowledgeExtraction.Preprocessing.Strategies.Abstractions;
 
 
 namespace KnowledgeExtraction.Preprocessing.Strategies
 {
-    public class ByteArrayExtractionStrategy : ExtractionStrategy<byte[],PdfArticle>
+    public class ByteArrayExtractionStrategy : IExtractionStrategy<byte[],PdfArticle>
     {
-        private readonly byte[] Bytes;
-        public ByteArrayExtractionStrategy(ByteDocument document) : base(document.Bytes)
-        {
-            this.Path = document.Path;
-            this.Bytes = document.Bytes;
-        }
-
         public string Path { get; set; }
+        
 
-        protected override string ReadText()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override PdfArticle ExecuteExtraction()
+        public PdfArticle? ExecuteExtraction(byte[] data)
         {
             throw new NotImplementedException();
         }
