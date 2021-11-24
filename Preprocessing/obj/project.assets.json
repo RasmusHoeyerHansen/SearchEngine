@@ -83,11 +83,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\Knowledge Extraction\\Knowledge Extraction.csproj",
-      "projectName": "Knowledge Extraction",
-      "projectPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\Knowledge Extraction\\Knowledge Extraction.csproj",
+      "projectUniqueName": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\Preprocessing\\Preprocessing.csproj",
+      "projectName": "Preprocessing",
+      "projectPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\Preprocessing\\Preprocessing.csproj",
       "packagesPath": "C:\\Users\\rasmus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\Knowledge Extraction\\obj\\",
+      "outputPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\Preprocessing\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rasmus\\AppData\\Roaming\\NuGet\\NuGet.Config",

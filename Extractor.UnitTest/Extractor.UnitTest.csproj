@@ -19,6 +19,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Domain\Domain.csproj" />
+      <ProjectReference Include="..\KnowledgeExtraction\KnowledgeExtraction.csproj" />
       <ProjectReference Include="..\Preprocessing\Preprocessing.csproj" />
     </ItemGroup>
 

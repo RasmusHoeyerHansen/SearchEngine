@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rasmus\\Desktop\\SearchEngine\\Preprocessing\\Preprocessing.csproj": {}
+    "C:\\Users\\rasmus\\Desktop\\SearchEngine\\KnowledgeExtraction\\KnowledgeExtraction.csproj": {}
   },
   "projects": {
     "C:\\Users\\rasmus\\Desktop\\SearchEngine\\Domain\\Domain.csproj": {
@@ -58,14 +58,14 @@
         }
       }
     },
-    "C:\\Users\\rasmus\\Desktop\\SearchEngine\\Preprocessing\\Preprocessing.csproj": {
+    "C:\\Users\\rasmus\\Desktop\\SearchEngine\\KnowledgeExtraction\\KnowledgeExtraction.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\Preprocessing\\Preprocessing.csproj",
-        "projectName": "Preprocessing",
-        "projectPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\Preprocessing\\Preprocessing.csproj",
+        "projectUniqueName": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\KnowledgeExtraction\\KnowledgeExtraction.csproj",
+        "projectName": "KnowledgeExtraction",
+        "projectPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\KnowledgeExtraction\\KnowledgeExtraction.csproj",
         "packagesPath": "C:\\Users\\rasmus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\Preprocessing\\obj\\",
+        "outputPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\KnowledgeExtraction\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rasmus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -98,6 +98,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "iTextSharp": {
               "target": "Package",
               "version": "[5.5.13.2, )"

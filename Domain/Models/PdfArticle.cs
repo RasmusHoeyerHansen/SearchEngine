@@ -1,9 +1,9 @@
 ﻿
 using System.Collections.Generic;
 
-namespace Domain.Models
+namespace Domain_models.Models
 {
-    public class PdfArticle
+    public class PdfArticle : IMediaItem
     {
         public PdfArticle(IEnumerable<string> parsedStrings, string path):this(path)
         {
@@ -20,6 +20,12 @@ namespace Domain.Models
         public string Title { get; set; }
         
 
+        public IEnumerable<string> ParsedStrings { get; set; }
+    }
+
+    public interface IMediaItem
+    {
+        public string Title { get;}
         public IEnumerable<string> ParsedStrings { get; set; }
     }
 }

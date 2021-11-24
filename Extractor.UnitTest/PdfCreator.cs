@@ -1,10 +1,12 @@
-﻿using System;
+﻿
+
+using System;
 using System.IO;
 using System.Text;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
-using PdfDocument = PDfExtractor.Models.PdfDocument;
+using PdfDocument = KnowledgeExtraction.Preprocessing.Models.PdfDocument;
 
 namespace ExtractorTests
 {

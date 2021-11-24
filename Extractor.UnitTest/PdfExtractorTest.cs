@@ -1,11 +1,11 @@
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Domain.Models;
+using Domain_models.Models;
+using KnowledgeExtraction.Preprocessing;
+using KnowledgeExtraction.Preprocessing.Models;
 using NUnit.Framework;
-using PdfExtractor;
-using PdfDocument = PDfExtractor.Models.PdfDocument;
-
 
 namespace ExtractorTests
 {
@@ -22,7 +22,7 @@ namespace ExtractorTests
         [TestCase("æøå")]
         public void Extract_Returns_StringContainer_With_Strings_From_PDF(string input)
         {
-            IExtractor<PdfDocument, PdfArticle> pdfExtractor = new PdfExtractor.PdfArticleFactory();
+            IExtractor<PdfDocument, PdfArticle> pdfExtractor = new PdfArticleFactory();
             IEnumerable<string> actual = pdfExtractor.Parse(CreateTestPDF(input)).ParsedStrings;
             IEnumerable<string> expected = input.Split(' ');
 
@@ -35,7 +35,7 @@ namespace ExtractorTests
         [Test]
         public void Extract_Returns_StringContainer_With_String_From_PDF_With_Tables_IsNotEmpty()
         {
-            var pdfExtractor = new PdfExtractor.PdfArticleFactory();
+            var pdfExtractor = new PdfArticleFactory();
             PdfDocument input = CreateTestPDF(ReadPdf());
             PdfArticle q = null; 
             
