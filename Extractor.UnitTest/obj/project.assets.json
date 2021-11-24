@@ -1489,20 +1489,6 @@
         "runtime": {
           "bin/placeholder/KnowledgeExtraction.dll": {}
         }
-      },
-      "Preprocessing/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Domain": "1.0.0",
-          "iTextSharp": "5.5.13.2"
-        },
-        "compile": {
-          "bin/placeholder/Preprocessing.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Preprocessing.dll": {}
-        }
       }
     }
   },
@@ -5553,11 +5539,6 @@
       "type": "project",
       "path": "../KnowledgeExtraction/KnowledgeExtraction.csproj",
       "msbuildProject": "../KnowledgeExtraction/KnowledgeExtraction.csproj"
-    },
-    "Preprocessing/1.0.0": {
-      "type": "project",
-      "path": "../Preprocessing/Preprocessing.csproj",
-      "msbuildProject": "../Preprocessing/Preprocessing.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5567,7 +5548,6 @@
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "NUnit >= 3.13.1",
       "NUnit3TestAdapter >= 3.17.0",
-      "Preprocessing >= 1.0.0",
       "coverlet.collector >= 3.0.2"
     ]
   },
@@ -5603,9 +5583,6 @@
             },
             "C:\\Users\\rasmus\\Desktop\\SearchEngine\\KnowledgeExtraction\\KnowledgeExtraction.csproj": {
               "projectPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\KnowledgeExtraction\\KnowledgeExtraction.csproj"
-            },
-            "C:\\Users\\rasmus\\Desktop\\SearchEngine\\Preprocessing\\Preprocessing.csproj": {
-              "projectPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\Preprocessing\\Preprocessing.csproj"
             }
           }
         }

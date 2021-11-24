@@ -6,7 +6,6 @@
         {
             this.Bytes = documentBytes;
             this.Path = path;
-
         }
 
         public byte[] Bytes { get; }

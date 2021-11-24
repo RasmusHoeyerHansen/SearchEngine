@@ -15,7 +15,7 @@ namespace ExtractorTests
         protected PdfDocument CreateTestPDF(string text)
         {
             string path = @"./test.txt";
-            PdfDocument pdfDocument = new PdfDocument(path);
+            PdfDocument pdfDocument = new PdfDocument(path, "title");
             PdfWriter.GetInstance(pdfDocument,
                 new FileStream(path, FileMode.Create));
             

@@ -1,4 +1,5 @@
-﻿using Domain_models.Models;
+﻿using System;
+using Domain_models.Models;
 using KnowledgeExtraction.Preprocessing.Models;
 using KnowledgeExtraction.Preprocessing.Strategies;
 using PdfDocument = KnowledgeExtraction.Preprocessing.Models.PdfDocument;
@@ -9,12 +10,12 @@ namespace KnowledgeExtraction.Preprocessing
     {
         public PdfArticle Parse(PdfDocument document)
         {
-            return Parse(document, new DocumentExtractionStrategy(document, document.Path));
+            return Parse(document,new PdfExtractionStrategy(document, document.Path) );
         }
 
-        public PdfArticle Parse(PdfDocument document, IPdfExtractionStrategy strategy)
+        public PdfArticle Parse(PdfDocument document, IExtractionStrategy<PdfArticle> strategy)
         {
-            return new PdfArticle(strategy.ExecuteExtraction().Split(" "), document.Path);
+            return strategy.ExecuteExtraction();
         }
 
         public PdfArticle Parse(ByteDocument document)
@@ -22,9 +23,9 @@ namespace KnowledgeExtraction.Preprocessing
             return Parse(document, new ByteArrayExtractionStrategy(document));
         }
         
-        public PdfArticle Parse(ByteDocument document, IPdfExtractionStrategy strategy)
+        public PdfArticle Parse(ByteDocument document, IExtractionStrategy<PdfArticle> strategy)
         {
-            return new PdfArticle(strategy.ExecuteExtraction().Split(" "), document.Path);
+            return strategy.ExecuteExtraction();
         }
     }
 }

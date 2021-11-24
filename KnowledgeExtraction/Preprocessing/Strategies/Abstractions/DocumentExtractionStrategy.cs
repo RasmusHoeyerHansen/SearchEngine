@@ -1,22 +1,34 @@
-﻿using System.Text;
+﻿
+
+using System.Text;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
 
 namespace KnowledgeExtraction.Preprocessing.Strategies
 {
-    public class DocumentExtractionStrategy : TryExtractionStrategy<Document>
+    public abstract class DocumentExtractionStrategy<TResult> : ExtractionStrategy<Document, TResult>
     {
-        public readonly string Path;
+        protected readonly string Path;
+        public string DocumentTitle { get; private set; }
+
+        public DocumentExtractionStrategy(Document document, string path, string documentTitle) : base(document)
+        {
+            this.Path = path;
+            DocumentTitle = documentTitle;
+        }
+        
         public DocumentExtractionStrategy(Document document, string path) : base(document)
         {
             this.Path = path;
+            DocumentTitle = "";
         }
+        
 
-        public override string ExecuteExtraction()
+        protected override string ReadText()
         {
             StringBuilder bob = new StringBuilder();
-            using (PdfReader reader = new FdfReader(Path))
+            using (PdfReader reader = new PdfReader(Path))
             {
                 for (int i = 1; i <= reader.NumberOfPages; i++)
                 {

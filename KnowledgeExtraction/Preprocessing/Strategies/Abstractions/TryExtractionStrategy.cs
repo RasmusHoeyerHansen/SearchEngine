@@ -1,13 +1,16 @@
-﻿namespace KnowledgeExtraction.Preprocessing.Strategies
+﻿using System;
+
+namespace KnowledgeExtraction.Preprocessing.Strategies
 {
-    public abstract class  TryExtractionStrategy<T> : ExtractionStrategy<T>, IPdfTryExtractionStrategy
+    public abstract class  TryExtractionStrategy<T, TOut> 
+        : ExtractionStrategy<T, TOut>
     {
 
         protected TryExtractionStrategy(T data) : base(data)
         {
            
         }
-        public virtual bool TryExecuteStrategy(out string result)
+        public virtual bool TryExtract(out TOut? result)
         {
 
             try
@@ -18,7 +21,7 @@
             catch
             {
                 // ignored
-                result = null;
+                result = default;
                 return false;
             }
         }

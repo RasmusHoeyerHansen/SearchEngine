@@ -1,31 +1,29 @@
-﻿using System.Text;
-using iTextSharp.text.pdf;
-using iTextSharp.text.pdf.parser;
+﻿using System;
+using Domain_models.Models;
 using KnowledgeExtraction.Preprocessing.Models;
+
 
 namespace KnowledgeExtraction.Preprocessing.Strategies
 {
-    public class ByteArrayExtractionStrategy : TryExtractionStrategy<byte[]>
+    public class ByteArrayExtractionStrategy : ExtractionStrategy<byte[],PdfArticle>
     {
+        private readonly byte[] Bytes;
         public ByteArrayExtractionStrategy(ByteDocument document) : base(document.Bytes)
         {
             this.Path = document.Path;
+            this.Bytes = document.Bytes;
         }
 
         public string Path { get; set; }
 
-        public override string ExecuteExtraction()
+        protected override string ReadText()
         {
-            StringBuilder bob = new StringBuilder();
-            using (PdfReader reader = new FdfReader(Path))
-            {
-                for (int i = 1; i <= reader.NumberOfPages; i++)
-                {
-                    bob.Append(PdfTextExtractor.GetTextFromPage(reader, i,
-                        new GlyphTextRenderListener(new LocationTextExtractionStrategy())));
-                }
-            }
-            return bob.ToString();
+            throw new NotImplementedException();
+        }
+
+        public override PdfArticle ExecuteExtraction()
+        {
+            throw new NotImplementedException();
         }
     }
 }
