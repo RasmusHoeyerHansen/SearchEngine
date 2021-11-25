@@ -12,15 +12,17 @@ namespace DataAndInfrastructure.Persistence
         public DbSet<WordOccurance> WordOccurances { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //Keys
             modelBuilder.Entity<Author>().HasKey(a => a.AuthorId);
             modelBuilder.Entity<Article>().HasKey(a => a.Id);
             modelBuilder.Entity<Word>().HasKey(a => a.Literal);
             modelBuilder.Entity<WordOccurance>().HasKey(w => new {w.ArticleId, w.Word});
             
-            modelBuilder.Entity<Article>().HasOne(p => p.Author).WithMany(a => a.WrittenArticles);
+            //Navigation properties
+            modelBuilder.Entity<WordOccurance>().HasOne(a => a.Word);
             modelBuilder.Entity<WordOccurance>().HasOne(w => w.Article).WithMany(a => a.WordOccurances)
                 .HasForeignKey(w => w.ArticleId);
-            modelBuilder.Entity<WordOccurance>().HasOne(a => a.Word);
+            modelBuilder.Entity<Article>().HasOne(article => article.Author).WithMany(author => author.WrittenArticles).HasForeignKey(a => a.AuthorId);
            
 
         }
