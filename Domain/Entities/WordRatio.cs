@@ -2,10 +2,11 @@
 
 namespace Domain_models.Entities
 {
-    public class WordRatio
+    public class WordRatio : IWordRatio
     {
         public string Word { get; set; }
         public int Occurances { get; set; }
+
         public Guid ArticleId { get; set; }
     }
 }

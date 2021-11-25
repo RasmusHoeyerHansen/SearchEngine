@@ -1,4 +1,4 @@
-﻿using Domain_models.Models;
+﻿using KnowledgeExtraction.Models;
 
 namespace KnowledgeExtraction.Preprocessing
 {

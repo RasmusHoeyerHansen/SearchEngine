@@ -1,6 +1,6 @@
 ﻿using System;
-using Domain_models.Models;
 using iTextSharp.text;
+using KnowledgeExtraction.Models;
 using KnowledgeExtraction.Preprocessing.Models;
 using KnowledgeExtraction.Preprocessing.Strategies;
 using KnowledgeExtraction.Preprocessing.Strategies.Abstractions;
@@ -15,16 +15,10 @@ namespace KnowledgeExtraction.Preprocessing
             return Parse(document,new PdfExtractionStrategy());
         }
 
-        private PdfArticle? Parse(PdfDocument document, PdfExtractionStrategy strategy)
+        private PdfArticle? Parse(PdfDocument document, IExtractionStrategy<PdfDocument, PdfArticle> strategy)
         {
             return strategy.ExecuteExtraction(document);
         }
-
-        public PdfArticle? Parse(PdfDocument document, IExtractionStrategy<PdfDocument, PdfArticle?> strategy)
-        {
-            return strategy.ExecuteExtraction(document);
-        }
-
         public PdfArticle? Parse(ByteDocument document)
         {
             return Parse(document, new ByteArrayExtractionStrategy());
@@ -36,4 +30,5 @@ namespace KnowledgeExtraction.Preprocessing
         }
 
     }
+
 }

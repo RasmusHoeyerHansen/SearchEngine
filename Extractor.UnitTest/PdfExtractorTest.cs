@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Domain_models.Models;
+using KnowledgeExtraction.Models;
 using KnowledgeExtraction.Preprocessing;
 using KnowledgeExtraction.Preprocessing.Models;
 using NUnit.Framework;

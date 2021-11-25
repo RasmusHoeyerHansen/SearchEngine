@@ -1,5 +1,5 @@
 ﻿using System;
-using Domain_models.Models;
+using KnowledgeExtraction.Models;
 using KnowledgeExtraction.Preprocessing.Models;
 using KnowledgeExtraction.Preprocessing.Strategies.Abstractions;
 

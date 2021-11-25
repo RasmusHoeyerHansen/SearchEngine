@@ -1,44 +1,19 @@
-﻿
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using Domain_models.Entities;
-using Domain_models.Models;
+using KnowledgeExtraction.Models;
 
 namespace KnowledgeExtraction.WordCounting
 {
-    public class WordRatioFactory : MediaItemFactory<WordRatio>
+    public class WordRatioFactory : IMediaItemProcessor<WordRatio>
     {
-        public WordRatioFactory(PdfArticle article) : base(article)
+        public IEnumerable<WordRatio> Create(ITextMediaItem item)
         {
+            return new DictionaryLookUpStrategy().ProcessMedia(item);
         }
 
-        public override WordRatio Create()
+        public IEnumerable<WordRatio> Create(ITextMediaItem item, IMediaItemProcessingStrategy<WordRatio> strategy)
         {
-            //Approximation of how many times words occur to initialise a good size. 
-            int wordOccuranceAverage = this.Item.ParsedStrings.Count() / 3;
-            List<WordRatio> occurrences = new(wordOccuranceAverage);
-            List<string> Found = new(wordOccuranceAverage);
-            var x = Item.ParsedStrings.Select(x => x).Count();
-            
-
-            return null;
-        }
-
-        private int CountOccurenceOfValue(List<int> list, int valueToFind)
-        {
-            return ((from temp in list where temp.Equals(valueToFind) select temp).Count());
+            return strategy.ProcessMedia(item);
         }
     }
-
-    public abstract class MediaItemFactory<T>
-    {
-        protected IMediaItem Item;
-        public MediaItemFactory(PdfArticle article)
-        {
-            Item = article;
-        }
-
-        public abstract T Create();
-    }
-
 }

@@ -21,6 +21,7 @@ namespace ExtractorTests
             
             pdfDocument.Open( );
             pdfDocument.Add(new Paragraph(text));
+            pdfDocument.AddTitle("TITLE");
             pdfDocument.Close( );
             
             return pdfDocument;

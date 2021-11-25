@@ -1,7 +1,7 @@
-﻿namespace KnowledgeExtraction.Preprocessing.Strategies
+﻿namespace KnowledgeExtraction.Preprocessing.Strategies.Abstractions
 {
-    internal interface ITryExtractionStrategy<T>
+    public interface ITryExtractionStrategy<TIn, TOut> : IExtractionStrategy<TIn, TOut>
     {
-        public bool TryExecuteStrategy(out T result);
+        public bool TryExtract(TIn input, TOut? result);
     }
 }
