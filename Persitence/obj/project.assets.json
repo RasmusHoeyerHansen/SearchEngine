@@ -616,11 +616,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\SearchEnginePersistence\\SearchEnginePersistence.csproj",
-      "projectName": "SearchEnginePersistence",
-      "projectPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\SearchEnginePersistence\\SearchEnginePersistence.csproj",
+      "projectUniqueName": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\Persitence\\Persitence.csproj",
+      "projectName": "Persitence",
+      "projectPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\Persitence\\Persitence.csproj",
       "packagesPath": "C:\\Users\\rasmus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\SearchEnginePersistence\\obj\\",
+      "outputPath": "C:\\Users\\rasmus\\Desktop\\SearchEngine\\Persitence\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rasmus\\AppData\\Roaming\\NuGet\\NuGet.Config",

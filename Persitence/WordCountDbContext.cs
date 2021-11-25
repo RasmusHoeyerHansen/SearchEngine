@@ -2,7 +2,7 @@
 using KnowledgeExtraction.Common;
 using Microsoft.EntityFrameworkCore;
 
-namespace DataAndInfrastructure.Persistence
+namespace DataAndInfrastructure
 {
     public class WordCountContext : DbContext, IWordRatioContext, IWordCountContext
     {
@@ -23,8 +23,6 @@ namespace DataAndInfrastructure.Persistence
             modelBuilder.Entity<WordOccurance>().HasOne(w => w.Article).WithMany(a => a.WordOccurances)
                 .HasForeignKey(w => w.ArticleId);
             modelBuilder.Entity<Article>().HasOne(article => article.Author).WithMany(author => author.WrittenArticles).HasForeignKey(a => a.AuthorId);
-           
-
         }
     }
 }
