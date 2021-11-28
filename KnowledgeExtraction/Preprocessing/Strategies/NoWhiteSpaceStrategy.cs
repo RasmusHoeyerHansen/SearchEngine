@@ -6,7 +6,7 @@ using KnowledgeExtraction.Preprocessing.Strategies.Abstractions;
 
 namespace KnowledgeExtraction.Preprocessing.Strategies
 {
-    public class NoWhiteSpaceStrategy : DocumentTextReader<iTextSharp.text.Document>
+    internal class NoWhiteSpaceStrategy : DocumentTextReader<iTextSharp.text.Document>
     {
         public PdfArticle? ExecuteExtraction(PdfDocument data)
         {

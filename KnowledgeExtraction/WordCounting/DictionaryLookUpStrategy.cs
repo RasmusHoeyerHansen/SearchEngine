@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Domain_models.Entities;
+using KnowledgeExtraction.Common.Models;
 using KnowledgeExtraction.Models;
 
 namespace KnowledgeExtraction.WordCounting
@@ -9,33 +10,47 @@ namespace KnowledgeExtraction.WordCounting
     {
         public IEnumerable<WordRatio> ProcessMedia(ITextMediaItem item)
         {
+            string[] strings = ApproximateDictSize(item, out int numberOfWords, out Dictionary<string, int> WordRatios);
+            PupulateRatioDictionary(numberOfWords, strings, WordRatios, out int totalUniqueWords);
+            
+            List<WordRatio> result = new(totalUniqueWords);
+            foreach (KeyValuePair<string,int> keyValuePair in WordRatios)
+            {
+                result.Add(new WordRatio(){Word = keyValuePair.Key, Occurances = keyValuePair.Value, MediaTitle = item.Title});
+            }
+
+            return result;
+        }
+
+        private static string[] ApproximateDictSize(ITextMediaItem item, out int numberOfWords, out Dictionary<string, int> ratios)
+        {
             var strings = item.ParsedStrings;
-            int numberOfWords = strings.Count();
+            numberOfWords = strings.Count();
             // arbitrarily chosen, to not build list entirely from the start.
             int repeatingWords = 3;
-            Dictionary<string, int> ratios = new(numberOfWords/repeatingWords);
-            int totalUniqueWords = 0;
+            ratios = new(numberOfWords / repeatingWords);
+            return strings;
+        }
+
+        private void PupulateRatioDictionary(int numberOfWords, string[] strings, Dictionary<string, int> ratios, out int totalUniqueWords)
+        {
+            totalUniqueWords = 0;
             for (int i = 0; i < numberOfWords; i++)
             {
                 if (string.IsNullOrWhiteSpace(strings[i]))
                 {
                     continue;
                 }
+
                 if (ratios.ContainsKey(strings[i]))
                 {
                     ratios[strings[i]] += 1;
                     continue;
                 }
+
                 ratios.Add(strings[i], 1);
                 totalUniqueWords++;
             }
-            List<WordRatio> result = new(totalUniqueWords);
-            foreach (KeyValuePair<string,int> keyValuePair in ratios)
-            {
-                result.Add(new WordRatio(){Word = keyValuePair.Key, Occurances = keyValuePair.Value});
-            }
-
-            return result;
         }
     }
 }

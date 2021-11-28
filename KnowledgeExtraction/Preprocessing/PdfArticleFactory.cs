@@ -1,6 +1,4 @@
-﻿using System;
-using iTextSharp.text;
-using KnowledgeExtraction.Models;
+﻿using KnowledgeExtraction.Models;
 using KnowledgeExtraction.Preprocessing.Models;
 using KnowledgeExtraction.Preprocessing.Strategies;
 using KnowledgeExtraction.Preprocessing.Strategies.Abstractions;
@@ -8,9 +6,9 @@ using PdfDocument = KnowledgeExtraction.Preprocessing.Models.PdfDocument;
 
 namespace KnowledgeExtraction.Preprocessing
 {
-    public class PdfArticleFactory : IPdfFactory<ByteDocument>, IPdfFactory<Models.PdfDocument> 
+    internal class PdfArticleFactory : IPdfFactory<Models.PdfDocument>
     {
-        public PdfArticle? Parse(PdfDocument document)
+        public PdfArticle? Extract(PdfDocument document)
         {
             return Parse(document,new PdfExtractionStrategy());
         }
@@ -19,16 +17,11 @@ namespace KnowledgeExtraction.Preprocessing
         {
             return strategy.ExecuteExtraction(document);
         }
-        public PdfArticle? Parse(ByteDocument document)
-        {
-            return Parse(document, new ByteArrayExtractionStrategy());
-        }
 
-        private PdfArticle? Parse(ByteDocument document, ByteArrayExtractionStrategy strategy)
+        public PdfArticle? Parse(string path)
         {
-            return strategy.ExecuteExtraction(document.Bytes);
+            return new PdfExtractionStrategy().ExecuteExtraction(path);
         }
-
     }
 
 }

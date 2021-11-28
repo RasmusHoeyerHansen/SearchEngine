@@ -5,7 +5,7 @@ using iTextSharp.text.pdf.parser;
 
 namespace KnowledgeExtraction.Preprocessing.Strategies.Abstractions
 {
-    public abstract class DocumentTextReader<TResult>
+    internal abstract class DocumentTextReader<TResult>
     {
         public string DocumentTitle { get; protected set; }
         

@@ -4,7 +4,7 @@ using KnowledgeExtraction.Preprocessing.Strategies.Abstractions;
 
 namespace KnowledgeExtraction.Preprocessing.Strategies
 {
-    public abstract class DocumentExtractionStrategy<T> :
+    internal abstract class DocumentExtractionStrategy<T> :
         DocumentTextReader<Document>, IExtractionStrategy<Document, PdfArticle>,
         ITryExtractionStrategy<Document, PdfArticle>
         where T : Document
@@ -21,11 +21,11 @@ namespace KnowledgeExtraction.Preprocessing.Strategies
             return new PdfArticle(text.Split(" "), Path, DocumentTitle);
         }
 
-        public bool TryExtract(Document input, PdfArticle? result)
+        public bool TryExtract(Document inputDocument, out PdfArticle result)
         {
             try
             {
-                result = ExecuteExtraction(input);
+                result = ExecuteExtraction(inputDocument);
                 return true;
             }
             catch

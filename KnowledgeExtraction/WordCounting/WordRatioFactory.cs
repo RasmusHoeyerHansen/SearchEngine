@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using Domain_models.Entities;
+using KnowledgeExtraction.Common.Models;
 using KnowledgeExtraction.Models;
 
 namespace KnowledgeExtraction.WordCounting
 {
-    public class WordRatioFactory : IMediaItemProcessor<WordRatio>
+    internal class WordRatioFactory : IMediaItemProcessor<WordRatio>
     {
         public IEnumerable<WordRatio> Create(ITextMediaItem item)
         {

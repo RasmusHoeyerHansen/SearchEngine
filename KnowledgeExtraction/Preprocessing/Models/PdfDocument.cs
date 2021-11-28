@@ -7,12 +7,9 @@ namespace KnowledgeExtraction.Preprocessing.Models
     {
         public string Path { get; }
 
-        public PdfDocument(string path, string title)
+        public PdfDocument(string path)
         {
-            Title = title;
             Path = path;
         }
-
-        public string Title { get; set; } = "";
     }
 }
