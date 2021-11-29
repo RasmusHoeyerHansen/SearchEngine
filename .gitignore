@@ -9,5 +9,5 @@
 KnowledgeExtraction.UnitTest/bin/Debug/net6.0/test.pdf
 KnowledgeExtraction.UnitTest/bin/*
 Persitence/.env
-KnowledgeExtraction.UnitTest/debug/*
-KnowledgeAndPreprocessing.UnitTest\debug\*
+KnowledgeAndPreprocessing.UnitTest\debug\*\
+KnowledgeAndPreprocessing.UnitTest/debug/*
