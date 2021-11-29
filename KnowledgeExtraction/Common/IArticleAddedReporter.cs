@@ -1,5 +1,5 @@
 ﻿using System;
-using KnowledgeExtraction.Models;
+using KnowledgeExtraction.Common.Models;
 
 namespace KnowledgeExtraction.Common
 {

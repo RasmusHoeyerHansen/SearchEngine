@@ -1,9 +1,9 @@
 ﻿using System;
 using System.IO;
 using System.Reflection.Metadata;
-using Domain_models.Exceptions;
 using iTextSharp.text.pdf;
-using KnowledgeExtraction.Models;
+using KnowledgeExtraction.Common.Exceptions;
+using KnowledgeExtraction.Common.Models;
 using KnowledgeExtraction.Preprocessing.Strategies.Abstractions;
 using PdfDocument = KnowledgeExtraction.Preprocessing.Models.PdfDocument;
 

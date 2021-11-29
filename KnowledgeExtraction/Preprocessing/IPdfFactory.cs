@@ -1,5 +1,5 @@
-﻿using Domain_models.Exceptions;
-using KnowledgeExtraction.Models;
+﻿using KnowledgeExtraction.Common.Exceptions;
+using KnowledgeExtraction.Common.Models;
 
 namespace KnowledgeExtraction.Preprocessing
 {

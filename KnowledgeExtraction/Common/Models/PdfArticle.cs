@@ -1,6 +1,4 @@
-﻿using KnowledgeExtraction.Common.Models;
-
-namespace KnowledgeExtraction.Models
+﻿namespace KnowledgeExtraction.Common.Models
 {
     public class PdfArticle : ITextMediaItem
     {

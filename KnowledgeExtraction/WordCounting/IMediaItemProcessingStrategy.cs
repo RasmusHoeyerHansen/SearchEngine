@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using KnowledgeExtraction.Common.Models;
-using KnowledgeExtraction.Models;
 
 namespace KnowledgeExtraction.WordCounting
 {

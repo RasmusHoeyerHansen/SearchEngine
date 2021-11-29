@@ -1,5 +1,4 @@
-﻿using Domain_models.Exceptions;
-using KnowledgeExtraction.Models;
+﻿using KnowledgeExtraction.Common.Exceptions;
 using KnowledgeExtraction.Preprocessing.Models;
 using KnowledgeExtraction.Preprocessing.Strategies;
 using NUnit.Framework;

@@ -1,20 +1,20 @@
 ﻿using System;
 using System.IO;
-using Domain_models.Exceptions;
-using KnowledgeExtraction.Models;
+using KnowledgeExtraction.Common.Exceptions;
+using KnowledgeExtraction.Common.Models;
 using KnowledgeExtraction.Preprocessing;
 using KnowledgeExtraction.Preprocessing.Models;
 using Microsoft.Extensions.Logging;
 
 namespace KnowledgeExtraction.Common.Communication
 {
-    internal class DirectoryWatcher
+    internal class DirectoryWatcher : IWatcherService<PdfArticle>
     {
         private readonly FileSystemWatcher Watcher;
         private readonly IPdfFactory<PdfDocument> Factory;
-        private readonly ILogger<PdfArticle> Logger;
+        private readonly ILogger<PdfArticle>? Logger;
 
-        public event Action<PdfArticle>? PdfAddedOrChanged;
+        public event Action<PdfArticle>? MediaItemAddedOrChanged;
 
         public DirectoryWatcher(string pathToFolder, IPdfFactory<PdfDocument> factory)
         {
@@ -26,7 +26,7 @@ namespace KnowledgeExtraction.Common.Communication
         public DirectoryWatcher(string pathToFolder, IPdfFactory<PdfDocument> factory, ILogger<PdfArticle> logger)
             : this(pathToFolder, factory)
         {
-            this.Logger = logger;
+            this.Logger = logger ?? throw new ArgumentNullException(nameof(logger));
             SetupWatcher(pathToFolder);
         }
 
@@ -38,12 +38,12 @@ namespace KnowledgeExtraction.Common.Communication
             Watcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite
                                                             | NotifyFilters.FileName
                                                             | NotifyFilters.DirectoryName;
-            Watcher.Created += OnFileAddedOrChanged;
-            Watcher.Changed += OnFileAddedOrChanged;
+            Watcher.Created += OnSourceAddedOrChanged;
+            Watcher.Changed += OnSourceAddedOrChanged;
             Watcher.EnableRaisingEvents = true;
         }
 
-        public virtual void OnFileAddedOrChanged(object sender, FileSystemEventArgs eventArgs)
+        public virtual void OnSourceAddedOrChanged(object sender, FileSystemEventArgs eventArgs)
         {
             PdfArticle article;
             try
@@ -55,7 +55,7 @@ namespace KnowledgeExtraction.Common.Communication
                 if (Logger != null) Logger.LogError(e.Message);
                 return;
             }
-            PdfAddedOrChanged?.Invoke(article);
+            MediaItemAddedOrChanged?.Invoke(article);
         }
     }
 }

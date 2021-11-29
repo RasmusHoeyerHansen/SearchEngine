@@ -2,7 +2,6 @@
 using System.Linq;
 using Domain_models.Entities;
 using KnowledgeExtraction.Common.Models;
-using KnowledgeExtraction.Models;
 
 namespace KnowledgeExtraction.WordCounting
 {

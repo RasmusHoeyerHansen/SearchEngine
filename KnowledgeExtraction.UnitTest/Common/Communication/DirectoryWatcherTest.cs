@@ -3,11 +3,11 @@ using System;
 using System.IO;
 using System.Linq;
 using Castle.Core;
-using Domain_models.Exceptions;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using KnowledgeExtraction.Common.Communication;
-using KnowledgeExtraction.Models;
+using KnowledgeExtraction.Common.Exceptions;
+using KnowledgeExtraction.Common.Models;
 using KnowledgeExtraction.Preprocessing;
 using Microsoft.Extensions.Logging;
 using NSubstitute;
@@ -64,7 +64,7 @@ namespace ExtractorTests.Common.Communication
                 isCalled = true;
             }
             DirectoryWatcher watcher = new DirectoryWatcher(Directory, factory:CorrectParsingFactory);
-            watcher.PdfAddedOrChanged += AssertArticle;
+            watcher.MediaItemAddedOrChanged += AssertArticle;
             
             //Act
             CreateTestPDF("some text");
@@ -87,10 +87,10 @@ namespace ExtractorTests.Common.Communication
 
             var x = CorrectParsingFactory.Parse(Directory);
             DirectoryWatcher watcher = new DirectoryWatcher(Directory, factory:CorrectParsingFactory);
-            watcher.PdfAddedOrChanged += ObserverFunction;
+            watcher.MediaItemAddedOrChanged += ObserverFunction;
             
             //Act
-            watcher.OnFileAddedOrChanged(null, new FileSystemEventArgs(WatcherChangeTypes.Changed,Directory, FileName){});
+            watcher.OnSourceAddedOrChanged(null, new FileSystemEventArgs(WatcherChangeTypes.Changed,Directory, FileName){});
         }
         
         [Test]
@@ -101,7 +101,7 @@ namespace ExtractorTests.Common.Communication
             DirectoryWatcher watcher = new DirectoryWatcher(Directory, ExceptionThrowingFactory,logger);
 
             //Act
-            Assert.DoesNotThrow(() => watcher.OnFileAddedOrChanged(null, new FileSystemEventArgs(WatcherChangeTypes.Changed,Directory, FileName)));
+            Assert.DoesNotThrow(() => watcher.OnSourceAddedOrChanged(null, new FileSystemEventArgs(WatcherChangeTypes.Changed,Directory, FileName)));
         }
         
         [Test]
@@ -110,7 +110,7 @@ namespace ExtractorTests.Common.Communication
             //Arrange
             ILogger<PdfArticle> logger = Substitute.For<ILogger<PdfArticle>>();
             DirectoryWatcher watcher = new DirectoryWatcher(Directory, ExceptionThrowingFactory, logger);
-            watcher.OnFileAddedOrChanged(null, new FileSystemEventArgs(WatcherChangeTypes.Changed,Directory, FileName){});
+            watcher.OnSourceAddedOrChanged(null, new FileSystemEventArgs(WatcherChangeTypes.Changed,Directory, FileName){});
             //Act
             logger.ReceivedWithAnyArgs().LogError(default);
         }

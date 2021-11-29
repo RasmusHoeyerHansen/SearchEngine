@@ -1,4 +1,4 @@
-﻿using KnowledgeExtraction.Models;
+﻿using KnowledgeExtraction.Common.Models;
 using KnowledgeExtraction.Preprocessing.Models;
 using KnowledgeExtraction.Preprocessing.Strategies;
 using KnowledgeExtraction.Preprocessing.Strategies.Abstractions;
