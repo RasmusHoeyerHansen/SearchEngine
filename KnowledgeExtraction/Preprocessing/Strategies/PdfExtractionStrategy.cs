@@ -10,7 +10,7 @@ using PdfDocument = KnowledgeExtraction.Preprocessing.Models.PdfDocument;
 namespace KnowledgeExtraction.Preprocessing.Strategies
 {
     internal class PdfExtractionStrategy 
-        : DocumentTextReader<Document>, ITryExtractionStrategy<PdfDocument, PdfArticle>
+        : DocumentTextReader<PdfDocument>, ITryExtractionStrategy<PdfDocument, PdfArticle>
     {
         public virtual PdfArticle? ExecuteExtraction(PdfDocument data)
         {
@@ -36,7 +36,7 @@ namespace KnowledgeExtraction.Preprocessing.Strategies
             catch (IOException e)
             {
                 result = default;
-                throw new PdfParsingException(e.Message);
+                throw new PdfParsingException(e.Message);   
             }
             catch (NullReferenceException)
             {

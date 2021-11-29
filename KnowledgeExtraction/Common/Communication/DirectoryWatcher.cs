@@ -20,14 +20,12 @@ namespace KnowledgeExtraction.Common.Communication
         {
             this.Factory = factory;
             this.Watcher = new FileSystemWatcher();
-            Logger = new Logger<PdfArticle>(new LoggerFactory());
             SetupWatcher(pathToFolder);
         }
         
         public DirectoryWatcher(string pathToFolder, IPdfFactory<PdfDocument> factory, ILogger<PdfArticle> logger)
+            : this(pathToFolder, factory)
         {
-            this.Factory = factory;
-            this.Watcher = new FileSystemWatcher();
             this.Logger = logger;
             SetupWatcher(pathToFolder);
         }
@@ -51,12 +49,13 @@ namespace KnowledgeExtraction.Common.Communication
             try
             {
                 article = Factory.Parse(eventArgs.FullPath);
-                PdfAddedOrChanged?.Invoke(article);
             }
             catch (PdfParsingException e)
             {
-                Logger.LogError($"ERROR PARSING FILE: {e.Message}");
+                if (Logger != null) Logger.LogError(e.Message);
+                return;
             }
+            PdfAddedOrChanged?.Invoke(article);
         }
     }
 }

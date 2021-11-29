@@ -3,12 +3,16 @@ using System;
 using System.IO;
 using System.Linq;
 using Castle.Core;
+using Domain_models.Exceptions;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using KnowledgeExtraction.Common.Communication;
 using KnowledgeExtraction.Models;
 using KnowledgeExtraction.Preprocessing;
+using Microsoft.Extensions.Logging;
 using NSubstitute;
+using NSubstitute.Core.Arguments;
+using NSubstitute.ExceptionExtensions;
 using NUnit.Framework;
 using PdfDocument = KnowledgeExtraction.Preprocessing.Models.PdfDocument;
 
@@ -16,15 +20,8 @@ namespace ExtractorTests.Common.Communication
 {
     public class DirectoryWatcherTest : PdfCreator
     {
-        public static string FilePath
-        {
-            get
-            {
-                string pathToDirctory = Directory.GetCurrentDirectory();
-                DirectoryInfo dirInfo = new DirectoryInfo(pathToDirctory);
-                return dirInfo.FullName;
-            }
-        }
+        public static string Directory => System.IO.Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar;
+        public static string FileName => "test.pdf";
 
         static string[] Strings
         {
@@ -35,12 +32,22 @@ namespace ExtractorTests.Common.Communication
             }
         }
 
-        public static IPdfFactory<PdfDocument> Factory
+        public static IPdfFactory<PdfDocument> CorrectParsingFactory
         {
             get
             {
                 IPdfFactory<PdfDocument> factory = Substitute.For<IPdfFactory<PdfDocument>>();
-                factory.Parse(Arg.Is(FilePath)).Returns(new PdfArticle(Strings, FilePath, "title"));
+                factory.Parse(Arg.Is(Directory+FileName)).Returns(new PdfArticle(Strings, Directory+FileName, "title"));
+                return factory;
+            }
+        }
+        
+        public static IPdfFactory<PdfDocument> ExceptionThrowingFactory
+        {
+            get
+            {
+                IPdfFactory<PdfDocument> factory = Substitute.For<IPdfFactory<PdfDocument>>();
+                factory.Parse(Arg.Is(Directory+FileName)).Throws(new PdfParsingException("Exception"));
                 return factory;
             }
         }
@@ -56,7 +63,7 @@ namespace ExtractorTests.Common.Communication
             {
                 isCalled = true;
             }
-            DirectoryWatcher watcher = new DirectoryWatcher(FilePath, factory:Factory);
+            DirectoryWatcher watcher = new DirectoryWatcher(Directory, factory:CorrectParsingFactory);
             watcher.PdfAddedOrChanged += AssertArticle;
             
             //Act
@@ -69,7 +76,6 @@ namespace ExtractorTests.Common.Communication
         public void Watcher_CallsPdfAddedOrChanged_ArticleDoesContainText()
         {
             //Arrange
-            bool isCalled = false;
             void ObserverFunction(PdfArticle a)
             {
                 Assert.AreEqual(a.ParsedStrings.Count(), Strings.Count());
@@ -78,13 +84,35 @@ namespace ExtractorTests.Common.Communication
                     Assert.AreEqual(Strings[i], a.ParsedStrings[i]);
                 }
             }
-            DirectoryWatcher watcher = new DirectoryWatcher(FilePath, factory:Factory);
+
+            var x = CorrectParsingFactory.Parse(Directory);
+            DirectoryWatcher watcher = new DirectoryWatcher(Directory, factory:CorrectParsingFactory);
             watcher.PdfAddedOrChanged += ObserverFunction;
             
             //Act
-            CreateTestPDF(string.Join("",Strings));
-            //Assert
-            Assert.IsTrue(isCalled);
+            watcher.OnFileAddedOrChanged(null, new FileSystemEventArgs(WatcherChangeTypes.Changed,Directory, FileName){});
+        }
+        
+        [Test]
+        public void Watcher_OnFailedFileParse_ThrowsPdfParsingException()
+        {
+            //Arrange
+            ILogger<PdfArticle> logger = Substitute.For<ILogger<PdfArticle>>();
+            DirectoryWatcher watcher = new DirectoryWatcher(Directory, ExceptionThrowingFactory,logger);
+
+            //Act
+            Assert.DoesNotThrow(() => watcher.OnFileAddedOrChanged(null, new FileSystemEventArgs(WatcherChangeTypes.Changed,Directory, FileName)));
+        }
+        
+        [Test]
+        public void Watcher_OnFailedFileParse_Calls_ILoggerLogError()
+        {
+            //Arrange
+            ILogger<PdfArticle> logger = Substitute.For<ILogger<PdfArticle>>();
+            DirectoryWatcher watcher = new DirectoryWatcher(Directory, ExceptionThrowingFactory, logger);
+            watcher.OnFileAddedOrChanged(null, new FileSystemEventArgs(WatcherChangeTypes.Changed,Directory, FileName){});
+            //Act
+            logger.ReceivedWithAnyArgs().LogError(default);
         }
 
 

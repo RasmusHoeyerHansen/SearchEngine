@@ -6,7 +6,7 @@ namespace Domain_models.Exceptions
 {
     public class PdfParsingException : Exception
     {
-        public PdfParsingException([NotNull]string message):base($"Error: {message}")
+        public PdfParsingException([NotNull]string message):base($"{message}")
         {
             
         }
