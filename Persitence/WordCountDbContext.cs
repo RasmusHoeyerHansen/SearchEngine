@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DataAndInfrastructure
 {
-    public class WordCountContext : DbContext, IWordRatioContext, IWordCountContext
+    internal class WordCountContext : DbContext, IWordRatioContext, IWordCountContext
     {
         public DbSet<Article> Articles { get; set; }
         public DbSet<Author> Authors { get; set; }
