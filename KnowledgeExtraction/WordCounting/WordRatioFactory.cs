@@ -4,7 +4,7 @@ using KnowledgeExtraction.Common.Models;
 
 namespace KnowledgeExtraction.WordCounting
 {
-    internal class WordRatioFactory : IMediaItemProcessor<WordRatio>
+    public class WordRatioFactory : IMediaItemProcessor<WordRatio>
     {
         public IEnumerable<WordRatio> Create(ITextMediaItem item)
         {

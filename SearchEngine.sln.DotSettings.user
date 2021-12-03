@@ -4,7 +4,7 @@
   &lt;Assembly Path="C:\Users\rasmus\.nuget\packages\castle.core\4.4.0\lib\netstandard1.5\Castle.Core.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String>
 	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\rasmus\AppData\Local\JetBrains\Rider2021.2\resharper-host\temp\Rider\vAny\CoverageData\_SearchEngine.855644948\Snapshot\snapshot.utdcvr</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7f3bbafd_002D7167_002D49bb_002D9ddb_002Dfa7223d16881/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="True" ContinuousTestingMode="1" IsActive="True" Name="All tests from &amp;lt;Testing&amp;gt;\&amp;lt;ApplicationTests&amp;gt;\&amp;lt;KnowledgeExtraction.UnitTest&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7f3bbafd_002D7167_002D49bb_002D9ddb_002Dfa7223d16881/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="True" ContinuousTestingMode="3" IsActive="True" Name="All tests from &amp;lt;Testing&amp;gt;\&amp;lt;ApplicationTests&amp;gt;\&amp;lt;KnowledgeExtraction.UnitTest&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Project Location="C:\Users\rasmus\Desktop\SearchEngine\KnowledgeExtraction.UnitTest" Presentation="&amp;lt;Testing&amp;gt;\&amp;lt;ApplicationTests&amp;gt;\&amp;lt;KnowledgeExtraction.UnitTest&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	

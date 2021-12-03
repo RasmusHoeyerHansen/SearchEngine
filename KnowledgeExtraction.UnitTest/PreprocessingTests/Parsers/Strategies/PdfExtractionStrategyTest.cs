@@ -1,9 +1,9 @@
 ﻿using KnowledgeExtraction.Common.Exceptions;
 using KnowledgeExtraction.Preprocessing.Models;
-using KnowledgeExtraction.Preprocessing.Strategies;
+using KnowledgeExtraction.Preprocessing.Parsers.Strategies;
 using NUnit.Framework;
 
-namespace ExtractorTests.PreprocessingTests.Strategies
+namespace ExtractorTests.PreprocessingTests.Parsers.Strategies
 {
     public class PdfExtractionStrategyTest
     {

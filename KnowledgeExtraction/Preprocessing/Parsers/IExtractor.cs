@@ -1,5 +1,5 @@
 ﻿
-namespace KnowledgeExtraction.Preprocessing
+namespace KnowledgeExtraction.Preprocessing.Parsers
 {
     public interface IExtractor<in TIn, out TOut>
     {

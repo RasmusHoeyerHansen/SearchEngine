@@ -13,11 +13,11 @@ namespace ExtractorTests
 {
     public abstract class PdfCreator
     {
-        protected virtual PdfDocument CreateTestPDF(string path, string text)
+        internal virtual PdfDocument CreateTestPDF(string FullPathToFile, string text)
         {
-            PdfDocument pdfDocument = new PdfDocument(path+ Path.DirectorySeparatorChar+"test.pdf");
+            PdfDocument pdfDocument = new PdfDocument(FullPathToFile);
             PdfWriter.GetInstance(pdfDocument,
-                new FileStream(path, FileMode.Create));
+                new FileStream(FullPathToFile, FileMode.Create));
             pdfDocument.Open( );
             pdfDocument.Add(new Paragraph(text));
             pdfDocument.AddTitle("TITLE");
@@ -25,7 +25,9 @@ namespace ExtractorTests
             
             return pdfDocument;
         }
-        protected virtual PdfDocument CreateTestPDF(string text)
+        
+        
+        internal virtual PdfDocument CreateTestPDF(string text)
         {
             string path = @Directory.GetCurrentDirectory()+ Path.DirectorySeparatorChar+"test.pdf";
             
@@ -43,7 +45,7 @@ namespace ExtractorTests
  
         
 
-        protected string ReadPdf()
+        internal string ReadPdf()
         {
             StringBuilder bob = new StringBuilder();
             using (PdfReader reader = new PdfReader(@"C:\Users\rasmus\Desktop\SearchEngine\KnowledgeExtraction.UnitTest\PDFs\Rasmus Høyer Hansen, grades - Aalborg University.pdf"))

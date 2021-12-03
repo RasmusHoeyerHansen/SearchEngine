@@ -1,11 +1,10 @@
 ﻿using System.Text;
-using iTextSharp.text;
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
 
-namespace KnowledgeExtraction.Preprocessing.Strategies.Abstractions
+namespace KnowledgeExtraction.Preprocessing.Parsers.Strategies.Abstractions
 {
-    internal abstract class DocumentTextReader<TResult>
+    internal abstract class DocumentTextReader
     {
         public string DocumentTitle { get; protected set; }
         

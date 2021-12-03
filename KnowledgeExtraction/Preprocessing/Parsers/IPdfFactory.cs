@@ -1,7 +1,7 @@
 ﻿using KnowledgeExtraction.Common.Exceptions;
 using KnowledgeExtraction.Common.Models;
 
-namespace KnowledgeExtraction.Preprocessing
+namespace KnowledgeExtraction.Preprocessing.Parsers
 {
     public interface IPdfFactory<in TIn> : IExtractor<TIn, PdfArticle>
     {

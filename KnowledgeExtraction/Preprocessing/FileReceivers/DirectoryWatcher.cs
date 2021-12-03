@@ -1,20 +1,25 @@
 ﻿using System;
 using System.IO;
+using KnowledgeExtraction.Common.Communication;
 using KnowledgeExtraction.Common.Exceptions;
 using KnowledgeExtraction.Common.Models;
-using KnowledgeExtraction.Preprocessing;
 using KnowledgeExtraction.Preprocessing.Models;
+using KnowledgeExtraction.Preprocessing.Parsers;
 using Microsoft.Extensions.Logging;
 
-namespace KnowledgeExtraction.Common.Communication
+namespace KnowledgeExtraction.Preprocessing.FileReceivers
 {
-    internal class DirectoryWatcher : IWatcherService<PdfArticle>
+    public class PdfInsertionController :  IFileReceiver<PdfArticle>
+    {
+        public event Action<PdfArticle>? FileReceived;
+    }
+    internal class DirectoryWatcher : IFileReceiver<PdfArticle>
     {
         private readonly FileSystemWatcher Watcher;
         private readonly IPdfFactory<PdfDocument> Factory;
         private readonly ILogger<PdfArticle>? Logger;
 
-        public event Action<PdfArticle>? MediaItemAddedOrChanged;
+        public event Action<PdfArticle>? FileReceived;
 
         public DirectoryWatcher(string pathToFolder, IPdfFactory<PdfDocument> factory)
         {
@@ -38,12 +43,11 @@ namespace KnowledgeExtraction.Common.Communication
             Watcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite
                                                             | NotifyFilters.FileName
                                                             | NotifyFilters.DirectoryName;
-            Watcher.Created += OnSourceAddedOrChanged;
-            Watcher.Changed += OnSourceAddedOrChanged;
+            Watcher.Created += OnFileRecieved;
             Watcher.EnableRaisingEvents = true;
         }
 
-        public virtual void OnSourceAddedOrChanged(object sender, FileSystemEventArgs eventArgs)
+        public virtual void OnFileRecieved(object sender, FileSystemEventArgs eventArgs)
         {
             PdfArticle article;
             try
@@ -53,9 +57,9 @@ namespace KnowledgeExtraction.Common.Communication
             catch (PdfParsingException e)
             {
                 if (Logger != null) Logger.LogError(e.Message);
-                return;
+                throw e;
             }
-            MediaItemAddedOrChanged?.Invoke(article);
+            FileReceived?.Invoke(article);
         }
     }
 }

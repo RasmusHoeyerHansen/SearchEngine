@@ -1,4 +1,4 @@
-﻿namespace KnowledgeExtraction.Preprocessing.Strategies.Abstractions
+﻿namespace KnowledgeExtraction.Preprocessing.Parsers.Strategies.Abstractions
 {
     internal interface ITryExtractionStrategy<TIn, TOut> : IExtractionStrategy<TIn, TOut>
     {

@@ -3,7 +3,7 @@ using iTextSharp.text;
 
 namespace KnowledgeExtraction.Preprocessing.Models
 {
-    public class PdfDocument : Document
+    internal class PdfDocument : Document
     {
         public string Path { get; }
 

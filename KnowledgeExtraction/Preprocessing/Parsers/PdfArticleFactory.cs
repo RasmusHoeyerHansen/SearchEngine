@@ -1,10 +1,9 @@
 ﻿using KnowledgeExtraction.Common.Models;
-using KnowledgeExtraction.Preprocessing.Models;
-using KnowledgeExtraction.Preprocessing.Strategies;
-using KnowledgeExtraction.Preprocessing.Strategies.Abstractions;
+using KnowledgeExtraction.Preprocessing.Parsers.Strategies;
+using KnowledgeExtraction.Preprocessing.Parsers.Strategies.Abstractions;
 using PdfDocument = KnowledgeExtraction.Preprocessing.Models.PdfDocument;
 
-namespace KnowledgeExtraction.Preprocessing
+namespace KnowledgeExtraction.Preprocessing.Parsers
 {
     internal class PdfArticleFactory : IPdfFactory<Models.PdfDocument>
     {

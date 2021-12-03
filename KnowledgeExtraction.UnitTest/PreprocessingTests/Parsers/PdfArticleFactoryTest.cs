@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using KnowledgeExtraction.Common.Models;
-using KnowledgeExtraction.Preprocessing;
 using KnowledgeExtraction.Preprocessing.Models;
+using KnowledgeExtraction.Preprocessing.Parsers;
 using NUnit.Framework;
 
-namespace ExtractorTests.PreprocessingTests
+namespace ExtractorTests.PreprocessingTests.Parsers
 {
     public class PdfArticleFactoryTest : PdfCreator
     {
@@ -58,19 +58,6 @@ namespace ExtractorTests.PreprocessingTests
             Assert.AreEqual(expected.Count(), enumerable.Count());
             CollectionAssert.AreEqual(expected, enumerable, StringComparer.Ordinal);
         }
-
-        
-        [Test]
-        public void Parse_ReturnsArticleWithStringFromPDF_WithTables_IsNotEmpty()
-        {
-            var pdfExtractor = new PdfArticleFactory();
-            PdfDocument input = CreateTestPDF(ReadPdf());
-            PdfArticle q = null; 
-            
-            Assert.DoesNotThrow(()=> q = pdfExtractor.Extract(input));
-            Assert.IsNotNull(q);
-            Assert.IsNotEmpty(q.ParsedStrings);
-        }
         
         [Test]
         public void Parse_ReturnsObjectWithAllFieldsSet()
@@ -79,11 +66,9 @@ namespace ExtractorTests.PreprocessingTests
             PdfDocument input = CreateTestPDF("string");
             PdfArticle result = pdfExtractor.Extract(input);
             Assert.IsNotNull(result);
-            Assert.IsNotNull(result.Path);
             Assert.IsNotNull(result.Title);
             Assert.IsNotNull(result.ParsedStrings);
             
-            Assert.IsNotEmpty(result.Path);
             Assert.IsNotEmpty(result.Title);
             Assert.IsNotEmpty(result.ParsedStrings);
         }
