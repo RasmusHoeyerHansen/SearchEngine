@@ -1,0 +1,17 @@
+C:\Users\rasmus\Desktop\SearchEngine\Infrastructure\bin\Debug\net6.0\Infrastructure.deps.json
+C:\Users\rasmus\Desktop\SearchEngine\Infrastructure\bin\Debug\net6.0\Infrastructure.dll
+C:\Users\rasmus\Desktop\SearchEngine\Infrastructure\bin\Debug\net6.0\ref\Infrastructure.dll
+C:\Users\rasmus\Desktop\SearchEngine\Infrastructure\bin\Debug\net6.0\Infrastructure.pdb
+C:\Users\rasmus\Desktop\SearchEngine\Infrastructure\bin\Debug\net6.0\Domain.dll
+C:\Users\rasmus\Desktop\SearchEngine\Infrastructure\bin\Debug\net6.0\KnowledgeExtraction.dll
+C:\Users\rasmus\Desktop\SearchEngine\Infrastructure\bin\Debug\net6.0\Domain.pdb
+C:\Users\rasmus\Desktop\SearchEngine\Infrastructure\bin\Debug\net6.0\KnowledgeExtraction.pdb
+C:\Users\rasmus\Desktop\SearchEngine\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\rasmus\Desktop\SearchEngine\Infrastructure\obj\Debug\net6.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rasmus\Desktop\SearchEngine\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\rasmus\Desktop\SearchEngine\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfo.cs
+C:\Users\rasmus\Desktop\SearchEngine\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\rasmus\Desktop\SearchEngine\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CopyComplete
+C:\Users\rasmus\Desktop\SearchEngine\Infrastructure\obj\Debug\net6.0\Infrastructure.dll
+C:\Users\rasmus\Desktop\SearchEngine\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll
+C:\Users\rasmus\Desktop\SearchEngine\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
