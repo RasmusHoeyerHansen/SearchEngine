@@ -8,7 +8,7 @@ namespace KnowledgeExtraction
 {
     public static class KnowledgeExtractionDependencyInjection
     {
-        public static IServiceCollection AddApplication(this IServiceCollection services)
+        public static IServiceCollection AddKnowledgeExtraction(this IServiceCollection services)
         {
             services.AddTransient(typeof(IExtractor<Stream, PdfArticle>), typeof(PdfArticleFactory));
             services.AddTransient(typeof(IFileReceiver<PdfArticle>),typeof(FileController));

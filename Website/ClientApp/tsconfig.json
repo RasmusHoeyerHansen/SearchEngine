@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "./public/js",
     "strict": true,
     "target": "es5",
     "allowJs": false,

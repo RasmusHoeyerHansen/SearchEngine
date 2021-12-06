@@ -19,7 +19,7 @@ namespace Website
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            
+            services.AddKnowledgeExtraction();
             // In production, the React files will be served from this directory
         }
 

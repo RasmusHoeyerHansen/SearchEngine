@@ -27,6 +27,7 @@
 
 
     <ItemGroup>
+      <Folder Include="ClientApp\src" />
       <Folder Include="Controllers" />
     </ItemGroup>
 

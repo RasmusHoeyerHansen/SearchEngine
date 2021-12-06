@@ -23,11 +23,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="249a25f1-c9cc-49f3-86f8-65bcbed601bb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction.UnitTest/bin/Debug/net6.0/test.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction.UnitTest/bin/Debug/net6.0/test.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Website/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/ClientApp/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Website/ClientApp/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SearchEngine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SearchEngine/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction.UnitTest/PreprocessingTests/Parsers/Strategies/StreamExtractionStrategyTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction.UnitTest/PreprocessingTests/Parsers/Strategies/StreamExtractionStrategyTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction/DependencyInjection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Website/ClientApp/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Website/ClientApp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/components/Counter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/components/Counter.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/components/FetchData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/components/FetchData.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/components/Home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/components/Home.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/components/Layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/components/Layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/components/NavMenu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/components/NavMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/components/NavMenu.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/react-app-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/registerServiceWorker.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/service-worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/serviceWorkerRegistration.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/setupProxy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/store/Counter.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/store/WeatherForecasts.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/store/configureStore.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/src/store/index.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Website/ClientApp/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Website/ClientApp/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Website/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/Pages/Error.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/Pages/Error.cshtml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/Pages/_ViewImports.cshtml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Website/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Website/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Website/Website.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Website/Website.csproj" afterDir="false" />
     </list>
@@ -99,12 +131,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/Website/ClientApp/node_modules/react-scripts" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="RiderDotCoverContinuousTestingPageId" />
     <property name="ts.external.directory.path" value="C:\Users\rasmus\Desktop\SearchEngine\Website\ClientApp\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="npm.test">
+  <component name="RunManager" selected=".NET Launch Settings Profile.Website: IIS Express">
     <configuration name="ExtractorTests" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -122,6 +155,32 @@
       <method v="2">
         <option name="Build" />
       </method>
+    </configuration>
+    <configuration name="renders without crashing (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/Website/ClientApp/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$/Website/ClientApp" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/Website/ClientApp/src/Tests/App.test.js" />
+      <test-names>
+        <test-name value="renders without crashing" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="renders without crashing" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/Website/ClientApp/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$/Website/ClientApp" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/Website/ClientApp/src/Tests/App.test.tsx" />
+      <test-names>
+        <test-name value="renders without crashing" />
+      </test-names>
+      <method v="2" />
     </configuration>
     <configuration name="ASP.NETCoreWebApplication" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebSite/WebSite.csproj" />
@@ -405,7 +464,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.renders without crashing (1)" />
         <item itemvalue="npm.test" />
+        <item itemvalue="Jest.renders without crashing" />
       </list>
     </recent_temporary>
   </component>
@@ -442,7 +503,7 @@
       <workItem from="1638519987525" duration="1795000" />
       <workItem from="1638521814239" duration="6811000" />
       <workItem from="1638625501256" duration="6970000" />
-      <workItem from="1638784163107" duration="3212000" />
+      <workItem from="1638784163107" duration="5439000" />
     </task>
     <servers />
   </component>
@@ -450,9 +511,6 @@
     <option name="version" value="3" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Website/ClientApp/src/App.test.js" />
-        <option value="$PROJECT_DIR$/Website/ClientApp/src/index.js" />
-        <option value="$PROJECT_DIR$/Website/ClientApp/src/App.js" />
         <option value="$PROJECT_DIR$/Website/ClientApp/src/components/Counter.js" />
         <option value="$PROJECT_DIR$/Website/ClientApp/src/components/Home.js" />
         <option value="$PROJECT_DIR$/Website/ClientApp/src/components/NavMenu.js" />
@@ -470,7 +528,7 @@
       <expand>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 0% 260/260" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 77% 126/544" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
       </expand>
       <select />

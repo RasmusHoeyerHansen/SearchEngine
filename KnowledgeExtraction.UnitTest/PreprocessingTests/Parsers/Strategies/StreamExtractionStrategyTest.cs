@@ -9,12 +9,6 @@ namespace ExtractorTests.PreprocessingTests.Parsers.Strategies
 {
     public class StreamExtractionStrategyTest
     {
-        [TestCase()]
-        public void T()
-        {
-            ITryExtractionStrategy<Stream, PdfArticle> strategy = new StreamExtractionStrategy();
-            Assert.Throws<PdfParsingException>(() => strategy.TryExtract(CreateStream(), out _));
-        }
         [Test]
         public void TryExtract_NullInput_ThrowsPdfParsingException()
         {
