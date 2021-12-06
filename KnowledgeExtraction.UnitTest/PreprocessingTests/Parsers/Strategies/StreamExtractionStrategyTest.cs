@@ -1,11 +1,8 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using KnowledgeExtraction.Common.Exceptions;
 using KnowledgeExtraction.Common.Models;
 using KnowledgeExtraction.Preprocessing.Parsers.Strategies;
 using KnowledgeExtraction.Preprocessing.Parsers.Strategies.Abstractions;
-using Microsoft.AspNetCore.Http;
-using NSubstitute;
 using NUnit.Framework;
 
 namespace ExtractorTests.PreprocessingTests.Parsers.Strategies
