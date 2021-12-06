@@ -6,7 +6,7 @@ namespace Domain_models.Entities
     {
         public Guid AuthorId { get; set; }
         public Guid Id { get; set; }
-        public List<WordOccurance> WordOccurances { get; set; }
+        public virtual List<WordOccurance> WordOccurances { get; set; }
         public Author Author { get; set; }
     }
 }

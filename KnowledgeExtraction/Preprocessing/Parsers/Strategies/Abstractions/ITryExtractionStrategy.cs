@@ -2,6 +2,6 @@
 {
     internal interface ITryExtractionStrategy<TIn, TOut> : IExtractionStrategy<TIn, TOut>
     {
-        public bool TryExtract(TIn inputDocument, out TOut result);
+        public bool TryExtract(TIn documentStream, out TOut result);
     }
 }

@@ -1,11 +1,12 @@
-﻿using KnowledgeExtraction.Common.Models;
+﻿using System.IO;
+using KnowledgeExtraction.Common.Models;
 using KnowledgeExtraction.Preprocessing.Parsers.Strategies;
 using KnowledgeExtraction.Preprocessing.Parsers.Strategies.Abstractions;
 using PdfDocument = KnowledgeExtraction.Preprocessing.Models.PdfDocument;
 
 namespace KnowledgeExtraction.Preprocessing.Parsers
 {
-    internal class PdfArticleFactory : IPdfFactory<Models.PdfDocument>
+    internal class PdfArticleFactory : IPdfFactory<Models.PdfDocument>, IPdfFactory<Stream>
     {
         public PdfArticle? Extract(PdfDocument document)
         {
@@ -20,6 +21,11 @@ namespace KnowledgeExtraction.Preprocessing.Parsers
         public PdfArticle? Parse(string path)
         {
             return new PdfExtractionStrategy().ExecuteExtraction(path);
+        }
+
+        public PdfArticle? Extract(Stream inputElement)
+        {
+            return new StreamExtractionStrategy().ExecuteExtraction(inputElement);
         }
     }
 

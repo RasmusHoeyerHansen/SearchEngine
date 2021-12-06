@@ -1435,9 +1435,6 @@
         }
       },
       "Domain/1.0.0": {
-        "dependencies": {
-          "iTextSharp": "5.5.13.2"
-        },
         "runtime": {
           "Domain.dll": {}
         }

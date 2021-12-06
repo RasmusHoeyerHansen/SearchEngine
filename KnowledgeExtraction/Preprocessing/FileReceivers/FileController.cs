@@ -25,21 +25,25 @@ namespace KnowledgeExtraction.Preprocessing.FileReceivers
         [HttpPost, Route("/[controller]/Extract")]
         public IActionResult PostFile(IFormFile file)
         {
-            Stream? stream = file.OpenReadStream();
-            var x = ArticleExtractor.Extract(stream);
+            IActionResult result;
             try
             {
+                Stream? stream = file.OpenReadStream();
+                var x = ArticleExtractor.Extract(stream);
                 FileReceived?.Invoke(x);
-                return Ok();
+                result = Ok();
             }
             catch (PdfParsingException e)
             {
-                return this.BadRequest(e.Message);
+                result = BadRequest(e.Message);
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return this.StatusCode(500, "Something went wrong.");
+                result = BadRequest("Corrupted File");
             }
+
+            return result;
         }
     }
+
 }

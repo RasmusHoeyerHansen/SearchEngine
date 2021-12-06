@@ -2069,9 +2069,6 @@
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "iTextSharp": "5.5.13.2"
-        },
         "compile": {
           "bin/placeholder/Domain.dll": {}
         },
