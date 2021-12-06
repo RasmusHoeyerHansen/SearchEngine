@@ -98,9 +98,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.AspNet.WebApi": {
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
               "target": "Package",
-              "version": "[5.2.7, )"
+              "version": "[2.2.0, )"
             },
             "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",
@@ -109,6 +109,34 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Primitives": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "ServiceCollection.RegisterOption": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "ServiceCollectionBuilder": {
+              "target": "Package",
+              "version": "[0.1.2-beta, )"
+            },
+            "ServiceCollectionExtensions": {
+              "target": "Package",
+              "version": "[1.0.2, )"
             },
             "iTextSharp": {
               "target": "Package",

@@ -1,25 +1,35 @@
 ﻿using System;
 using System.IO;
-using System.Web.Http.Results;
-using KnowledgeExtraction.Common.Communication;
 using KnowledgeExtraction.Common.Exceptions;
 using KnowledgeExtraction.Common.Models;
 using KnowledgeExtraction.Preprocessing.Parsers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace KnowledgeExtraction.Preprocessing.FileReceivers
+namespace KnowledgeExtraction.Common.Communication.FileReceivers
 {
     [ApiController]
     [Route("[controller]")]
-    internal class FileController : ControllerBase, IFileReceiver<PdfArticle>
+    public class FileController : ControllerBase, IFileWatcherObservable<PdfArticle>
     {
         private readonly IExtractor<Stream,PdfArticle> ArticleExtractor;
         public event Action<PdfArticle>? FileReceived;
 
+        public FileController(IHttpFormInputObserver<PdfArticle> httpInputObservable)
+        {
+
+        }
+
         public FileController(IExtractor<Stream,PdfArticle> extractor)
         {
             this.ArticleExtractor = extractor;
+        }
+
+        [HttpGet, Route("/[controller]/")]
+        public IActionResult GetFile()
+        {
+            Console.WriteLine("HEREEE");
+            return Ok("HEY");
         }
         
         [HttpPost, Route("/[controller]/Extract")]

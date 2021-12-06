@@ -21,6 +21,7 @@
     <ItemGroup>
       <ProjectReference Include="..\Domain\Domain.csproj" />
       <ProjectReference Include="..\KnowledgeExtraction\KnowledgeExtraction.csproj" />
+      <ProjectReference Include="..\Website\Website.csproj" />
     </ItemGroup>
 
 </Project>

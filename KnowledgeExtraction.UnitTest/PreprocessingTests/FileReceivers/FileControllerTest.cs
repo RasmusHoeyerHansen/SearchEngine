@@ -1,18 +1,13 @@
 ﻿using System;
 using System.IO;
-using System.IO.Enumeration;
+using KnowledgeExtraction.Common.Communication.FileReceivers;
 using KnowledgeExtraction.Common.Exceptions;
 using KnowledgeExtraction.Common.Models;
-using KnowledgeExtraction.Preprocessing.FileReceivers;
 using KnowledgeExtraction.Preprocessing.Parsers;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Http.Internal;
 using Microsoft.AspNetCore.Mvc;
 using NSubstitute;
-using NSubstitute.ExceptionExtensions;
 using NUnit.Framework;
-using Org.BouncyCastle.Crypto.Tls;
-using BadRequestResult = System.Web.Http.Results.BadRequestResult;
 
 namespace ExtractorTests.PreprocessingTests.FileReceivers
 {

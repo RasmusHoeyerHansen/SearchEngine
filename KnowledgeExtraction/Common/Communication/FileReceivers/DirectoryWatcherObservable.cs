@@ -1,19 +1,26 @@
 ﻿using System;
 using System.IO;
-using KnowledgeExtraction.Common.Communication;
+using System.Linq;
 using KnowledgeExtraction.Common.Exceptions;
 using KnowledgeExtraction.Common.Models;
 using KnowledgeExtraction.Preprocessing.Models;
 using KnowledgeExtraction.Preprocessing.Parsers;
 using Microsoft.Extensions.Logging;
 
-namespace KnowledgeExtraction.Preprocessing.FileReceivers
+namespace KnowledgeExtraction.Common.Communication.FileReceivers
 {
-    public class PdfInsertionController :  IFileReceiver<PdfArticle>
+    internal class PipelineInputObserver : DirectoryWatcherObservable, IHttpFormInputObserver<PdfArticle>
     {
-        public event Action<PdfArticle>? FileReceived;
+        public PipelineInputObserver(DirectoryInfo info, IPdfFactory<PdfDocument> factory) : base(info, factory)
+        {
+        }
+
+        public PipelineInputObserver(DirectoryInfo dirInfo, IPdfFactory<PdfDocument> factory, ILogger<PdfArticle> logger) : base(dirInfo, factory, logger)
+        {
+        }
     }
-    internal class DirectoryWatcher : IFileReceiver<PdfArticle>
+    
+    internal class DirectoryWatcherObservable : IFileWatcherObservable<PdfArticle>
     {
         private readonly FileSystemWatcher Watcher;
         private readonly IPdfFactory<PdfDocument> Factory;
@@ -21,23 +28,21 @@ namespace KnowledgeExtraction.Preprocessing.FileReceivers
 
         public event Action<PdfArticle>? FileReceived;
 
-        public DirectoryWatcher(string pathToFolder, IPdfFactory<PdfDocument> factory)
+        public DirectoryWatcherObservable(DirectoryInfo info, IPdfFactory<PdfDocument> factory)
         {
             this.Factory = factory;
             this.Watcher = new FileSystemWatcher();
-            SetupWatcher(pathToFolder);
+            SetupWatcher(info);
         }
-        
-        public DirectoryWatcher(string pathToFolder, IPdfFactory<PdfDocument> factory, ILogger<PdfArticle> logger)
-            : this(pathToFolder, factory)
+        public DirectoryWatcherObservable(DirectoryInfo dirInfo, IPdfFactory<PdfDocument> factory, ILogger<PdfArticle> logger)
+            : this(dirInfo, factory)
         {
             this.Logger = logger ?? throw new ArgumentNullException(nameof(logger));
-            SetupWatcher(pathToFolder);
         }
 
-        private void SetupWatcher(string path)
+        private void SetupWatcher(DirectoryInfo dirInfo)
         {
-            Watcher.Path = path;
+            Watcher.Path = dirInfo.FullName;
             Watcher.IncludeSubdirectories = true;
             Watcher.Filter = "*.*";
             Watcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite

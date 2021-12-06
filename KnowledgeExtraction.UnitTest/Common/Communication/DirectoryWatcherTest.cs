@@ -4,9 +4,9 @@
 using System;
 using System.IO;
 using System.Linq;
+using KnowledgeExtraction.Common.Communication.FileReceivers;
 using KnowledgeExtraction.Common.Exceptions;
 using KnowledgeExtraction.Common.Models;
-using KnowledgeExtraction.Preprocessing.FileReceivers;
 using KnowledgeExtraction.Preprocessing.Models;
 using KnowledgeExtraction.Preprocessing.Parsers;
 using Microsoft.Extensions.Logging;
@@ -18,7 +18,14 @@ namespace ExtractorTests.Common.Communication
 {
     public class DirectoryWatcherTest : PdfCreator
     {
-        public static string Directory => System.IO.Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar;
+        public static DirectoryInfo Directory
+        {
+            get
+            {
+                return new DirectoryInfo(System.IO.Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar);;
+            }
+        }
+
         public static string FileName => "test.pdf";
 
         static string[] Strings
@@ -61,11 +68,11 @@ namespace ExtractorTests.Common.Communication
             {
                 isCalled = true;
             }
-            DirectoryWatcher directoryWatcher = new DirectoryWatcher(Directory, CorrectParsingFactory);
-            directoryWatcher.FileReceived += AssertArticle;
+            DirectoryWatcherObservable directoryWatcherObservable = new DirectoryWatcherObservable(Directory, CorrectParsingFactory);
+            directoryWatcherObservable.FileReceived += AssertArticle;
             
             //Act
-            directoryWatcher.OnFileRecieved(null, new FileSystemEventArgs(WatcherChangeTypes.Changed,Directory, FileName));
+            directoryWatcherObservable.OnFileRecieved(null, new FileSystemEventArgs(WatcherChangeTypes.Changed,Directory.FullName, FileName));
             //Assert
             Assert.IsTrue(isCalled);
         }
@@ -83,12 +90,12 @@ namespace ExtractorTests.Common.Communication
                 }
             }
 
-            var x = CorrectParsingFactory.Parse(Directory);
-            DirectoryWatcher directoryWatcher = new DirectoryWatcher(Directory, factory:CorrectParsingFactory);
-            directoryWatcher.FileReceived += ObserverFunction;
+            var x = CorrectParsingFactory.Parse(Directory.FullName);
+            DirectoryWatcherObservable directoryWatcherObservable = new DirectoryWatcherObservable(Directory, factory:CorrectParsingFactory);
+            directoryWatcherObservable.FileReceived += ObserverFunction;
             
             //Act
-            directoryWatcher.OnFileRecieved(null, new FileSystemEventArgs(WatcherChangeTypes.Changed,Directory, FileName){});
+            directoryWatcherObservable.OnFileRecieved(null, new FileSystemEventArgs(WatcherChangeTypes.Changed,Directory.FullName, FileName){});
         }
         
         [Test]
@@ -96,10 +103,11 @@ namespace ExtractorTests.Common.Communication
         {
             //Arrange
             ILogger<PdfArticle> logger = Substitute.For<ILogger<PdfArticle>>();
-            DirectoryWatcher directoryWatcher = new DirectoryWatcher(Directory, ExceptionThrowingFactory,logger);
+            DirectoryWatcherObservable directoryWatcherObservable = new DirectoryWatcherObservable(Directory, ExceptionThrowingFactory,logger);
 
             //Act
-            Assert.Throws<PdfParsingException>(() => directoryWatcher.OnFileRecieved(null, new FileSystemEventArgs(WatcherChangeTypes.Changed,Directory, FileName)));
+            Assert.Throws<PdfParsingException>(() => 
+                directoryWatcherObservable.OnFileRecieved(null, new FileSystemEventArgs(WatcherChangeTypes.Changed,Directory.FullName, FileName)));
         }
         
         [Test]
@@ -107,10 +115,10 @@ namespace ExtractorTests.Common.Communication
         {
             //Arrange
             ILogger<PdfArticle> logger = Substitute.For<ILogger<PdfArticle>>();
-            DirectoryWatcher directoryWatcher = new DirectoryWatcher(Directory, ExceptionThrowingFactory, logger);
+            DirectoryWatcherObservable directoryWatcherObservable = new DirectoryWatcherObservable(Directory, ExceptionThrowingFactory, logger);
             try
             {
-                directoryWatcher.OnFileRecieved(null, new FileSystemEventArgs(WatcherChangeTypes.Changed,Directory, FileName){});
+                directoryWatcherObservable.OnFileRecieved(null, new FileSystemEventArgs(WatcherChangeTypes.Changed,Directory.FullName, FileName){});
             }
             catch (Exception e)
             {

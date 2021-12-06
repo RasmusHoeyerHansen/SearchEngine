@@ -4,6 +4,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using KnowledgeExtraction;
+using KnowledgeExtraction.Common.Communication.FileReceivers;
+using KnowledgeExtraction.Preprocessing.Parsers;
+using Microsoft.OpenApi.Models;
+
 namespace Website
 {
     public class Startup
@@ -18,8 +22,13 @@ namespace Website
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            DependencyInjection.AddKnowledgeExtraction(services);
             services.AddControllersWithViews();
-            services.AddKnowledgeExtraction();
+            services.AddSingleton(new FileController(new PdfArticleFactory()));
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+            });
             // In production, the React files will be served from this directory
         }
 
@@ -39,16 +48,26 @@ namespace Website
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
             app.UseRouting();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller}/{action=Index}/{id?}");
             });
-            
+
+
+            SetupSwagger(app);
+        }
+
+        private static void SetupSwagger(IApplicationBuilder app)
+        {
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1"); });
         }
     }
 }
