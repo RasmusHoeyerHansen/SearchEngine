@@ -23,24 +23,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="249a25f1-c9cc-49f3-86f8-65bcbed601bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Persitence/DataAccess/Configurations/ArticleConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/Infrastructure.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/Persistence/WordCountDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SearchEngine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SearchEngine/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Entities/Article.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Entities/Article.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Entities/Author.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Entities/Author.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Entities/OccursIn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Entities/OccursIn.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Entities/Word.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Entities/Word.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/bin/Debug/net6.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/bin/Debug/net6.0/Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/bin/Debug/net6.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction/bin/Debug/net6.0/Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/Common/IWordCountContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction/Common/IWordCountContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/Common/IWordRatioContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction/Common/IWordRatioContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/bin/Debug/net6.0/KnowledgeExtraction.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction/bin/Debug/net6.0/KnowledgeExtraction.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/obj/Debug/net6.0/KnowledgeExtraction.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction/obj/Debug/net6.0/KnowledgeExtraction.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persitence/DependencyInjection.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persitence/WordCountDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Persitence/WordCountDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persitence/bin/Debug/net6.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Persitence/bin/Debug/net6.0/Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persitence/DataAccess/Configurations/ArticleConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Persistence/DataAccess/Configurations/ArticleConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persitence/DataAccess/Configurations/AuthorConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Persistence/DataAccess/Configurations/AuthorConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persitence/DataAccess/Configurations/OccursInConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Persistence/DataAccess/Configurations/OccursInConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persitence/DataAccess/Configurations/WordConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Persistence/DataAccess/Configurations/WordConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persitence/WordCountDbContext.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Persitence/bin/Debug/net6.0/KnowledgeExtraction.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Persitence/bin/Debug/net6.0/KnowledgeExtraction.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Persitence/bin/Debug/net6.0/Persitence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Persitence/bin/Debug/net6.0/Persitence.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Persitence/obj/Debug/net6.0/Persitence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Persitence/obj/Debug/net6.0/Persitence.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/net6.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/net6.0/Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine.sln" beforeDir="false" afterPath="$PROJECT_DIR$/SearchEngine.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/net6.0/KnowledgeExtraction.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/net6.0/KnowledgeExtraction.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/net6.0/UnitTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/net6.0/UnitTests.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/net6.0/Website.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/net6.0/Website.pdb" afterDir="false" />
@@ -91,7 +98,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f0a172a57f74527baa217742039c9ad280000/c8/aaa83dcf/DocumentException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/879e64150fe442079fadd555ede677aa8f5788/8b/163ab9a0/IEnumerable`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/57c2d4282221452cad4df86bbd5d6fa0a1fc70/3E9/Path.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Persitence/WordCountDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Infrastructure/Persistence/WordCountDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f0a172a57f74527baa217742039c9ad280000/f0/fa1a9588/FdfReader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/57c2d4282221452cad4df86bbd5d6fa0a1fc70/e2/6f9b429a/ICollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f0a172a57f74527baa217742039c9ad280000/83/66a0ff82/LocationTextExtractionStrategy.cs" root0="SKIP_HIGHLIGHTING" />
@@ -495,7 +502,7 @@
       <workItem from="1638521814239" duration="6811000" />
       <workItem from="1638625501256" duration="6970000" />
       <workItem from="1638784163107" duration="19433000" />
-      <workItem from="1638815696578" duration="4161000" />
+      <workItem from="1638815696578" duration="4893000" />
     </task>
     <servers />
   </component>

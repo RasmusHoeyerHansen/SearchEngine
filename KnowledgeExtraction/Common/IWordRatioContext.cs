@@ -5,7 +5,7 @@ namespace KnowledgeExtraction.Common
 {
     public interface IWordRatioContext
     {
-        DbSet<WordRatio> Ratios { get; set; }
+        DbSet<WordRatio> Ratios { get; }
     }
 
   
