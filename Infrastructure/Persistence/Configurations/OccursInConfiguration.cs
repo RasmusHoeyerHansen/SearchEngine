@@ -3,7 +3,7 @@ using KnowledgeExtraction.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace DataAndInfrastructure.DataAccess.Configurations
+namespace Infrastructure.Persistence.DataAccess.Configurations
 {
     public class OccursInConfiguration : IEntityTypeConfiguration<OccursIn>
     {
