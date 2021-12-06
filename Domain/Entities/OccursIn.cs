@@ -1,13 +1,13 @@
-﻿
-using System;
+﻿using System;
+using Domain_models.Entities;
 
-namespace Domain_models.Entities
+namespace KnowledgeExtraction.Common
 {
-    public class WordOccurance
+    public class OccursIn
     {
         public Article Article { get; set; }
-        public Guid ArticleId { get; set; }
-        public int Occurances { get; set; }
-        public Word Word { get; set; }
+        public Guid ArticleId{get;set;}
+        public string Word { get; set; }
+        public int NumberOfOccurances { get; set; }
     }
 }

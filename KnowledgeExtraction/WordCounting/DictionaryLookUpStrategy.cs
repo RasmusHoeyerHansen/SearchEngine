@@ -1,27 +1,27 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Domain_models.Entities;
-using KnowledgeExtraction.Common.Models;
+using KnowledgeExtraction.Common;
 
 namespace KnowledgeExtraction.WordCounting
 {
-    internal class DictionaryLookUpStrategy : IMediaItemProcessingStrategy<WordRatio>
+    internal class DictionaryLookUpStrategy : IMediaItemProcessingStrategy<IWordCount>
     {
-        public IEnumerable<WordRatio> ProcessMedia(ITextMediaItem item)
+        public IEnumerable<IWordCount> ProcessMedia(ITextItem item)
         {
             string[] strings = ApproximateDictSize(item, out int numberOfWords, out Dictionary<string, int> WordRatios);
             PupulateRatioDictionary(numberOfWords, strings, WordRatios, out int totalUniqueWords);
             
-            List<WordRatio> result = new(totalUniqueWords);
+            List<IWordCount> result = new(totalUniqueWords);
             foreach (KeyValuePair<string,int> keyValuePair in WordRatios)
             {
-                result.Add(new WordRatio(){Word = keyValuePair.Key, Occurances = keyValuePair.Value, MediaTitle = item.Title});
+                result.Add(new WordCount(){Word = keyValuePair.Key, Occurances = keyValuePair.Value, MediaTitle = item.Title});
             }
 
             return result;
         }
 
-        private static string[] ApproximateDictSize(ITextMediaItem item, out int numberOfWords, out Dictionary<string, int> ratios)
+        private static string[] ApproximateDictSize(ITextItem item, out int numberOfWords, out Dictionary<string, int> ratios)
         {
             var strings = item.ParsedStrings;
             numberOfWords = strings.Count();
@@ -51,5 +51,7 @@ namespace KnowledgeExtraction.WordCounting
                 totalUniqueWords++;
             }
         }
+
+
     }
 }

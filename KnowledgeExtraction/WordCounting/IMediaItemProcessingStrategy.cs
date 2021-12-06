@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
-using KnowledgeExtraction.Common.Models;
+using Domain_models.Entities;
+using KnowledgeExtraction.Common;
 
 namespace KnowledgeExtraction.WordCounting
 {
     public interface IMediaItemProcessingStrategy<out T>
     {
-        public IEnumerable<T> ProcessMedia(ITextMediaItem item);
+        public IEnumerable<T> ProcessMedia(ITextItem item);
         
     }
 }

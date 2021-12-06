@@ -3,7 +3,7 @@ using System.IO;
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.interfaces;
 using KnowledgeExtraction.Common.Exceptions;
-using KnowledgeExtraction.Common.Models;
+using KnowledgeExtraction.Preprocessing.Models;
 using KnowledgeExtraction.Preprocessing.Parsers.Strategies.Abstractions;
 using PdfDocument = KnowledgeExtraction.Preprocessing.Models.PdfDocument;
 

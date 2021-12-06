@@ -3,15 +3,16 @@ using System.IO;
 using System.Text;
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
+using KnowledgeExtraction.Common;
 using KnowledgeExtraction.Common.Exceptions;
-using KnowledgeExtraction.Common.Models;
+using KnowledgeExtraction.Preprocessing.Models;
 using KnowledgeExtraction.Preprocessing.Parsers.Strategies.Abstractions;
 
 namespace KnowledgeExtraction.Preprocessing.Parsers.Strategies
 {
-    internal class StreamExtractionStrategy : ITryExtractionStrategy<Stream, PdfArticle>
+    internal class StreamExtractionStrategy : ITryExtractionStrategy<Stream, ITextItem>
     {
-        public PdfArticle? ExecuteExtraction(Stream data)
+        public ITextItem? ExecuteExtraction(Stream data)
         {
             string title;
             StringBuilder bob = new();
@@ -27,7 +28,7 @@ namespace KnowledgeExtraction.Preprocessing.Parsers.Strategies
             }
         }
 
-        public bool TryExtract(Stream documentStream, out PdfArticle? result)
+        public bool TryExtract(Stream documentStream, out ITextItem? result)
         {
             try
             {

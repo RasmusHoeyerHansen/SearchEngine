@@ -1,29 +1,26 @@
 ﻿using System;
 using System.IO;
 using KnowledgeExtraction.Common.Exceptions;
-using KnowledgeExtraction.Common.Models;
+using KnowledgeExtraction.Common.Services;
+using KnowledgeExtraction.Preprocessing;
 using KnowledgeExtraction.Preprocessing.Parsers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace KnowledgeExtraction.Common.Communication.FileReceivers
+namespace Website.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class FileController : ControllerBase, IFileWatcherObservable<PdfArticle>
+    public class FileController : ControllerBase
     {
-        private readonly IExtractor<Stream,PdfArticle> ArticleExtractor;
-        public event Action<PdfArticle>? FileReceived;
+        private readonly IPreProcessingService<Stream> ExtractionService;
 
-        public FileController(IHttpFormInputObserver<PdfArticle> httpInputObservable)
+        public FileController(IPreProcessingService<Stream> extractionService)
         {
-
+            ExtractionService = extractionService;
         }
+        
 
-        public FileController(IExtractor<Stream,PdfArticle> extractor)
-        {
-            this.ArticleExtractor = extractor;
-        }
 
         [HttpGet, Route("/[controller]/")]
         public IActionResult GetFile()
@@ -35,13 +32,10 @@ namespace KnowledgeExtraction.Common.Communication.FileReceivers
         [HttpPost, Route("/[controller]/Extract")]
         public IActionResult PostFile(IFormFile file)
         {
-            IActionResult result;
+            IActionResult result = Ok();
             try
             {
-                Stream? stream = file.OpenReadStream();
-                var x = ArticleExtractor.Extract(stream);
-                FileReceived?.Invoke(x);
-                result = Ok();
+                ExtractionService.PreprocessKnowledge(file.OpenReadStream());
             }
             catch (PdfParsingException e)
             {
@@ -54,6 +48,7 @@ namespace KnowledgeExtraction.Common.Communication.FileReceivers
 
             return result;
         }
+
     }
 
 }

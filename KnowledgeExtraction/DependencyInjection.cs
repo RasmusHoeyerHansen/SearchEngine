@@ -1,7 +1,9 @@
 ﻿using System.IO;
+using Domain_models.Entities;
+using KnowledgeExtraction.Common.Services;
 using Microsoft.Extensions.DependencyInjection;
-using KnowledgeExtraction.Common.Models;
 using KnowledgeExtraction.Preprocessing.Parsers;
+using KnowledgeExtraction.WordCounting;
 
 namespace KnowledgeExtraction
 {
@@ -9,8 +11,14 @@ namespace KnowledgeExtraction
     {
         public static IServiceCollection AddKnowledgeExtraction(IServiceCollection services)
         {
-            services.AddMvcCore().AddControllersAsServices();
-            services.AddTransient(typeof(IExtractor<Stream, PdfArticle>), typeof(PdfArticleFactory));
+            services.AddTransient(
+                typeof(ITextItemFactory<Stream>), 
+                typeof(TextItemFactory));
+            
+            services.AddTransient(
+                typeof(IBaseKnowledgeExtractor), 
+                typeof(WordCountingFactory));
+
             return services;
         }
     }

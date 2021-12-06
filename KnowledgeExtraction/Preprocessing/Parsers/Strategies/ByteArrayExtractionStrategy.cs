@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
-using KnowledgeExtraction.Common.Models;
+using KnowledgeExtraction.Preprocessing.Models;
 using KnowledgeExtraction.Preprocessing.Parsers.Strategies.Abstractions;
 
 namespace KnowledgeExtraction.Preprocessing.Parsers.Strategies
