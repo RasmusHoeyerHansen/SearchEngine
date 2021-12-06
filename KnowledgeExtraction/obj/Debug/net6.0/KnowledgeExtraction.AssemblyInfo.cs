@@ -11,6 +11,7 @@ using System;
 using System.Reflection;
 
 [assembly: System.Runtime.CompilerServices.InternalsVisibleTo("KnowledgeExtraction.UnitTest")]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("Website")]
 [assembly: System.Runtime.CompilerServices.InternalsVisibleTo("DynamicProxyGenAssembly2")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("KnowledgeExtraction")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
