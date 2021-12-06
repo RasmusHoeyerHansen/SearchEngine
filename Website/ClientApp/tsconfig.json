@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
+    "strict": true,
     "target": "es5",
-    "allowJs": true,
+    "allowJs": false,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "esnext",
     "moduleResolution": "node",

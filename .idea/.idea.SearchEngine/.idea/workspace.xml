@@ -23,80 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="249a25f1-c9cc-49f3-86f8-65bcbed601bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Website/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/.env.development" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/aspnetcore-https.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/aspnetcore-react.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/App.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/App.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/components/Counter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/components/Counter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/components/FetchData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/components/FetchData.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/components/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/components/Home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/components/Layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/components/Layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/components/NavMenu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/components/NavMenu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/components/NavMenu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/react-app-env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/registerServiceWorker.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/reportWebVitals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/service-worker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/serviceWorkerRegistration.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/setupProxy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/store/Counter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/store/WeatherForecasts.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/store/configureStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/src/store/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/ClientApp/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/Controllers/WeatherForecastController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/Pages/Error.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/Pages/Error.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/Pages/_ViewImports.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/Startup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/WeatherForecast.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/Website.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SearchEngine/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SearchEngine/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SearchEngine/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SearchEngine/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/bin/Debug/net6.0/Domain.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/bin/Debug/net6.0/Domain.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction.UnitTest/bin/Debug/net6.0/KnowledgeExtraction.UnitTest.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction.UnitTest/bin/Debug/net6.0/KnowledgeExtraction.UnitTest.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction.UnitTest/bin/Debug/net6.0/KnowledgeExtraction.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction.UnitTest/bin/Debug/net6.0/KnowledgeExtraction.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction.UnitTest/obj/Debug/net6.0/KnowledgeExtraction.UnitTest.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction.UnitTest/obj/Debug/net6.0/KnowledgeExtraction.UnitTest.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction/DependencyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/KnowledgeExtraction.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction/KnowledgeExtraction.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/bin/Debug/net6.0/KnowledgeExtraction.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction/bin/Debug/net6.0/KnowledgeExtraction.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/obj/Debug/net6.0/KnowledgeExtraction.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction/obj/Debug/net6.0/KnowledgeExtraction.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/obj/Debug/net6.0/KnowledgeExtraction.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction/obj/Debug/net6.0/KnowledgeExtraction.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persitence/bin/Debug/net6.0/KnowledgeExtraction.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Persitence/bin/Debug/net6.0/KnowledgeExtraction.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persitence/bin/Debug/net6.0/Persitence.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Persitence/bin/Debug/net6.0/Persitence.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persitence/bin/Debug/net6.0/Persitence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Persitence/bin/Debug/net6.0/Persitence.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persitence/obj/Debug/net6.0/Persitence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Persitence/obj/Debug/net6.0/Persitence.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchEngine.sln" beforeDir="false" afterPath="$PROJECT_DIR$/SearchEngine.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchEngine.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/SearchEngine.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction.UnitTest/bin/Debug/net6.0/test.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction.UnitTest/bin/Debug/net6.0/test.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Website/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Website/ClientApp/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/ClientApp/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Website/ClientApp/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Website/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Website/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/Website.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Website/Website.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,9 +101,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="RiderDotCoverContinuousTestingPageId" />
+    <property name="ts.external.directory.path" value="C:\Users\rasmus\Desktop\SearchEngine\Website\ClientApp\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.SearchEngineAPI: SearchEngine">
+  <component name="RunManager" selected="npm.test">
     <configuration name="ExtractorTests" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -459,6 +393,21 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/Website/ClientApp/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -493,7 +442,7 @@
       <workItem from="1638519987525" duration="1795000" />
       <workItem from="1638521814239" duration="6811000" />
       <workItem from="1638625501256" duration="6970000" />
-      <workItem from="1638784163107" duration="2878000" />
+      <workItem from="1638784163107" duration="3212000" />
     </task>
     <servers />
   </component>
@@ -521,7 +470,7 @@
       <expand>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 0% 196/196" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 260/260" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
       </expand>
       <select />
