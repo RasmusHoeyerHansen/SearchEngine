@@ -5,7 +5,7 @@ using KnowledgeExtraction.Common.Services;
 
 namespace KnowledgeExtraction.WordCounting
 {
-    internal class WordCountingFactory :IBaseKnowledgeExtractor, IMediaItemProcessor<IWordCount>
+    internal class WordCountingFactory : IBaseKnowledgeExtractor, IMediaItemProcessor<IWordCount>
     {
         public IEnumerable<IWordCount> ExtractKnowledge(ITextItem textItem)
         {

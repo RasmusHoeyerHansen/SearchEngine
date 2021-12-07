@@ -7,6 +7,4 @@ namespace KnowledgeExtraction.Common
     {
         DbSet<WordRatio> Ratios { get; }
     }
-
-  
 }

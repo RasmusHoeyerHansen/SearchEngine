@@ -11,35 +11,33 @@ namespace KnowledgeExtraction.WordCounting
         {
             string[] strings = ApproximateDictSize(item, out int numberOfWords, out Dictionary<string, int> WordRatios);
             PupulateRatioDictionary(numberOfWords, strings, WordRatios, out int totalUniqueWords);
-            
+
             List<IWordCount> result = new(totalUniqueWords);
-            foreach (KeyValuePair<string,int> keyValuePair in WordRatios)
-            {
-                result.Add(new WordCount(){Word = keyValuePair.Key, Occurances = keyValuePair.Value, MediaTitle = item.Title});
-            }
+            foreach (KeyValuePair<string, int> keyValuePair in WordRatios)
+                result.Add(new WordCount()
+                    {Word = keyValuePair.Key, Occurances = keyValuePair.Value, MediaTitle = item.Title});
 
             return result;
         }
 
-        private static string[] ApproximateDictSize(ITextItem item, out int numberOfWords, out Dictionary<string, int> ratios)
+        private static string[] ApproximateDictSize(ITextItem item, out int numberOfWords,
+            out Dictionary<string, int> ratios)
         {
             var strings = item.ParsedStrings;
             numberOfWords = strings.Count();
             // arbitrarily chosen, to not build list entirely from the start.
             int repeatingWords = 3;
-            ratios = new(numberOfWords / repeatingWords);
+            ratios = new Dictionary<string, int>(numberOfWords / repeatingWords);
             return strings;
         }
 
-        private void PupulateRatioDictionary(int numberOfWords, string[] strings, Dictionary<string, int> ratios, out int totalUniqueWords)
+        private void PupulateRatioDictionary(int numberOfWords, string[] strings, Dictionary<string, int> ratios,
+            out int totalUniqueWords)
         {
             totalUniqueWords = 0;
             for (int i = 0; i < numberOfWords; i++)
             {
-                if (string.IsNullOrWhiteSpace(strings[i]))
-                {
-                    continue;
-                }
+                if (string.IsNullOrWhiteSpace(strings[i])) continue;
 
                 if (ratios.ContainsKey(strings[i]))
                 {
@@ -51,7 +49,5 @@ namespace KnowledgeExtraction.WordCounting
                 totalUniqueWords++;
             }
         }
-
-
     }
 }

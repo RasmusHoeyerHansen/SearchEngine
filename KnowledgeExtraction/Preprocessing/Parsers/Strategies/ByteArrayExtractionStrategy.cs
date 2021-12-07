@@ -15,10 +15,8 @@ namespace KnowledgeExtraction.Preprocessing.Parsers.Strategies
             using (PdfReader reader = new(data))
             {
                 for (int i = 1; i <= reader.NumberOfPages; i++)
-                {
                     bob.Append(PdfTextExtractor.GetTextFromPage(reader, i,
                         new GlyphTextRenderListener(new LocationTextExtractionStrategy())));
-                }
 
                 title = reader.Info["Title"];
                 return new PdfArticle(bob.ToString().Split(" "), title);

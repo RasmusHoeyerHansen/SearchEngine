@@ -16,11 +16,11 @@ namespace KnowledgeExtraction.Common.Services
             BaseKnowledgeExtractor.ExtractKnowledge(extractResult);
         }
 
-        public PdfKnowledgeExtractionService(ITextItemFactory<Stream> factory,IBaseKnowledgeExtractor baseKnowledgeExtractor)
+        public PdfKnowledgeExtractionService(ITextItemFactory<Stream> factory,
+            IBaseKnowledgeExtractor baseKnowledgeExtractor)
         {
             Factory = factory;
             BaseKnowledgeExtractor = baseKnowledgeExtractor;
         }
-
     }
 }

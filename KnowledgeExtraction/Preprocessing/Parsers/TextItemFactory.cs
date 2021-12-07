@@ -8,7 +8,7 @@ using PdfDocument = KnowledgeExtraction.Preprocessing.Models.PdfDocument;
 
 namespace KnowledgeExtraction.Preprocessing.Parsers
 {
-    internal partial class TextItemFactory : ITextItemFactory<Models.PdfDocument>, ITextItemFactory<Stream>
+    internal partial class TextItemFactory : ITextItemFactory<PdfDocument>, ITextItemFactory<Stream>
     {
         public ITextItem? Extract(PdfDocument document)
         {
@@ -34,5 +34,4 @@ namespace KnowledgeExtraction.Preprocessing.Parsers
             return res ?? throw new PdfParsingException();
         }
     }
-
 }

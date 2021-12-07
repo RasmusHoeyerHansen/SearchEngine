@@ -19,17 +19,18 @@ namespace Website.Controllers
         {
             ExtractionService = extractionService;
         }
-        
 
 
-        [HttpGet, Route("/[controller]/")]
+        [HttpGet]
+        [Route("/[controller]/")]
         public IActionResult GetFile()
         {
             Console.WriteLine("HEREEE");
             return Ok("HEY");
         }
-        
-        [HttpPost, Route("/[controller]/Extract")]
+
+        [HttpPost]
+        [Route("/[controller]/Extract")]
         public IActionResult PostFile(IFormFile file)
         {
             IActionResult result = Ok();
@@ -48,7 +49,5 @@ namespace Website.Controllers
 
             return result;
         }
-
     }
-
 }

@@ -19,10 +19,10 @@ namespace ExtractorTests.KnowledgeExtraction.WordCountingTests
         [TestCase(4, "b", "a", "c", "d")]
         public void Test(int uniqueWords, params string[] inputStrings)
         {
-            ITextItem item = Substitute.For<ITextItem>();
+            var item = Substitute.For<ITextItem>();
             item.ParsedStrings.Returns(inputStrings);
-            WordCountingFactory factory = new WordCountingFactory();
-            var wordRatios = factory.ExtractKnowledge(item);
+            var factory = new WordCountingFactory();
+            IEnumerable<IWordCount> wordRatios = factory.ExtractKnowledge(item);
             Assert.AreEqual(uniqueWords, wordRatios.Count());
         }
 
@@ -30,8 +30,8 @@ namespace ExtractorTests.KnowledgeExtraction.WordCountingTests
         public void ExecutesStrategyCorrectly_GivesCallToStrategy()
         {
             List<string> strings = new() {"string1", "string2"};
-            WordCountingFactory factory = new WordCountingFactory();
-            ITextItem item = Substitute.For<ITextItem>();
+            var factory = new WordCountingFactory();
+            var item = Substitute.For<ITextItem>();
             IMediaItemProcessingStrategy<WordCount> strategy =
                 Substitute.For<IMediaItemProcessingStrategy<WordCount>>();
             item.ParsedStrings.Returns(strings.ToArray());

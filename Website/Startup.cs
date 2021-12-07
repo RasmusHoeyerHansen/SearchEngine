@@ -25,10 +25,7 @@ namespace Website
             DependencyInjection.AddKnowledgeExtraction(services);
             services.AddControllersWithViews();
             services.AddSingleton(new FileController(null));
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
-            });
+            services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "My API", Version = "v1"}); });
             // In production, the React files will be served from this directory
         }
 
@@ -52,8 +49,8 @@ namespace Website
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller}/{action=Index}/{id?}");
+                    "default",
+                    "{controller}/{action=Index}/{id?}");
             });
 
 

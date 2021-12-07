@@ -17,7 +17,7 @@ namespace ExtractorTests.KnowledgeExtraction.PreprocessingTests.Parsers.Strategi
 
             Assert.Throws<PdfParsingException>(() => strategy.TryExtract(null, out _));
         }
-        
+
         [Test]
         public void TryExtract_PdfWithNoText_ThrowsPdfParsingException()
         {
@@ -25,7 +25,7 @@ namespace ExtractorTests.KnowledgeExtraction.PreprocessingTests.Parsers.Strategi
 
             Assert.Throws<PdfParsingException>(() => strategy.TryExtract(CreateStream(), out _));
         }
-        
+
         [Test]
         public void TryExtract_PdfWithNullPath_ThrowsPdfParsingException()
         {
@@ -33,7 +33,7 @@ namespace ExtractorTests.KnowledgeExtraction.PreprocessingTests.Parsers.Strategi
 
             Assert.Throws<PdfParsingException>(() => strategy.TryExtract(CreateStream(), out _));
         }
-        
+
         [Test]
         public void TryExtract_PdfWithEmptyPath_ThrowsPdfParsingException()
         {
@@ -48,7 +48,7 @@ namespace ExtractorTests.KnowledgeExtraction.PreprocessingTests.Parsers.Strategi
             string content = "Hello World from a Fake stream";
             string fileName = "test.pdf";
             Stream ms = new MemoryStream();
-            StreamWriter writer = new StreamWriter(ms);
+            var writer = new StreamWriter(ms);
             writer.Write(content);
             writer.Flush();
             ms.Position = 0;

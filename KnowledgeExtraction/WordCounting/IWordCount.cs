@@ -3,6 +3,6 @@
     public interface IWordCount
     {
         public string Word { get; }
-        public int Occurances { get;}
+        public int Occurances { get; }
     }
 }

@@ -5,7 +5,8 @@ namespace KnowledgeExtraction.Common.Exceptions
 {
     public class PdfParsingException : Exception
     {
-        public PdfParsingException([NotNull]string message = "Could not parse file."):base($"{message}")
-        {}
+        public PdfParsingException([NotNull] string message = "Could not parse file.") : base($"{message}")
+        {
+        }
     }
 }

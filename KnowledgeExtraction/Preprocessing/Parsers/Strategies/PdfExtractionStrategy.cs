@@ -9,7 +9,7 @@ using PdfDocument = KnowledgeExtraction.Preprocessing.Models.PdfDocument;
 
 namespace KnowledgeExtraction.Preprocessing.Parsers.Strategies
 {
-    internal class PdfExtractionStrategy 
+    internal class PdfExtractionStrategy
         : DocumentTextReader, ITryExtractionStrategy<PdfDocument, PdfArticle>
     {
         public virtual PdfArticle? ExecuteExtraction(PdfDocument data)
@@ -18,7 +18,7 @@ namespace KnowledgeExtraction.Preprocessing.Parsers.Strategies
             string[]? strings = text.Split(" ");
             return new PdfArticle(text.Split(" "), DocumentTitle);
         }
-        
+
         public virtual PdfArticle? ExecuteExtraction(string path)
         {
             string? text = ReadText(path);
@@ -36,7 +36,7 @@ namespace KnowledgeExtraction.Preprocessing.Parsers.Strategies
             catch (IOException e)
             {
                 result = default;
-                throw new PdfParsingException(e.Message);   
+                throw new PdfParsingException(e.Message);
             }
             catch (NullReferenceException)
             {

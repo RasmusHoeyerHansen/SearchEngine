@@ -12,15 +12,14 @@ namespace KnowledgeExtraction
         public static IServiceCollection AddKnowledgeExtraction(IServiceCollection services)
         {
             services.AddTransient(
-                typeof(ITextItemFactory<Stream>), 
+                typeof(ITextItemFactory<Stream>),
                 typeof(TextItemFactory));
-            
+
             services.AddTransient(
-                typeof(IBaseKnowledgeExtractor), 
+                typeof(IBaseKnowledgeExtractor),
                 typeof(WordCountingFactory));
 
             return services;
         }
     }
-
 }

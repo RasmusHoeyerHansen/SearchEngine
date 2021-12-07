@@ -2,6 +2,7 @@
 using Domain_models.Entities;
 using KnowledgeExtraction.Common;
 using Microsoft.EntityFrameworkCore;
+
 namespace Infrastructure.Persistence
 {
     internal class WordCountContext : DbContext, IWordRatioContext, IWordCountContext

@@ -4,5 +4,4 @@
     {
         public TOut? ExecuteExtraction(TIn data);
     }
-
 }

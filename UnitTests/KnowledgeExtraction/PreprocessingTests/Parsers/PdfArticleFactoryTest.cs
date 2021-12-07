@@ -10,7 +10,6 @@ namespace ExtractorTests.KnowledgeExtraction.PreprocessingTests.Parsers
 {
     public class PdfArticleFactoryTest : PdfCreator
     {
-        
         [SetUp]
         public void Setup()
         {
@@ -30,18 +29,18 @@ namespace ExtractorTests.KnowledgeExtraction.PreprocessingTests.Parsers
             Assert.AreEqual(expected.Count(), enumerable.Count());
             CollectionAssert.AreEqual(expected, enumerable, StringComparer.Ordinal);
         }
-        
+
         [Test]
         [TestCase("123 Hello there 123")]
         [TestCase("0 1 2 3")]
         [TestCase("æøå")]
         public void Parse_ReadFromFilePath_DoesNotThrow(string input)
         {
-            ITextItemFactory<PdfDocument>  pdfExtractor = new TextItemFactory();
-            PdfDocument document = CreateTestPDF(input);
-            Assert.DoesNotThrow( () => pdfExtractor.Extract(document));
+            ITextItemFactory<PdfDocument> pdfExtractor = new TextItemFactory();
+            var document = CreateTestPDF(input);
+            Assert.DoesNotThrow(() => pdfExtractor.Extract(document));
         }
-        
+
         [Test]
         [TestCase("123 Hello there 123")]
         [TestCase("0 1 2 3")]
@@ -49,7 +48,7 @@ namespace ExtractorTests.KnowledgeExtraction.PreprocessingTests.Parsers
         public void Parse_ReadFromFilePath_GivesTextFromFile(string input)
         {
             var pdfExtractor = new TextItemFactory();
-            PdfDocument document = CreateTestPDF(input);
+            var document = CreateTestPDF(input);
             IEnumerable<string> actual = pdfExtractor.Parse(document.Path)?.ParsedStrings;
             string[] expected = input.Split(" ");
 
@@ -58,17 +57,17 @@ namespace ExtractorTests.KnowledgeExtraction.PreprocessingTests.Parsers
             Assert.AreEqual(expected.Count(), enumerable.Count());
             CollectionAssert.AreEqual(expected, enumerable, StringComparer.Ordinal);
         }
-        
+
         [Test]
         public void Parse_ReturnsObjectWithAllFieldsSet()
         {
             var pdfExtractor = new TextItemFactory();
-            PdfDocument input = CreateTestPDF("string");
-            ITextItem result = pdfExtractor.Extract(input);
+            var input = CreateTestPDF("string");
+            var result = pdfExtractor.Extract(input);
             Assert.IsNotNull(result);
             Assert.IsNotNull(result.Title);
             Assert.IsNotNull(result.ParsedStrings);
-            
+
             Assert.IsNotEmpty(result.Title);
             Assert.IsNotEmpty(result.ParsedStrings);
         }
