@@ -20,15 +20,6 @@ namespace Website.Controllers
             ExtractionService = extractionService;
         }
 
-
-        [HttpGet]
-        [Route("/[controller]/")]
-        public IActionResult GetFile()
-        {
-            Console.WriteLine("HEREEE");
-            return Ok("HEY");
-        }
-
         [HttpPost]
         [Route("/[controller]/Extract")]
         public IActionResult PostFile(IFormFile file)
