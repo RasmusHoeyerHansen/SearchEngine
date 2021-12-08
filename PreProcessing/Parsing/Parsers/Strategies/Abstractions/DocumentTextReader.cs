@@ -2,7 +2,7 @@
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
 
-namespace PreProcessingTest.Parsing.Parsers.Strategies.Abstractions
+namespace PreProcessing.Parsing.Parsers.Strategies.Abstractions
 {
     internal abstract class DocumentTextReader
     {

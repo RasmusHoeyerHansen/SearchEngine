@@ -6,8 +6,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NSubstitute;
 using NUnit.Framework;
-using PreProcessingTest.Common.Exceptions;
-using PreProcessingTest.Common.Services;
+using PreProcessing.Common.Exceptions;
+using PreProcessing.Common.Services;
 using Website.Controllers;
 
 namespace WebsiteTests
@@ -22,10 +22,10 @@ namespace WebsiteTests
         [Test]
         public void Post_CorrectParse_Gives_OkResult()
         {
-            IPreProcessingService<Stream> extractor = Substitute.For<IPreProcessingService<Stream>>();
+            IKnowledgeFromTextService<Stream> extractor = Substitute.For<IKnowledgeFromTextService<Stream>>();
             var controller = new FileController(extractor);
             var form = CreateFileMock();
-            extractor.PreprocessKnowledge(form.OpenReadStream());
+            extractor.ExtractKnowledge(form.OpenReadStream());
 
             var response = controller.PostFile(form);
             Assert.IsInstanceOf<OkResult>(response);
@@ -34,7 +34,7 @@ namespace WebsiteTests
         [Test]
         public void Post_IncorrectForm_Gives_BadRequest()
         {
-            IPreProcessingService<Stream> extractor = Substitute.For<IPreProcessingService<Stream>>();
+            IKnowledgeFromTextService<Stream> extractor = Substitute.For<IKnowledgeFromTextService<Stream>>();
             var controller = new FileController(extractor);
             var form = CreateFailingFileMock();
 
@@ -45,9 +45,9 @@ namespace WebsiteTests
         [Test]
         public void Post_FailedParse_Gives_BadRequestObjectResult()
         {
-            IPreProcessingService<Stream> extractor = Substitute.For<IPreProcessingService<Stream>>();
+            IKnowledgeFromTextService<Stream> extractor = Substitute.For<IKnowledgeFromTextService<Stream>>();
             var file = CreateFileMock();
-            extractor.When(x => x.PreprocessKnowledge(file.OpenReadStream()))
+            extractor.When(x => x.ExtractKnowledge(file.OpenReadStream()))
                 .Do(x => throw new PdfParsingException());
 
             var controller = new FileController(extractor);

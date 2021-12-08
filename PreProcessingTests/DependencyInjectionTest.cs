@@ -2,8 +2,8 @@
 using System.IO;
 using Microsoft.Extensions.DependencyInjection;
 using NUnit.Framework;
-using PreProcessingTest;
-using PreProcessingTest.Parsing.Parsers;
+using PreProcessing;
+using PreProcessing.Parsing.Parsers;
 
 namespace PreProcessingTests
 {

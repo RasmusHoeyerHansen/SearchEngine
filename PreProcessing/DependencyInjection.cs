@@ -1,10 +1,10 @@
 ﻿using System.IO;
 using Microsoft.Extensions.DependencyInjection;
-using PreProcessingTest.Parsing.Parsers;
+using PreProcessing.Parsing.Parsers;
 
-namespace PreProcessingTest
+namespace PreProcessing
 {
-    public class DependencyInjection
+    public static class DependencyInjection
     {
         public static IServiceCollection AddPreProcessing(IServiceCollection services)
         {

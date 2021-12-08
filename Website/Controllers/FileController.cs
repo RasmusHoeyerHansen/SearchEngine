@@ -2,8 +2,8 @@
 using System.IO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using PreProcessingTest.Common.Exceptions;
-using PreProcessingTest.Common.Services;
+using PreProcessing.Common.Exceptions;
+using PreProcessing.Common.Services;
 
 namespace Website.Controllers
 {
@@ -11,11 +11,11 @@ namespace Website.Controllers
     [Route("[controller]")]
     public class FileController : ControllerBase
     {
-        private readonly IPreProcessingService<Stream> ExtractionService;
+        private readonly IKnowledgeFromTextService<Stream> ExtractionFromTextService;
 
-        public FileController(IPreProcessingService<Stream> extractionService)
+        public FileController(IKnowledgeFromTextService<Stream> extractionFromTextService)
         {
-            ExtractionService = extractionService;
+            ExtractionFromTextService = extractionFromTextService;
         }
 
         [HttpPost]
@@ -25,7 +25,7 @@ namespace Website.Controllers
             IActionResult result = Ok();
             try
             {
-                ExtractionService.PreprocessKnowledge(file.OpenReadStream());
+                ExtractionFromTextService.ExtractKnowledge(file.OpenReadStream());
             }
             catch (PdfParsingException e)
             {

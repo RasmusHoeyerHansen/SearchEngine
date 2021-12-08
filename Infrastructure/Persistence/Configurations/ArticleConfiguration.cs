@@ -1,9 +1,8 @@
 ﻿using Domain_models.Entities;
-using KnowledgeExtraction.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Infrastructure.Persistence.DataAccess.Configurations
+namespace Infrastructure.Persistence.Configurations
 {
     public class ArticleConfiguration : IEntityTypeConfiguration<Article>
     {

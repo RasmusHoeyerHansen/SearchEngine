@@ -3,7 +3,7 @@ using Domain_models.Entities;
 using KnowledgeExtraction.Common.Services;
 using Microsoft.Extensions.DependencyInjection;
 using KnowledgeExtraction.WordCounting;
-using PreProcessingTest.Parsing.Parsers;
+using PreProcessing.Common.Services;
 
 namespace KnowledgeExtraction
 {
@@ -14,6 +14,8 @@ namespace KnowledgeExtraction
             services.AddTransient(
                 typeof(IWordCounter),
                 typeof(WordCountingFactory));
+
+            services.AddTransient(typeof(IKnowledgeFromTextService<Stream>), typeof(TextWordCountingFromTextService));
 
             return services;
         }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace PreProcessingTest.Common.Exceptions
+namespace PreProcessing.Common.Exceptions
 {
     public class PdfParsingException : Exception
     {

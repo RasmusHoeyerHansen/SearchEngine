@@ -1,4 +1,4 @@
-﻿namespace PreProcessingTest.Common
+﻿namespace PreProcessing.Common
 {
     public interface ITextItem
     {

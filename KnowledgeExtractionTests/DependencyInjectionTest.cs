@@ -1,6 +1,7 @@
 ﻿using KnowledgeExtraction.Common.Services;
 using Microsoft.Extensions.DependencyInjection;
 using NUnit.Framework;
+using PreProcessing;
 
 
 namespace KnowledgeExtractionTests
@@ -25,7 +26,7 @@ namespace KnowledgeExtractionTests
         [Test]
         public void CanRequest_IWordCounter_Service_DoesNotThrow()
         {
-            PreProcessingTest.DependencyInjection.AddPreProcessing(Services);
+            DependencyInjection.AddPreProcessing(Services);
             ServiceProvider provider = Services.BuildServiceProvider();
             Assert.DoesNotThrow(() => provider.GetRequiredService<IWordCounter>());
         }

@@ -1,12 +1,11 @@
 ﻿using System.IO;
-using PreProcessingTest.Common;
-using PreProcessingTest.Common.Exceptions;
-using PreProcessingTest.Parsing.Models;
-using PreProcessingTest.Parsing.Parsers.Strategies;
-using PreProcessingTest.Parsing.Parsers.Strategies.Abstractions;
-using PdfDocument = PreProcessingTest.Parsing.Models.PdfDocument;
+using PreProcessing.Common;
+using PreProcessing.Common.Exceptions;
+using PreProcessing.Parsing.Models;
+using PreProcessing.Parsing.Parsers.Strategies;
+using PreProcessing.Parsing.Parsers.Strategies.Abstractions;
 
-namespace PreProcessingTest.Parsing.Parsers
+namespace PreProcessing.Parsing.Parsers
 {
     internal partial class TextItemFactory : ITextItemFactory<Models.PdfDocument>, ITextItemFactory<Stream>
     {

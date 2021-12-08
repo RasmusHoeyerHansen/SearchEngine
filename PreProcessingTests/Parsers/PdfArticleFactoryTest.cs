@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
-using PreProcessingTest.Parsing.Parsers;
+using PreProcessing.Parsing.Parsers;
 
-namespace PreProcessingTest.Parsers
+namespace PreProcessingTests.Parsers
 {
     public class PdfArticleFactoryTest : PdfCreator
     {

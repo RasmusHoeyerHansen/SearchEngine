@@ -2,7 +2,7 @@ using Domain_models.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Infrastructure.Persistence.DataAccess.Configurations
+namespace Infrastructure.Persistence.Configurations
 {
     public class AuthorConfiguration : IEntityTypeConfiguration<Author>
     {

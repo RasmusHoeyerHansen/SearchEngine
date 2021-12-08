@@ -3,7 +3,7 @@ using System.Linq;
 using KnowledgeExtraction.WordCounting;
 using NSubstitute;
 using NUnit.Framework;
-using PreProcessingTest.Common;
+using PreProcessing.Common;
 
 namespace KnowledgeExtractionTests.WordCountingTests
 {
@@ -21,7 +21,7 @@ namespace KnowledgeExtractionTests.WordCountingTests
             var item = Substitute.For<ITextItem>();
             item.ParsedStrings.Returns(inputStrings);
             var factory = new WordCountingFactory();
-            IEnumerable<IWordCount> wordRatios = factory.ExtractKnowledge(item);
+            IEnumerable<IWordCount> wordRatios = factory.CountWords(item);
             Assert.AreEqual(uniqueWords, wordRatios.Count());
         }
 

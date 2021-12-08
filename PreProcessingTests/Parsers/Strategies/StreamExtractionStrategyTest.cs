@@ -1,11 +1,11 @@
 ﻿using System.IO;
 using NUnit.Framework;
-using PreProcessingTest.Common;
-using PreProcessingTest.Common.Exceptions;
-using PreProcessingTest.Parsing.Parsers.Strategies;
-using PreProcessingTest.Parsing.Parsers.Strategies.Abstractions;
+using PreProcessing.Common;
+using PreProcessing.Common.Exceptions;
+using PreProcessing.Parsing.Parsers.Strategies;
+using PreProcessing.Parsing.Parsers.Strategies.Abstractions;
 
-namespace PreProcessingTest.Parsers.Strategies
+namespace PreProcessingTests.Parsers.Strategies
 {
     public class StreamExtractionStrategyTest
     {
