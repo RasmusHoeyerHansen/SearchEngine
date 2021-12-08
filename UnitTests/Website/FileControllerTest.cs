@@ -1,14 +1,12 @@
 ﻿using System;
 using System.IO;
 using ExtractorTests.KnowledgeExtraction;
-using KnowledgeExtraction.Common.Exceptions;
-using KnowledgeExtraction.Common.Services;
-using KnowledgeExtraction.Preprocessing;
-using KnowledgeExtraction.Preprocessing.Parsers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NSubstitute;
 using NUnit.Framework;
+using PreProcessing.Common.Exceptions;
+using PreProcessing.Common.Services;
 using Website.Controllers;
 
 namespace ExtractorTests.Website

@@ -1,4 +1,4 @@
-﻿namespace KnowledgeExtraction.Common
+﻿namespace PreProcessing.Common
 {
     public interface ITextItem
     {

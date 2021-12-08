@@ -1,7 +1,6 @@
-﻿using System.Runtime.CompilerServices;
-using iTextSharp.text;
+﻿using iTextSharp.text;
 
-namespace KnowledgeExtraction.Preprocessing.Models
+namespace PreProcessing.Parsing.Models
 {
     internal class PdfDocument : Document
     {

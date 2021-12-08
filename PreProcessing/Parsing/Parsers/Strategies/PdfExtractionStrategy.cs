@@ -1,16 +1,15 @@
 ﻿using System;
 using System.IO;
 using iTextSharp.text.pdf;
-using iTextSharp.text.pdf.interfaces;
-using KnowledgeExtraction.Common.Exceptions;
-using KnowledgeExtraction.Preprocessing.Models;
-using KnowledgeExtraction.Preprocessing.Parsers.Strategies.Abstractions;
-using PdfDocument = KnowledgeExtraction.Preprocessing.Models.PdfDocument;
+using PreProcessing.Common.Exceptions;
+using PreProcessing.Parsing.Models;
+using PreProcessing.Parsing.Parsers.Strategies.Abstractions;
+using PdfDocument = PreProcessing.Parsing.Models.PdfDocument;
 
-namespace KnowledgeExtraction.Preprocessing.Parsers.Strategies
+namespace PreProcessing.Parsing.Parsers.Strategies
 {
     internal class PdfExtractionStrategy
-        : DocumentTextReader, ITryExtractionStrategy<PdfDocument, PdfArticle>
+        : DocumentTextReader, ITryExtractionStrategy<Models.PdfDocument, PdfArticle>
     {
         public virtual PdfArticle? ExecuteExtraction(PdfDocument data)
         {

@@ -17,6 +17,7 @@
 
     <ItemGroup>
         <ProjectReference Include="..\KnowledgeExtraction\KnowledgeExtraction.csproj"/>
+        <ProjectReference Include="..\PreProcessing\PreProcessing.csproj"/>
     </ItemGroup>
 
 

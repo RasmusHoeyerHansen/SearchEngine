@@ -7,25 +7,26 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Domain\Domain.csproj"/>
+        <ProjectReference Include="..\Domain\Domain.csproj" />
+        <ProjectReference Include="..\PreProcessing\PreProcessing.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="iTextSharp" Version="5.5.13.2"/>
-        <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0"/>
-        <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5"/>
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0"/>
-        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0"/>
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0"/>
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0"/>
-        <PackageReference Include="Microsoft.Extensions.Primitives" Version="6.0.0"/>
-        <PackageReference Include="ServiceCollection.RegisterOption" Version="1.0.3"/>
-        <PackageReference Include="ServiceCollectionBuilder" Version="0.1.2-beta"/>
-        <PackageReference Include="ServiceCollectionExtensions" Version="1.0.2"/>
+        <PackageReference Include="iTextSharp" Version="5.5.13.2" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Primitives" Version="6.0.0" />
+        <PackageReference Include="ServiceCollection.RegisterOption" Version="1.0.3" />
+        <PackageReference Include="ServiceCollectionBuilder" Version="0.1.2-beta" />
+        <PackageReference Include="ServiceCollectionExtensions" Version="1.0.2" />
     </ItemGroup>
 
     <ItemGroup>
-        <InternalsVisibleTo Include="$(AssemblyName).Tests"/>
+        <InternalsVisibleTo Include="$(AssemblyName).Tests" />
     </ItemGroup>
 
     <ItemGroup>
@@ -33,12 +34,13 @@
             <_Parameter1>UnitTests</_Parameter1>
         </AssemblyAttribute>
         <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-            <_Parameter1>Website</_Parameter1>
-        </AssemblyAttribute>
-        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
             <!-- Mocking framework -->
             <_Parameter1>DynamicProxyGenAssembly2</_Parameter1>
         </AssemblyAttribute>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Common\Exceptions" />
     </ItemGroup>
 
 </Project>

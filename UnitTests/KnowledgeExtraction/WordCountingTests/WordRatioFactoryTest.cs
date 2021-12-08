@@ -5,6 +5,7 @@ using KnowledgeExtraction.Common;
 using KnowledgeExtraction.WordCounting;
 using NSubstitute;
 using NUnit.Framework;
+using PreProcessing.Common;
 
 namespace ExtractorTests.KnowledgeExtraction.WordCountingTests
 {

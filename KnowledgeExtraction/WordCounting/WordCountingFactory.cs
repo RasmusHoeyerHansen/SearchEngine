@@ -2,10 +2,11 @@
 using Domain_models.Entities;
 using KnowledgeExtraction.Common;
 using KnowledgeExtraction.Common.Services;
+using PreProcessing.Common;
 
 namespace KnowledgeExtraction.WordCounting
 {
-    internal class WordCountingFactory : IBaseKnowledgeExtractor, IMediaItemProcessor<IWordCount>
+    internal class WordCountingFactory : IWordCounter, IMediaItemProcessor<IWordCount>
     {
         public IEnumerable<IWordCount> ExtractKnowledge(ITextItem textItem)
         {

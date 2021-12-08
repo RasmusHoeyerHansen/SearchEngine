@@ -244,3 +244,4 @@ ClientBin/
 orleans.codegen.cs
 # JetBrains Rider
 *.sln.iml
+SearchEngine.sln.DotSettings.user

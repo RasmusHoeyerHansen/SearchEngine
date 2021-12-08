@@ -1,8 +1,7 @@
-﻿using KnowledgeExtraction.Common.Exceptions;
-using KnowledgeExtraction.Preprocessing;
-using KnowledgeExtraction.Preprocessing.Models;
-using KnowledgeExtraction.Preprocessing.Parsers.Strategies;
-using NUnit.Framework;
+﻿using NUnit.Framework;
+using PreProcessing.Common.Exceptions;
+using PreProcessing.Parsing.Models;
+using PreProcessing.Parsing.Parsers.Strategies;
 
 namespace ExtractorTests.KnowledgeExtraction.PreprocessingTests.Parsers.Strategies
 {

@@ -1,10 +1,9 @@
 ﻿using System.IO;
-using KnowledgeExtraction.Common;
-using KnowledgeExtraction.Common.Exceptions;
-using KnowledgeExtraction.Preprocessing;
-using KnowledgeExtraction.Preprocessing.Parsers.Strategies;
-using KnowledgeExtraction.Preprocessing.Parsers.Strategies.Abstractions;
 using NUnit.Framework;
+using PreProcessing.Common;
+using PreProcessing.Common.Exceptions;
+using PreProcessing.Parsing.Parsers.Strategies;
+using PreProcessing.Parsing.Parsers.Strategies.Abstractions;
 
 namespace ExtractorTests.KnowledgeExtraction.PreprocessingTests.Parsers.Strategies
 {

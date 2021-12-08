@@ -1,26 +1,28 @@
 ﻿using System.Collections;
 using System.IO;
 using Domain_models.Entities;
-using KnowledgeExtraction.Preprocessing.Parsers;
+using PreProcessing.Common;
+using PreProcessing.Common.Services;
+using PreProcessing.Parsing.Parsers;
 
 namespace KnowledgeExtraction.Common.Services
 {
     public class PdfKnowledgeExtractionService : IPreProcessingService<Stream>
     {
         private readonly ITextItemFactory<Stream> Factory;
-        private readonly IBaseKnowledgeExtractor BaseKnowledgeExtractor;
+        private readonly IWordCounter WordCounter;
 
         public void PreprocessKnowledge(Stream baseFormat)
         {
             ITextItem extractResult = Factory.Extract(baseFormat);
-            BaseKnowledgeExtractor.ExtractKnowledge(extractResult);
+            WordCounter.ExtractKnowledge(extractResult);
         }
 
         public PdfKnowledgeExtractionService(ITextItemFactory<Stream> factory,
-            IBaseKnowledgeExtractor baseKnowledgeExtractor)
+            IWordCounter wordCounter)
         {
             Factory = factory;
-            BaseKnowledgeExtractor = baseKnowledgeExtractor;
+            WordCounter = wordCounter;
         }
     }
 }

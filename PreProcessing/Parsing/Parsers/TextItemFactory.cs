@@ -1,14 +1,14 @@
 ﻿using System.IO;
-using KnowledgeExtraction.Common;
-using KnowledgeExtraction.Common.Exceptions;
-using KnowledgeExtraction.Preprocessing.Models;
-using KnowledgeExtraction.Preprocessing.Parsers.Strategies;
-using KnowledgeExtraction.Preprocessing.Parsers.Strategies.Abstractions;
-using PdfDocument = KnowledgeExtraction.Preprocessing.Models.PdfDocument;
+using PreProcessing.Common;
+using PreProcessing.Common.Exceptions;
+using PreProcessing.Parsing.Models;
+using PreProcessing.Parsing.Parsers.Strategies;
+using PreProcessing.Parsing.Parsers.Strategies.Abstractions;
+using PdfDocument = PreProcessing.Parsing.Models.PdfDocument;
 
-namespace KnowledgeExtraction.Preprocessing.Parsers
+namespace PreProcessing.Parsing.Parsers
 {
-    internal partial class TextItemFactory : ITextItemFactory<PdfDocument>, ITextItemFactory<Stream>
+    internal partial class TextItemFactory : ITextItemFactory<Models.PdfDocument>, ITextItemFactory<Stream>
     {
         public ITextItem? Extract(PdfDocument document)
         {

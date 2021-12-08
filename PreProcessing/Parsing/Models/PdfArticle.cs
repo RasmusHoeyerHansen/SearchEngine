@@ -1,6 +1,6 @@
-﻿using KnowledgeExtraction.Common;
+﻿using PreProcessing.Common;
 
-namespace KnowledgeExtraction.Preprocessing.Models
+namespace PreProcessing.Parsing.Models
 {
     internal class PdfArticle : ITextItem
     {

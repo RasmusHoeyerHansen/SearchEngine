@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using KnowledgeExtraction.Common;
-using KnowledgeExtraction.Preprocessing.Models;
-using KnowledgeExtraction.Preprocessing.Parsers;
 using NUnit.Framework;
+using PreProcessing.Parsing.Models;
+using PreProcessing.Parsing.Parsers;
 
 namespace ExtractorTests.KnowledgeExtraction.PreprocessingTests.Parsers
 {

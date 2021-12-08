@@ -11,17 +11,18 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4"/>
-        <PackageReference Include="NSubstitute" Version="4.2.2"/>
-        <PackageReference Include="NUnit" Version="3.13.1"/>
-        <PackageReference Include="NUnit3TestAdapter" Version="3.17.0"/>
-        <PackageReference Include="coverlet.collector" Version="3.0.2"/>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+        <PackageReference Include="NSubstitute" Version="4.2.2" />
+        <PackageReference Include="NUnit" Version="3.13.1" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+        <PackageReference Include="coverlet.collector" Version="3.0.2" />
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Domain\Domain.csproj"/>
-        <ProjectReference Include="..\KnowledgeExtraction\KnowledgeExtraction.csproj"/>
-        <ProjectReference Include="..\Website\Website.csproj"/>
+        <ProjectReference Include="..\Domain\Domain.csproj" />
+        <ProjectReference Include="..\PreProcessing\PreProcessing.csproj" />
+        <ProjectReference Include="..\KnowledgeExtraction\KnowledgeExtraction.csproj" />
+        <ProjectReference Include="..\Website\Website.csproj" />
     </ItemGroup>
 
 </Project>

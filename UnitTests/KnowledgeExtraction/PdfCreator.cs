@@ -5,7 +5,7 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
 using Path = System.IO.Path;
-using PdfDocument = KnowledgeExtraction.Preprocessing.Models.PdfDocument;
+using PdfDocument = PreProcessing.Parsing.Models.PdfDocument;
 
 namespace ExtractorTests.KnowledgeExtraction
 {

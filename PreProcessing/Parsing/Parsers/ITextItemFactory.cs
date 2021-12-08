@@ -1,6 +1,6 @@
-﻿using KnowledgeExtraction.Common;
+﻿using PreProcessing.Common;
 
-namespace KnowledgeExtraction.Preprocessing.Parsers
+namespace PreProcessing.Parsing.Parsers
 {
     public interface ITextItemFactory<in TIn>
     {

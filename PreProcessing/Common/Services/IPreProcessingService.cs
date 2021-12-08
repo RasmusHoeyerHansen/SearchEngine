@@ -1,4 +1,4 @@
-﻿namespace KnowledgeExtraction.Common.Services
+﻿namespace PreProcessing.Common.Services
 {
     public interface IPreProcessingService<in TIn>
     {
