@@ -1,8 +1,8 @@
 ﻿using System.IO;
 using Microsoft.Extensions.DependencyInjection;
-using PreProcessing.Parsing.Parsers;
+using PreProcessingTest.Parsing.Parsers;
 
-namespace PreProcessing
+namespace PreProcessingTest
 {
     public class DependencyInjection
     {

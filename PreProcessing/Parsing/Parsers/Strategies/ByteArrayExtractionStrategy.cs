@@ -1,10 +1,10 @@
 ﻿using System.Text;
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
-using PreProcessing.Parsing.Models;
-using PreProcessing.Parsing.Parsers.Strategies.Abstractions;
+using PreProcessingTest.Parsing.Models;
+using PreProcessingTest.Parsing.Parsers.Strategies.Abstractions;
 
-namespace PreProcessing.Parsing.Parsers.Strategies
+namespace PreProcessingTest.Parsing.Parsers.Strategies
 {
     internal class ByteArrayExtractionStrategy : IExtractionStrategy<byte[], PdfArticle>
     {

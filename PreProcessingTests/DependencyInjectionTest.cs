@@ -1,9 +1,11 @@
-﻿using KnowledgeExtraction.Common.Services;
+﻿
+using System.IO;
 using Microsoft.Extensions.DependencyInjection;
 using NUnit.Framework;
+using PreProcessingTest;
+using PreProcessingTest.Parsing.Parsers;
 
-
-namespace KnowledgeExtractionTests
+namespace PreProcessingTests
 {
     public class DependencyInjectionTest
     {
@@ -13,7 +15,7 @@ namespace KnowledgeExtractionTests
         public void SetUp()
         {
             var services = new Microsoft.Extensions.DependencyInjection.ServiceCollection();
-            this.Services = KnowledgeExtraction.DependencyInjection.AddKnowledgeExtraction(services);
+            this.Services = DependencyInjection.AddPreProcessing(services);
         }
 
         [TearDown]
@@ -21,13 +23,12 @@ namespace KnowledgeExtractionTests
         {
             Services = null;
         }
-        
         [Test]
         public void CanRequest_IWordCounter_Service_DoesNotThrow()
         {
-            PreProcessingTest.DependencyInjection.AddPreProcessing(Services);
+            DependencyInjection.AddPreProcessing(Services);
             ServiceProvider provider = Services.BuildServiceProvider();
-            Assert.DoesNotThrow(() => provider.GetRequiredService<IWordCounter>());
+            Assert.DoesNotThrow(() => provider.GetRequiredService<ITextItemFactory<Stream>>());
         }
     }
 }

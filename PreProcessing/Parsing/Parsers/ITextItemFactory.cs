@@ -1,6 +1,6 @@
-﻿using PreProcessing.Common;
+﻿using PreProcessingTest.Common;
 
-namespace PreProcessing.Parsing.Parsers
+namespace PreProcessingTest.Parsing.Parsers
 {
     public interface ITextItemFactory<in TIn>
     {

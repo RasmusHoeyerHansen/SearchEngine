@@ -1,4 +1,4 @@
-﻿namespace PreProcessing.Common.Services
+﻿namespace PreProcessingTest.Common.Services
 {
     public interface IPreProcessingService<in TIn>
     {

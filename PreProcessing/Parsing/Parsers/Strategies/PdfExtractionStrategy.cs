@@ -1,17 +1,17 @@
 ﻿using System;
 using System.IO;
 using iTextSharp.text.pdf;
-using PreProcessing.Common.Exceptions;
-using PreProcessing.Parsing.Models;
-using PreProcessing.Parsing.Parsers.Strategies.Abstractions;
-using PdfDocument = PreProcessing.Parsing.Models.PdfDocument;
+using PreProcessingTest.Common.Exceptions;
+using PreProcessingTest.Parsing.Models;
+using PreProcessingTest.Parsing.Parsers.Strategies.Abstractions;
+using PdfDocument = PreProcessingTest.Parsing.Models.PdfDocument;
 
-namespace PreProcessing.Parsing.Parsers.Strategies
+namespace PreProcessingTest.Parsing.Parsers.Strategies
 {
     internal class PdfExtractionStrategy
         : DocumentTextReader, ITryExtractionStrategy<Models.PdfDocument, PdfArticle>
     {
-        public virtual PdfArticle? ExecuteExtraction(PdfDocument data)
+        public virtual PdfArticle? ExecuteExtraction(Models.PdfDocument data)
         {
             string? text = ReadText(data.Path);
             string[]? strings = text.Split(" ");
@@ -25,7 +25,7 @@ namespace PreProcessing.Parsing.Parsers.Strategies
             return new PdfArticle(text.Split(" "), DocumentTitle);
         }
 
-        public bool TryExtract(PdfDocument documentStream, out PdfArticle? result)
+        public bool TryExtract(Models.PdfDocument documentStream, out PdfArticle? result)
         {
             try
             {

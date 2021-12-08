@@ -1,22 +1,22 @@
 ﻿using System.IO;
-using PreProcessing.Common;
-using PreProcessing.Common.Exceptions;
-using PreProcessing.Parsing.Models;
-using PreProcessing.Parsing.Parsers.Strategies;
-using PreProcessing.Parsing.Parsers.Strategies.Abstractions;
-using PdfDocument = PreProcessing.Parsing.Models.PdfDocument;
+using PreProcessingTest.Common;
+using PreProcessingTest.Common.Exceptions;
+using PreProcessingTest.Parsing.Models;
+using PreProcessingTest.Parsing.Parsers.Strategies;
+using PreProcessingTest.Parsing.Parsers.Strategies.Abstractions;
+using PdfDocument = PreProcessingTest.Parsing.Models.PdfDocument;
 
-namespace PreProcessing.Parsing.Parsers
+namespace PreProcessingTest.Parsing.Parsers
 {
     internal partial class TextItemFactory : ITextItemFactory<Models.PdfDocument>, ITextItemFactory<Stream>
     {
-        public ITextItem? Extract(PdfDocument document)
+        public ITextItem? Extract(Models.PdfDocument document)
         {
             var res = Parse(document, new PdfExtractionStrategy());
             return res ?? throw new PdfParsingException();
         }
 
-        private PdfArticle? Parse(PdfDocument document, IExtractionStrategy<PdfDocument, PdfArticle> strategy)
+        private PdfArticle? Parse(Models.PdfDocument document, IExtractionStrategy<Models.PdfDocument, PdfArticle> strategy)
         {
             var res = strategy.ExecuteExtraction(document);
             return res ?? throw new PdfParsingException();

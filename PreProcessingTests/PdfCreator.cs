@@ -5,15 +5,15 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
 using Path = System.IO.Path;
-using PdfDocument = PreProcessing.Parsing.Models.PdfDocument;
+using PdfDocument = PreProcessingTest.Parsing.Models.PdfDocument;
 
-namespace ExtractorTests.KnowledgeExtractionTest
+namespace PreProcessingTest
 {
     public abstract class PdfCreator
     {
-        internal virtual PdfDocument CreateTestPDF(string FullPathToFile, string text)
+        internal virtual Parsing.Models.PdfDocument CreateTestPDF(string FullPathToFile, string text)
         {
-            var pdfDocument = new PdfDocument(FullPathToFile);
+            var pdfDocument = new Parsing.Models.PdfDocument(FullPathToFile);
             PdfWriter.GetInstance(pdfDocument,
                 new FileStream(FullPathToFile, FileMode.Create));
             pdfDocument.Open();
@@ -25,11 +25,11 @@ namespace ExtractorTests.KnowledgeExtractionTest
         }
 
 
-        internal virtual PdfDocument CreateTestPDF(string text)
+        internal virtual Parsing.Models.PdfDocument CreateTestPDF(string text)
         {
             string path = @Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar + "test.pdf";
 
-            var pdfDocument = new PdfDocument(path);
+            var pdfDocument = new Parsing.Models.PdfDocument(path);
             PdfWriter.GetInstance(pdfDocument,
                 new FileStream(path, FileMode.Create));
 

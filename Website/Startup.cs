@@ -21,7 +21,7 @@ namespace Website
         public void ConfigureServices(IServiceCollection services)
         {
             KnowledgeExtraction.DependencyInjection.AddKnowledgeExtraction(services);
-            PreProcessing.DependencyInjection.AddPreProcessing(services);
+            PreProcessingTest.DependencyInjection.AddPreProcessing(services);
             services.AddControllersWithViews();
             services.AddSingleton(new FileController(null));
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "My API", Version = "v1"}); });

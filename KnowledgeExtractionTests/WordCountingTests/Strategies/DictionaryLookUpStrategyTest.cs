@@ -3,7 +3,7 @@ using System.Linq;
 using KnowledgeExtraction.WordCounting;
 using NSubstitute;
 using NUnit.Framework;
-using PreProcessing.Common;
+using PreProcessingTest.Common;
 
 namespace KnowledgeExtractionTests.WordCountingTests.Strategies
 {

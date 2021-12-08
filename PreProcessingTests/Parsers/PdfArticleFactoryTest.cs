@@ -1,13 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using ExtractorTests.KnowledgeExtractionTest;
-using iTextSharp.text.pdf;
 using NUnit.Framework;
-using PreProcessing.Parsing.Models;
-using PreProcessing.Parsing.Parsers;
+using PreProcessingTest.Parsing.Parsers;
 
-namespace ExtractorTests.PreProcessingTests.Parsers
+namespace PreProcessingTest.Parsers
 {
     public class PdfArticleFactoryTest : PdfCreator
     {

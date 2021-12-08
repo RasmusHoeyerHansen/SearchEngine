@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.IO;
 using Domain_models.Entities;
-using PreProcessing.Common;
-using PreProcessing.Common.Services;
-using PreProcessing.Parsing.Parsers;
+using PreProcessingTest.Common;
+using PreProcessingTest.Common.Services;
+using PreProcessingTest.Parsing.Parsers;
 
 namespace KnowledgeExtraction.Common.Services
 {

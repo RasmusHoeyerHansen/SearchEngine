@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Domain_models.Entities;
 using KnowledgeExtraction.WordCounting;
-using PreProcessing.Common;
+using PreProcessingTest.Common;
 
 namespace KnowledgeExtraction.Common.Services
 {

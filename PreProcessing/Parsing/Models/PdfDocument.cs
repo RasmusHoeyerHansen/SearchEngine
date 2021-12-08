@@ -1,6 +1,6 @@
 ﻿using iTextSharp.text;
 
-namespace PreProcessing.Parsing.Models
+namespace PreProcessingTest.Parsing.Models
 {
     internal class PdfDocument : Document
     {

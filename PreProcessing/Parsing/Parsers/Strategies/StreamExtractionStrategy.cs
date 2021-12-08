@@ -3,12 +3,12 @@ using System.IO;
 using System.Text;
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
-using PreProcessing.Common;
-using PreProcessing.Common.Exceptions;
-using PreProcessing.Parsing.Models;
-using PreProcessing.Parsing.Parsers.Strategies.Abstractions;
+using PreProcessingTest.Common;
+using PreProcessingTest.Common.Exceptions;
+using PreProcessingTest.Parsing.Models;
+using PreProcessingTest.Parsing.Parsers.Strategies.Abstractions;
 
-namespace PreProcessing.Parsing.Parsers.Strategies
+namespace PreProcessingTest.Parsing.Parsers.Strategies
 {
     internal class StreamExtractionStrategy : ITryExtractionStrategy<Stream, ITextItem>
     {

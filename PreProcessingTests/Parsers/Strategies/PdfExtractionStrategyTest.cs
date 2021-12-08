@@ -1,9 +1,9 @@
 ﻿using NUnit.Framework;
-using PreProcessing.Common.Exceptions;
-using PreProcessing.Parsing.Models;
-using PreProcessing.Parsing.Parsers.Strategies;
+using PreProcessingTest.Common.Exceptions;
+using PreProcessingTest.Parsing.Models;
+using PreProcessingTest.Parsing.Parsers.Strategies;
 
-namespace ExtractorTests.PreProcessingTests.Parsers.Strategies
+namespace PreProcessingTest.Parsers.Strategies
 {
     public class PdfExtractionStrategyTest
     {

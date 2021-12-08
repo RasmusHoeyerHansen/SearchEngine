@@ -1,17 +1,18 @@
-﻿using System;
+﻿
+using System;
 using System.IO;
-using ExtractorTests.KnowledgeExtractionTest;
+
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NSubstitute;
 using NUnit.Framework;
-using PreProcessing.Common.Exceptions;
-using PreProcessing.Common.Services;
+using PreProcessingTest.Common.Exceptions;
+using PreProcessingTest.Common.Services;
 using Website.Controllers;
 
-namespace ExtractorTests.Website
+namespace WebsiteTests
 {
-    public class FileControllerTest : PdfCreator
+    public class FileControllerTest
     {
         [SetUp]
         public void Setup()

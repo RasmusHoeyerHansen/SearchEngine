@@ -1,6 +1,6 @@
-﻿using PreProcessing.Common;
+﻿using PreProcessingTest.Common;
 
-namespace PreProcessing.Parsing.Models
+namespace PreProcessingTest.Parsing.Models
 {
     internal class PdfArticle : ITextItem
     {

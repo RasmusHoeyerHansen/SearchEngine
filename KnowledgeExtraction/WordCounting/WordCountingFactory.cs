@@ -2,7 +2,7 @@
 using Domain_models.Entities;
 using KnowledgeExtraction.Common;
 using KnowledgeExtraction.Common.Services;
-using PreProcessing.Common;
+using PreProcessingTest.Common;
 
 namespace KnowledgeExtraction.WordCounting
 {

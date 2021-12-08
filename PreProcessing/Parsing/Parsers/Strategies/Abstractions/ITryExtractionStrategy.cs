@@ -1,4 +1,4 @@
-﻿namespace PreProcessing.Parsing.Parsers.Strategies.Abstractions
+﻿namespace PreProcessingTest.Parsing.Parsers.Strategies.Abstractions
 {
     internal interface ITryExtractionStrategy<TIn, TOut> : IExtractionStrategy<TIn, TOut>
     {

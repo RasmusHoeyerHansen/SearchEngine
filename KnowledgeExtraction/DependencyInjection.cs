@@ -3,7 +3,7 @@ using Domain_models.Entities;
 using KnowledgeExtraction.Common.Services;
 using Microsoft.Extensions.DependencyInjection;
 using KnowledgeExtraction.WordCounting;
-using PreProcessing.Parsing.Parsers;
+using PreProcessingTest.Parsing.Parsers;
 
 namespace KnowledgeExtraction
 {
