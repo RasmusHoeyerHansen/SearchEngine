@@ -22,13 +22,7 @@
     <projectFile profileName="Website">Website/Website.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="249a25f1-c9cc-49f3-86f8-65bcbed601bb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/obj/KnowledgeExtraction.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction/obj/KnowledgeExtraction.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/obj/KnowledgeExtraction.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction/obj/KnowledgeExtraction.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchEngine.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/SearchEngine.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/Controllers/FileController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Website/Controllers/FileController.cs" afterDir="false" />
-    </list>
+    <list default="true" id="249a25f1-c9cc-49f3-86f8-65bcbed601bb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
