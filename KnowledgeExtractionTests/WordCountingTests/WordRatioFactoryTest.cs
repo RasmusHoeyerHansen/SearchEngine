@@ -1,13 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Domain_models.Entities;
-using KnowledgeExtraction.Common;
 using KnowledgeExtraction.WordCounting;
 using NSubstitute;
 using NUnit.Framework;
 using PreProcessing.Common;
 
-namespace ExtractorTests.KnowledgeExtraction.WordCountingTests
+namespace KnowledgeExtractionTests.WordCountingTests
 {
     public class WordRatioFactoryTest
     {

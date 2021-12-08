@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using KnowledgeExtraction;
 using Microsoft.OpenApi.Models;
 using Website.Controllers;
 
@@ -21,7 +20,8 @@ namespace Website
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            DependencyInjection.AddKnowledgeExtraction(services);
+            KnowledgeExtraction.DependencyInjection.AddKnowledgeExtraction(services);
+            PreProcessing.DependencyInjection.AddPreProcessing(services);
             services.AddControllersWithViews();
             services.AddSingleton(new FileController(null));
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "My API", Version = "v1"}); });

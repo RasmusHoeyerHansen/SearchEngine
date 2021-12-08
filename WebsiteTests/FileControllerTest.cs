@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-using ExtractorTests.KnowledgeExtraction;
+using ExtractorTests.KnowledgeExtractionTest;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NSubstitute;

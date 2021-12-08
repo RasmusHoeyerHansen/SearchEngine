@@ -7,7 +7,7 @@ using iTextSharp.text.pdf.parser;
 using Path = System.IO.Path;
 using PdfDocument = PreProcessing.Parsing.Models.PdfDocument;
 
-namespace ExtractorTests.KnowledgeExtraction
+namespace ExtractorTests.KnowledgeExtractionTest
 {
     public abstract class PdfCreator
     {
@@ -47,7 +47,7 @@ namespace ExtractorTests.KnowledgeExtraction
             var bob = new StringBuilder();
             using (var reader =
                 new PdfReader(
-                    @"C:\Users\rasmus\Desktop\SearchEngine\UnitTests\PDFs\Rasmus Høyer Hansen, grades - Aalborg University.pdf"))
+                    @"C:\Users\rasmus\Desktop\SearchEngine\PreProcessingTests\PDFs\Rasmus Høyer Hansen, grades - Aalborg University.pdf"))
             {
                 for (int i = 1; i <= reader.NumberOfPages; i++)
                     try

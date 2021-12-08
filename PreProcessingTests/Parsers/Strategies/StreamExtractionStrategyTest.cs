@@ -5,7 +5,7 @@ using PreProcessing.Common.Exceptions;
 using PreProcessing.Parsing.Parsers.Strategies;
 using PreProcessing.Parsing.Parsers.Strategies.Abstractions;
 
-namespace ExtractorTests.KnowledgeExtraction.PreprocessingTests.Parsers.Strategies
+namespace ExtractorTests.PreProcessingTests.Parsers.Strategies
 {
     public class StreamExtractionStrategyTest
     {

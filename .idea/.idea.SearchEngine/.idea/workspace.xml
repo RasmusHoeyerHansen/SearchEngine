@@ -23,88 +23,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="249a25f1-c9cc-49f3-86f8-65bcbed601bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ClassLibrary1/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/bin/Debug/net6.0/Domain.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/obj/Debug/net6.0/Domain.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/obj/Domain.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/obj/Domain.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/obj/Domain.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KnowledgeExtraction/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KnowledgeExtraction/obj/Debug/net6.0/KnowledgeExtraction.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KnowledgeExtraction/obj/Debug/net6.0/KnowledgeExtraction.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KnowledgeExtraction/obj/Debug/net6.0/KnowledgeExtraction.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KnowledgeExtraction/obj/Debug/net6.0/KnowledgeExtraction.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KnowledgeExtraction/obj/KnowledgeExtraction.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KnowledgeExtraction/obj/KnowledgeExtraction.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KnowledgeExtraction/obj/KnowledgeExtraction.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KnowledgeExtraction/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KnowledgeExtraction/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PreProcessing/PreProcessing.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PreProcessing/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PreProcessing/obj/Debug/net6.0/PreProcessing.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PreProcessing/obj/Debug/net6.0/PreProcessing.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PreProcessing/obj/Debug/net6.0/PreProcessing.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PreProcessing/obj/Debug/net6.0/PreProcessing.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PreProcessing/obj/PreProcessing.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PreProcessing/obj/PreProcessing.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PreProcessing/obj/PreProcessing.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PreProcessing/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PreProcessing/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/net6.0/CoverletSourceRootsMapping" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnitTests/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnitTests/obj/Debug/net6.0/UnitTests.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnitTests/obj/Debug/net6.0/UnitTests.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnitTests/obj/UnitTests.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnitTests/obj/UnitTests.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnitTests/obj/UnitTests.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnitTests/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnitTests/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KnowledgeExtractionTests/DependencyInjectionTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KnowledgeExtractionTests/KnowledgeExtractionTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SearchEngine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SearchEngine/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/Common/Exceptions/PdfParsingException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PreProcessing/Common/Exceptions/PdfParsingException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/Common/ITextItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PreProcessing/Common/ITextItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/Common/Services/IBaseKnowledgeExtractor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction/Common/Services/IWordCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/Common/Services/IPreProcessingService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PreProcessing/Common/Services/IPreProcessingService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/Common/Services/PdfKnowledgeExtractionService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction/Common/Services/PdfKnowledgeExtractionService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction/DependencyInjection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ControllerTest/.gitignore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ControllerTest/ControllerTest.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ControllerTest/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ControllerTest/Tests.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ControllerTest/packages.config" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/KnowledgeExtraction.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction/KnowledgeExtraction.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/Preprocessing/Models/PdfArticle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PreProcessing/Parsing/Models/PdfArticle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/Preprocessing/Models/PdfDocument.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PreProcessing/Parsing/Models/PdfDocument.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/Preprocessing/Parsers/ITextItemFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PreProcessing/Parsing/Parsers/ITextItemFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/Preprocessing/Parsers/Strategies/Abstractions/DocumentTextReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PreProcessing/Parsing/Parsers/Strategies/Abstractions/DocumentTextReader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/Preprocessing/Parsers/Strategies/Abstractions/IExtractionStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PreProcessing/Parsing/Parsers/Strategies/Abstractions/IExtractionStrategy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/Preprocessing/Parsers/Strategies/Abstractions/ITryExtractionStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PreProcessing/Parsing/Parsers/Strategies/Abstractions/ITryExtractionStrategy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/Preprocessing/Parsers/Strategies/ByteArrayExtractionStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PreProcessing/Parsing/Parsers/Strategies/ByteArrayExtractionStrategy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/Preprocessing/Parsers/Strategies/PdfExtractionStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PreProcessing/Parsing/Parsers/Strategies/PdfExtractionStrategy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/Preprocessing/Parsers/Strategies/StreamExtractionStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PreProcessing/Parsing/Parsers/Strategies/StreamExtractionStrategy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/Preprocessing/Parsers/TextItemFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PreProcessing/Parsing/Parsers/TextItemFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/WordCounting/DictionaryLookUpStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction/WordCounting/DictionaryLookUpStrategy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/WordCounting/IMediaItemProcessingStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction/WordCounting/IMediaItemProcessingStrategy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/WordCounting/IMediaItemProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction/WordCounting/IMediaItemProcessor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KnowledgeExtraction/WordCounting/WordCountingFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtraction/WordCounting/WordCountingFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PreProcessing/PreProcessing.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PreProcessing/PreProcessing.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SearchEngine.sln" beforeDir="false" afterPath="$PROJECT_DIR$/SearchEngine.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/KnowledgeExtraction/PdfCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/KnowledgeExtraction/PdfCreator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/KnowledgeExtraction/PreprocessingTests/Parsers/PdfArticleFactoryTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/KnowledgeExtraction/PreprocessingTests/Parsers/PdfArticleFactoryTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/KnowledgeExtraction/PreprocessingTests/Parsers/Strategies/PdfExtractionStrategyTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/KnowledgeExtraction/PreprocessingTests/Parsers/Strategies/PdfExtractionStrategyTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/KnowledgeExtraction/PreprocessingTests/Parsers/Strategies/StreamExtractionStrategyTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/KnowledgeExtraction/PreprocessingTests/Parsers/Strategies/StreamExtractionStrategyTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/KnowledgeExtraction/WordCountingTests/Strategies/DictionaryLookUpStrategyTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/KnowledgeExtraction/WordCountingTests/Strategies/DictionaryLookUpStrategyTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/KnowledgeExtraction/WordCountingTests/WordRatioFactoryTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/KnowledgeExtraction/WordCountingTests/WordRatioFactoryTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/Website/FileControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/Website/FileControllerTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/Controllers/FileController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Website/Controllers/FileController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngine.sln.DotSettings.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/.gitignore.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PreProcessingTests/.gitignore.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/KnowledgeExtraction/PdfCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PreProcessingTests/PdfCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/KnowledgeExtraction/WordCountingTests/Strategies/DictionaryLookUpStrategyTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtractionTests/WordCountingTests/Strategies/DictionaryLookUpStrategyTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/KnowledgeExtraction/WordCountingTests/WordRatioFactoryTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KnowledgeExtractionTests/WordCountingTests/WordRatioFactoryTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/PreprocessingTests/Parsers/PdfArticleFactoryTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PreProcessingTests/PreProcessingTests/Parsers/PdfArticleFactoryTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/PreprocessingTests/Parsers/Strategies/PdfExtractionStrategyTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PreProcessingTests/PreProcessingTests/Parsers/Strategies/PdfExtractionStrategyTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/PreprocessingTests/Parsers/Strategies/StreamExtractionStrategyTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PreProcessingTests/PreProcessingTests/Parsers/Strategies/StreamExtractionStrategyTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/UnitTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PreProcessingTests/PreProcessingTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/Website/FileControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PreProcessingTests/Website/FileControllerTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Website/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Website/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,54 +64,60 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/57c2d4282221452cad4df86bbd5d6fa0a1fc70/3D2/Directory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/cd244751032541219fe0724dafc7e191a3f78/20/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f0a172a57f74527baa217742039c9ad280000/5e/8bdbedb2/Document.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PreProcessing/Common/Services/IPreProcessingService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/KnowledgeExtraction/Common/Services/PdfKnowledgeExtractionService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/879e64150fe442079fadd555ede677aa8f5788/41A/List.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/KnowledgeExtraction/Common/Services/IWordCounter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Website/Controllers/FileController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PreProcessingTests/PreProcessingTests/Parsers/Strategies/StreamExtractionStrategyTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PreProcessing/Common/Exceptions/PdfParsingException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PreProcessingTests/PreProcessingTests/Parsers/PdfArticleFactoryTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PreProcessingTests/PreProcessingTests/Parsers/Strategies/PdfExtractionStrategyTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PreProcessing/Parsing/Parsers/Strategies/Abstractions/DocumentTextReader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/879e64150fe442079fadd555ede677aa8f5788/8b/163ab9a0/IEnumerable`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/57c2d4282221452cad4df86bbd5d6fa0a1fc70/3E9/Path.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PreProcessing/Parsing/Parsers/Strategies/StreamExtractionStrategy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PreProcessing/Parsing/Parsers/Strategies/PdfExtractionStrategy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PreProcessing/Parsing/Parsers/ITextItemFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f0a172a57f74527baa217742039c9ad280000/f0/fa1a9588/FdfReader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PreProcessing/Parsing/Models/PdfDocument.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PreProcessing/Parsing/Parsers/TextItemFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PreProcessing/Parsing/Models/PdfArticle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/KnowledgeExtraction/WordCounting/WordCount.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Website/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Website/ClientApp/.eslintrc.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/cb6b23b5581d4ab798055b57b3fd8d8674e00/6/Assert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/57c2d4282221452cad4df86bbd5d6fa0a1fc70/ab/42339d8e/StringSplitOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Website/ClientApp/package.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/57c2d4282221452cad4df86bbd5d6fa0a1fc70/3D2/Directory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/57c2d4282221452cad4df86bbd5d6fa0a1fc70/08/2d8a93c1/IObservable`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/cd244751032541219fe0724dafc7e191a3f78/20/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/UnitTests/KnowledgeExtraction/WordCountingTests/Strategies/DictionaryLookUpStrategyTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f0a172a57f74527baa217742039c9ad280000/5e/8bdbedb2/Document.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/KnowledgeExtractionTests/WordCountingTests/Strategies/DictionaryLookUpStrategyTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f0e94c7710344038a25368ffb424754214178/10/FormFile.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/UnitTests/KnowledgeExtraction/PdfCreator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PreProcessingTests/PdfCreator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/57c2d4282221452cad4df86bbd5d6fa0a1fc70/99/3fe0770a/IObserver`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Entities/Author.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Entities/Word.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ControllerTest/Tests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Entities/Article.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/UnitTests/Website/FileControllerTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PreProcessingTests/Website/FileControllerTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Website/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/879e64150fe442079fadd555ede677aa8f5788/41A/List.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f0a172a57f74527baa217742039c9ad280000/8e/0a3e0a44/PdfTextExtractor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Website/Controllers/FileController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/UnitTests/KnowledgeExtraction/PreprocessingTests/Parsers/Strategies/StreamExtractionStrategyTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/PreProcessing/Common/Exceptions/PdfParsingException.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/UnitTests/KnowledgeExtraction/PreprocessingTests/Parsers/PdfArticleFactoryTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/KnowledgeExtraction/Common/IWordRatioContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/Persistence/Configurations/AuthorConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/UnitTests/KnowledgeExtraction/PreprocessingTests/Parsers/Strategies/PdfExtractionStrategyTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f0a172a57f74527baa217742039c9ad280000/c8/aaa83dcf/DocumentException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/Persistence/Configurations/OccursInConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/KnowledgeExtraction/WordCounting/IWordCount.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/Persistence/Configurations/WordConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/PreProcessing/Parsing/Parsers/Strategies/Abstractions/DocumentTextReader.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/879e64150fe442079fadd555ede677aa8f5788/8b/163ab9a0/IEnumerable`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/57c2d4282221452cad4df86bbd5d6fa0a1fc70/3E9/Path.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/Persistence/Configurations/ArticleConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/PreProcessing/Parsing/Parsers/Strategies/StreamExtractionStrategy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/PreProcessing/Parsing/Parsers/Strategies/PdfExtractionStrategy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/Persistence/WordCountDbContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f0a172a57f74527baa217742039c9ad280000/f0/fa1a9588/FdfReader.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/PreProcessing/Parsing/Parsers/TextItemFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/57c2d4282221452cad4df86bbd5d6fa0a1fc70/e2/6f9b429a/ICollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f0a172a57f74527baa217742039c9ad280000/83/66a0ff82/LocationTextExtractionStrategy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/KnowledgeExtraction/WordCounting/WordCount.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c1052b87823f4d0fba249f388ab002bd7c80/2/MvcServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f0a172a57f74527baa217742039c9ad280000/71/cf98b90d/RandomAccessSourceFactory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/KnowledgeExtraction/DependencyInjection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Website/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Website/ClientApp/.eslintrc.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f0a172a57f74527baa217742039c9ad280000/6e/a5e045d8/PdfDocument.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c5ca35042cf9479bb35024fe4a36ae4b11670/1d/6849c51d/NotifyFilters.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/cb6b23b5581d4ab798055b57b3fd8d8674e00/6/Assert.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="20uiR2tUHIzIMSxbdx4tja9rQog" />
   <component name="ProjectLevelVcsManager">
@@ -203,7 +149,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/UnitTests/UnitTests.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/PreProcessingTests/PreProcessingTests.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -562,7 +508,7 @@
       <workItem from="1638625501256" duration="6970000" />
       <workItem from="1638784163107" duration="19433000" />
       <workItem from="1638815696578" duration="5807000" />
-      <workItem from="1638995671907" duration="700000" />
+      <workItem from="1638995671907" duration="2240000" />
     </task>
     <servers />
   </component>
@@ -570,12 +516,43 @@
     <option name="version" value="3" />
   </component>
   <component name="UnitTestsCoverage.Settings">
-    <option name="coveragePercentColumnWidth" value="21" />
+    <option name="coveragePercentColumnWidth" value="15" />
     <option name="sortOrder" value="DESCENDING" />
     <option name="sortedColumn" value="1" />
-    <option name="symbolColumnWidth" value="55" />
+    <option name="symbolColumnWidth" value="15" />
     <coverage-tree-state>
-      <expand />
+      <expand>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 0% 489/489" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 0% 489/489" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Pipeline 0% 310/310" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 0% 489/489" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Pipeline 0% 310/310" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Applications 0% 176/176" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 0% 489/489" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Pipeline 0% 310/310" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Applications 0% 176/176" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="KnowledgeExtraction 0% 64/64" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 0% 489/489" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Pipeline 0% 310/310" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Applications 0% 176/176" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="KnowledgeExtraction 0% 64/64" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="KnowledgeExtraction 0% 64/64" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+      </expand>
       <select />
     </coverage-tree-state>
   </component>

@@ -20,8 +20,8 @@
 
     <ItemGroup>
         <ProjectReference Include="..\Domain\Domain.csproj" />
-        <ProjectReference Include="..\PreProcessing\PreProcessing.csproj" />
         <ProjectReference Include="..\KnowledgeExtraction\KnowledgeExtraction.csproj" />
+        <ProjectReference Include="..\PreProcessing\PreProcessing.csproj" />
         <ProjectReference Include="..\Website\Website.csproj" />
     </ItemGroup>
 

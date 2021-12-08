@@ -1,12 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using KnowledgeExtraction.Common;
+using ExtractorTests.KnowledgeExtractionTest;
+using iTextSharp.text.pdf;
 using NUnit.Framework;
 using PreProcessing.Parsing.Models;
 using PreProcessing.Parsing.Parsers;
 
-namespace ExtractorTests.KnowledgeExtraction.PreprocessingTests.Parsers
+namespace ExtractorTests.PreProcessingTests.Parsers
 {
     public class PdfArticleFactoryTest : PdfCreator
     {
@@ -21,7 +22,7 @@ namespace ExtractorTests.KnowledgeExtraction.PreprocessingTests.Parsers
         [TestCase("æøå")]
         public void Parse_Returns_StringContainer_With_Strings_From_PDF(string input)
         {
-            ITextItemFactory<PdfDocument> pdfExtractor = new TextItemFactory();
+            var pdfExtractor = new TextItemFactory();
             IEnumerable<string> actual = pdfExtractor.Extract(CreateTestPDF(input)).ParsedStrings;
             IEnumerable<string> expected = input.Split(' ');
 
@@ -36,7 +37,7 @@ namespace ExtractorTests.KnowledgeExtraction.PreprocessingTests.Parsers
         [TestCase("æøå")]
         public void Parse_ReadFromFilePath_DoesNotThrow(string input)
         {
-            ITextItemFactory<PdfDocument> pdfExtractor = new TextItemFactory();
+            TextItemFactory pdfExtractor = new TextItemFactory();
             var document = CreateTestPDF(input);
             Assert.DoesNotThrow(() => pdfExtractor.Extract(document));
         }

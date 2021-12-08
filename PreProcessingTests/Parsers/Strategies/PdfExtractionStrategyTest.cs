@@ -3,7 +3,7 @@ using PreProcessing.Common.Exceptions;
 using PreProcessing.Parsing.Models;
 using PreProcessing.Parsing.Parsers.Strategies;
 
-namespace ExtractorTests.KnowledgeExtraction.PreprocessingTests.Parsers.Strategies
+namespace ExtractorTests.PreProcessingTests.Parsers.Strategies
 {
     public class PdfExtractionStrategyTest
     {

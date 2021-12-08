@@ -1,7 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 
-namespace ControllerTest
+namespace WebsiteTests
 {
     [TestFixture]
     public class Tests
