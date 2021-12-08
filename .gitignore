@@ -27,3 +27,5 @@ Persitence/obj/Release/net6.0/Persitence.GlobalUsings.g.cs
 KnowledgeExtraction.UnitTest/obj/Release/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
 KnowledgeExtraction.UnitTest/obj/Release/net6.0/KnowledgeExtraction.UnitTest.AssemblyInfo.cs
 KnowledgeExtraction.UnitTest/obj/Release/net6.0/KnowledgeExtraction.UnitTest.GeneratedMSBuildEditorConfig.editorconfig
+*.pdb
+*.pdb
