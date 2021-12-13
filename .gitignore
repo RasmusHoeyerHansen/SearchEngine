@@ -225,7 +225,6 @@ _pkginfo.txt
 *.appxupload
 
 *.idea*
-
 .idea*
 
 # Visual Studio cache files
@@ -246,5 +245,3 @@ ClientBin/
 orleans.codegen.cs
 # JetBrains Rider
 *.sln.iml
-SearchEngine.sln.DotSettings.user
-SearchEngine.sln.DotSettings.user
