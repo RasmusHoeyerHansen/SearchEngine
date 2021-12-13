@@ -1,9 +1,10 @@
-import React from 'react';
+import './Components/PdfUploader/pdfFileUploader'
 import './App.css';
+import PdfFileUploader from "./Components/PdfUploader/pdfFileUploader";
 
 function App() {
-  return (
-    <p>hello</p>
+  return (<PdfFileUploader>HELLO</PdfFileUploader>
+    
   );
 }
 

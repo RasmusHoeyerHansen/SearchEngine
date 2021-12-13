@@ -8,7 +8,7 @@ using NSubstitute;
 using NUnit.Framework;
 using PreProcessing.Common.Exceptions;
 using PreProcessing.Common.Services;
-using Website.Controllers;
+using WebApp.Controllers;
 
 namespace WebsiteTests
 {

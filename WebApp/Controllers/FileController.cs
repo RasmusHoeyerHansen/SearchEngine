@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using PreProcessing.Common.Exceptions;
 using PreProcessing.Common.Services;
 
-namespace Website.Controllers
+namespace WebApp.Controllers
 {
     [ApiController, Route("[controller]")]
     public class FileController : ControllerBase
