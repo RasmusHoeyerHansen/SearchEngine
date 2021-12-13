@@ -18,7 +18,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\PreProcessing\PreProcessing.csproj" />
-      <ProjectReference Include="..\Website\Website.csproj" />
+      <ProjectReference Include="..\WebApp\WebApp.csproj" />
     </ItemGroup>
 
 </Project>

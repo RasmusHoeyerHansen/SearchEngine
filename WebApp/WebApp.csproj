@@ -8,12 +8,17 @@
         <IsPackable>false</IsPackable>
         <SpaRoot>application\</SpaRoot>
         <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
-        <SpaProxyServerUrl>https://localhost:44432</SpaProxyServerUrl>
+        <SpaProxyServerUrl>https://localhost:44418</SpaProxyServerUrl>
         <SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>
         <ImplicitUsings>enable</ImplicitUsings>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
-    
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.SpaProxy" Version="6.0.0" />
+    </ItemGroup>
+
+
     <ItemGroup>
         <ProjectReference Include="..\KnowledgeExtraction\KnowledgeExtraction.csproj" />
         <ProjectReference Include="..\PreProcessing\PreProcessing.csproj" />
@@ -21,14 +26,12 @@
     </ItemGroup>
 
 
+
     <ItemGroup>
-        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-            <_Parameter1>WebsiteUnitTests.UnitTest</_Parameter1>
-        </AssemblyAttribute>
-        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-            <!-- Mocking framework -->
-            <_Parameter1>DynamicProxyGenAssembly2</_Parameter1>
-        </AssemblyAttribute>
+        <PackageReference Include="Microsoft.OpenApi" Version="1.2.3" />
+        <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.2.3" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.2.3" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.2.3" />
     </ItemGroup>
 
     <ItemGroup>
@@ -38,22 +41,10 @@
         <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
     </ItemGroup>
 
-
     <ItemGroup>
-        <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.2.3" />
-        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.2.3" />
-        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.2.3" />
-    </ItemGroup>
-
-
-    <ItemGroup>
-      <_ContentIncludedByDefault Remove="application\.eslintrc.json" />
-      <_ContentIncludedByDefault Remove="application\build\asset-manifest.json" />
-      <_ContentIncludedByDefault Remove="application\build\manifest.json" />
       <_ContentIncludedByDefault Remove="application\package-lock.json" />
       <_ContentIncludedByDefault Remove="application\package.json" />
       <_ContentIncludedByDefault Remove="application\public\manifest.json" />
-      <_ContentIncludedByDefault Remove="application\tsconfig.json" />
     </ItemGroup>
 
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
