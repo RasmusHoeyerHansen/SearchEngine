@@ -9,7 +9,7 @@ namespace PreProcessing.Parsing.Parsers
 {
     internal partial class TextItemFactory : ITextItemFactory<Models.PdfDocument>, ITextItemFactory<Stream>
     {
-        public ITextItem? Extract(Models.PdfDocument document)
+        public ITextItem Extract(Models.PdfDocument document)
         {
             var res = Parse(document, new PdfExtractionStrategy());
             return res ?? throw new PdfParsingException();
@@ -27,7 +27,7 @@ namespace PreProcessing.Parsing.Parsers
             return res ?? throw new PdfParsingException();
         }
 
-        public ITextItem? Extract(Stream inputElement)
+        public ITextItem Extract(Stream inputElement)
         {
             var res = new StreamExtractionStrategy().ExecuteExtraction(inputElement);
             return res ?? throw new PdfParsingException();

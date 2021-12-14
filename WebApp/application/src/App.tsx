@@ -1,11 +1,14 @@
-import './Components/PdfUploader/pdfFileUploader'
+import './Components/PdfUploader/pdfFileUploadContainer'
 import './App.css';
-import PdfFileUploader from "./Components/PdfUploader/pdfFileUploader";
+import PdfFileUploadContainer from "./Components/PdfUploader/pdfFileUploadContainer";
 
 function App() {
-  return (<PdfFileUploader>HELLO</PdfFileUploader>
     
-  );
+    
+    return (
+      <PdfFileUploadContainer onFileUploaded={
+        () =>   console.log()}/>
+    );
 }
 
 export default App;
