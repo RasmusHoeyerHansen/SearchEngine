@@ -1,13 +1,12 @@
-import './Components/PdfUploader/pdfUploadContainer'
+
 import './App.css';
-import PdfUploadContainer from "./Components/PdfUploader/pdfUploadContainer";
+import PdfUploadContainer from "./Components/PdfUploader/PdfUploadContainer";
 
 function App() {
     
     
     return (
-      <PdfUploadContainer onFileUploaded={
-        () =>   console.log()}/>
+        <PdfUploadContainer/>
     );
 }
 
