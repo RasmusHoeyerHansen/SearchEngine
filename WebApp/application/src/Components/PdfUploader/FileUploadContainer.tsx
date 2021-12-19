@@ -13,7 +13,6 @@ export const PdfUploadContainer = () => {
 
     let displayText = "Upload a PDF file to contribute to the search engine."
 
-
     const onFileSelectionChanged = (event: ChangeEvent<HTMLInputElement>) => {
         let selectedFiles: File[] = [];
 

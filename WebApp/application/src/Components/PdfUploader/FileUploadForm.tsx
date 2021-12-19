@@ -10,17 +10,18 @@ interface IFileUploadFormOptionalProps {
 
 type ValidFileTypes = 'application/pdf' | 'application/vnd.ms-excel';
 
-export const FileUploadForm = (
-    {onChange, fileTypes = ['application/pdf']}: IFileUploadFormProps) => {
+export const FileUploadForm = ({
+                                   onChange, fileTypes = ['application/pdf']
+                               }: IFileUploadFormProps) => {
     let acceptFileTypes: string = fileTypes.join(',');
-    return (
-        <form id="pdfInputForm">
-            <input type="file"
-                   name="formFile" multiple
-                   accept={acceptFileTypes}
-                   onChange={onChange}
-            />
-            <input type={"submit"}/>
-        </form>
-    );
+    return (<form id="FileUploadForm">
+        <input id={'FileUploadForm-input'}
+               type="file"
+               name="formFile" multiple
+               accept={acceptFileTypes}
+               onChange={onChange}
+        />
+        <input id={"FileUploadForm-submit"} type={"submit"}/>
+        <label htmlFor="pdfInputForm"/>
+    </form>);
 }
