@@ -2,8 +2,6 @@
   "name": "application",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -27,5 +25,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "jest": "^27.4.5",
+    "react": "^17.0.2",
+    "react-scripts": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@types/react-test-renderer": "^17.0.1",
+    "react-dom": "^17.0.2",
+    "react-test-renderer": "^17.0.2"
   }
 }

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FileUploadForm renders correctly with default pdf as filetype and matches snapshot 1`] = `
+<form
+  id="pdfInputForm"
+>
+  <input
+    accept="application/pdf"
+    multiple={true}
+    name="formFile"
+    onChange={[Function]}
+    type="file"
+  />
+  <input
+    type="submit"
+  />
+</form>
+`;
