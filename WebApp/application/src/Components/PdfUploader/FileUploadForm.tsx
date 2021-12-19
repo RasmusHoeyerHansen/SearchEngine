@@ -1,8 +1,7 @@
-﻿import {ChangeEvent} from "react";
-import {FileInput, ValidFileTypes} from "./UploadInput";
+﻿import {FileInput, IFileInputProps, ValidFileTypes} from "./UploadInput";
 
-export interface IFileUploadFormProps extends IFileUploadFormOptionalProps {
-    onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+export interface IFileUploadFormProps extends IFileUploadFormOptionalProps,IFileInputProps{
+    onSubmit: (event:SubmitEvent) => void;
 }
 
 interface IFileUploadFormOptionalProps {
