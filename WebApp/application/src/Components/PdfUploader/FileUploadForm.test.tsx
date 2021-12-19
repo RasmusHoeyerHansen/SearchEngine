@@ -74,5 +74,4 @@ describe("FileUploadForm", () => {
         expect(fileInput.files?.length).toBeTruthy();
         expect(fileInput.files?.length).toBe(3);
     });
-
 })
