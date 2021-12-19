@@ -1,6 +1,6 @@
-import './Components/PdfUploader/pdfFileUploadForm'
+import './Components/PdfUploader/FileUploadContainer'
 import './App.css';
-import PdfFileUploadForm from "./Components/PdfUploader/pdfFileUploadForm";
+import PdfFileUploadForm from "./Components/PdfUploader/FileUploadContainer";
 
 function App() {
     return <PdfFileUploadForm/>
