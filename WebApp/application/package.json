@@ -8,13 +8,16 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "test-watch": "react-scripts test --watch",
-      "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache"
+    "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+      "jsx-a11y/no-redundant-roles": 0
+    }
   },
   "browserslist": {
     "production": [
@@ -42,6 +45,7 @@
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
     "@types/react-test-renderer": "^17.0.1",
+    "eslint": "^8.5.0",
     "react-test-renderer": "^17.0.2"
   }
 }

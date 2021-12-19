@@ -9,10 +9,8 @@ export interface IPdfUploadContainerProps extends IFileUploadFormProps {
 export const PdfUploadContainer = () => {
 
     const [pdfFiles, setState] = useState<File[]>()
-    const [count, setCountState] = useState(0);
 
     let displayText = "Upload a PDF file to contribute to the search engine."
-
     const onFileSelectionChanged = (event: ChangeEvent<HTMLInputElement>) => {
         let selectedFiles: File[] = [];
 
@@ -28,15 +26,10 @@ export const PdfUploadContainer = () => {
         }
 
         setState(selectedFiles);
-        setCountState(selectedFiles.length)
     }
-
 
     return (<div className={"PdfUploadContainer"}>
         <FileUploadForm onChange={onFileSelectionChanged}/>
-        <div>
-            {pdfFiles?.length}
-        </div>
     </div>)
 }
 

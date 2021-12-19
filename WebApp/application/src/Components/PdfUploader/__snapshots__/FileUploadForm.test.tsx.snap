@@ -4,20 +4,15 @@ exports[`FileUploadForm renders correctly with default pdf as filetype and match
 <div>
   <form
     id="FileUploadForm"
+    role="form"
   >
     <input
       accept="application/pdf"
       id="FileUploadForm-input"
       multiple=""
       name="formFile"
+      role="input"
       type="file"
-    />
-    <input
-      id="FileUploadForm-submit"
-      type="submit"
-    />
-    <label
-      for="pdfInputForm"
     />
   </form>
 </div>
