@@ -1,6 +1,6 @@
 import {cleanup, fireEvent, render, screen} from "@testing-library/react";
 import React, {ChangeEvent} from "react";
-import {FileInput} from "./UploadInput";
+import {FileInput} from "./FileInput";
 import mock = jest.mock;
 
 describe("FileInput", () => {
@@ -23,9 +23,9 @@ describe("FileInput", () => {
     });
 
     it('should be able to render a pdf file', function () {
-        CreateComponent();
+        let fileInput = CreateComponent();
         const file = new File([new ArrayBuffer(1)], 'testfile.pdf');
-        let fileInput =  screen.getByRole("input") as HTMLInputElement;
+
 
         fireEvent.change(fileInput, {
             target: {files: [file]}

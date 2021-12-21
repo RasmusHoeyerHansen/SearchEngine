@@ -7,6 +7,10 @@ export interface IPdfUploadContainerProps {
     onFileUpload:(event:FormEvent<HTMLInputElement> ) => void;
 }
 
+const UploadedFile = () : JSX.Element => {
+    return <div role = "uploaded files"/>;
+}
+
 export const FileUploadContainer = (props : IPdfUploadContainerProps) => {
     const [pdfFiles, setState] = useState<File[]>()
 
@@ -29,6 +33,7 @@ export const FileUploadContainer = (props : IPdfUploadContainerProps) => {
 
     return (<div className={"PdfUploadContainer"}>
         <FileUploadForm onSubmit={props.onSubmit} onChange={onFileSelectionChanged}/>
+        <UploadedFile ></UploadedFile>
     </div>)
 }
 

@@ -1,9 +1,21 @@
-import React, {ChangeEvent, FormEvent} from "react";
-import {cleanup, render, screen} from "@testing-library/react";
-import {FileUploadForm} from "./FileUploadForm";
+import React, {FormEvent} from "react";
+import {
+    cleanup,
+    createEvent, fireEvent,
+    render,
+    screen
+} from "@testing-library/react";
 import FileUploadContainer from "./FileUploadContainer";
+import {IFileInputProps} from "./FileInput";
+
 
 describe("FileUploadContainer", () => {
+    let moqFileUploadForm = jest.mock("./FileInput");
+
+
+    let moqFileInput = jest.mock("./FileInput");
+
+
     beforeEach(() => {
         jest.clearAllMocks();
         cleanup();
@@ -11,6 +23,16 @@ describe("FileUploadContainer", () => {
     it('Matches snapshot', function () {
         let component = CreateComponent({});
         expect(component).toMatchSnapshot();
+    });
+
+    it('should call submit on submit click', function () {
+        let mockFunction = jest.fn()
+        let content = CreateComponent({onSubmit: mockFunction});
+        const myEvent = createEvent.submit(content)
+        fireEvent(content, myEvent)
+
+        expect(mockFunction).toBeCalledTimes(1);
+
     });
 
     interface testProps {
