@@ -1,7 +1,21 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import {render, unmountComponentAtNode} from "react-dom";
+import {act} from "react-dom/test-utils";
+import App from "./App";
 
-test('renders learn react link', () => {
-  expect(1).toBe(1);
+let container: HTMLDivElement;
+beforeEach(() => {
+    // setup a DOM element as a render target
+    container = document.createElement("div");
+    document.body.appendChild(container);
 });
+
+afterEach(() => {
+    // cleanup on exiting
+    unmountComponentAtNode(container);
+    container.remove();
+});
+
+it('should render', () => {
+        render(<App/>, container);
+}); 
