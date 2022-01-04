@@ -35,7 +35,7 @@ describe("FileUploadForm", () => {
             submit = props.onSubmit;
         }
         render(<FileUploadForm onSubmit={submit} onChange={change}/>)
-        return screen.getByRole("form") as HTMLInputElement;
+        return screen.getByTestId("FileUploadForm") as HTMLInputElement;
     };
 
 

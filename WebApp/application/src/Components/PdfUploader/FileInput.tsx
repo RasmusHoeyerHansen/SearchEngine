@@ -16,5 +16,6 @@ export function FileInput ({acceptedFileString = "application/pdf", onChange}: I
                   accept={acceptedFileString}
                   onChange={onChange}
                   role="input"
+                  data-testid = "FileInput"
     />
 }

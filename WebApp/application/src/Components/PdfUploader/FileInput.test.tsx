@@ -87,6 +87,6 @@ describe("FileInput", () => {
         } else {
             render(<FileInput onChange={onChange}/>);
         }
-        return screen.getByRole("input") as HTMLInputElement;
+        return screen.getByTestId("FileInput") as HTMLInputElement;
     };
 })

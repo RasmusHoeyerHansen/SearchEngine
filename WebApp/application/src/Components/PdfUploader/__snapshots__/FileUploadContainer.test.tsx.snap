@@ -1,17 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FileUploadContainer Matches snapshot 1`] = `
-<form
-  id="FileUploadForm"
-  role="form"
+<div
+  class="PdfUploadContainer"
+  data-testid="FileUploadContainer"
 >
-  <input
-    accept="application/pdf"
-    id="FileUploadForm-input"
-    multiple=""
-    name="formFile"
-    role="input"
-    type="file"
+  <form
+    data-testid="FileUploadForm"
+    id="FileUploadForm"
+    role="form"
+  >
+    <input
+      accept="application/pdf"
+      data-testid="FileInput"
+      id="FileUploadForm-input"
+      multiple=""
+      name="formFile"
+      role="input"
+      type="file"
+    />
+  </form>
+  <div
+    role="uploaded files"
   />
-</form>
+</div>
 `;

@@ -1,23 +1,18 @@
-﻿import {ChangeEvent, FC, FormEvent, PropsWithChildren, useState} from "react";
+﻿import {ChangeEvent, useState} from "react";
 import {FileUploadForm} from "./FileUploadForm";
 
 
-export interface IPdfUploadContainerProps {
-    onSubmit: (event:SubmitEvent) => void;
-    onFileUpload:(event:FormEvent<HTMLInputElement> ) => void;
-}
 
 const UploadedFile = () : JSX.Element => {
     return <div role = "uploaded files"/>;
 }
 
-export const FileUploadContainer = (props : IPdfUploadContainerProps) => {
+export const FileUploadContainer = () => {
     const [pdfFiles, setState] = useState<File[]>()
 
     let displayText = "Upload a PDF file to contribute to the search engine."
     const onFileSelectionChanged = (event: ChangeEvent<HTMLInputElement>) => {
         let selectedFiles: File[] = [];
-
         const element = event.currentTarget as HTMLInputElement;
 
         let fileList: FileList | null = element.files;
@@ -31,14 +26,15 @@ export const FileUploadContainer = (props : IPdfUploadContainerProps) => {
         setState(selectedFiles);
     }
 
-    return (<div className={"PdfUploadContainer"}>
-        <FileUploadForm onSubmit={props.onSubmit} onChange={onFileSelectionChanged}/>
-        <UploadedFile ></UploadedFile>
-    </div>)
-}
+    const onFileSubmit  = (event : SubmitEvent) => {
 
-const z : FC<HTMLInputElement> = (props : PropsWithChildren<HTMLInputElement>) : JSX.Element => {
-    return <div>dsa</div>
+
+    }
+
+    return (<div className={"PdfUploadContainer"} data-testid='FileUploadContainer'>
+        <FileUploadForm onSubmit={onFileSubmit} onChange={onFileSelectionChanged}/>
+        <UploadedFile />
+    </div>)
 }
 
 export default FileUploadContainer;

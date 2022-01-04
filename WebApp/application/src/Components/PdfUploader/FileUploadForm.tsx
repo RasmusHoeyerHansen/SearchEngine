@@ -14,7 +14,7 @@ export const FileUploadForm = ({
                                }: IFileUploadFormProps) =>
 {
     let acceptFileTypes: string = fileTypes.join(',');
-    return <form id="FileUploadForm" role='form'>
+    return <form id="FileUploadForm" role='form' data-testid='FileUploadForm'>
             <FileInput acceptedFileString={acceptFileTypes} onChange={onChange}/>
             </form>
 }

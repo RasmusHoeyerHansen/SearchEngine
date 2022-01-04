@@ -1,9 +1,11 @@
 import './Components/PdfUploader/FileUploadContainer'
 import './App.css';
-import PdfFileUploadForm from "./Components/PdfUploader/FileUploadContainer";
+import PdfFileUploadForm, {
+    FileUploadContainer
+} from "./Components/PdfUploader/FileUploadContainer";
 
 function App() {
-    return <PdfFileUploadForm/>
+    return <FileUploadContainer/>
         }
 
 export default App;
