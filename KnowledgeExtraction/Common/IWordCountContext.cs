@@ -5,7 +5,7 @@ namespace KnowledgeExtraction.Common
 {
     public interface IWordCountContext
     {
-        public DbSet<OccursIn> Occurances { get; }
+        public DbSet<OccursIn> Occurrences { get; }
         DbSet<Article> Articles { get; }
         DbSet<Author> Authors { get; }
     }

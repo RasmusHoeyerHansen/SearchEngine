@@ -9,7 +9,7 @@ namespace Infrastructure.Persistence
     {
         public DbSet<Article> Articles => Set<Article>();
         public DbSet<Author> Authors => Set<Author>();
-        public DbSet<OccursIn> Occurances => Set<OccursIn>();
+        public DbSet<OccursIn> Occurrences => Set<OccursIn>();
         public DbSet<WordRatio> Ratios => Set<WordRatio>();
 
         protected override void OnModelCreating(ModelBuilder builder)
